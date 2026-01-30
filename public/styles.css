@@ -3221,3 +3221,47 @@ footer {
 .image-column.visible img:nth-child(2) {
   transition-delay: 0.5s;
 }
+
+
+/*Modify the acordeon replace by carrusel */
+
+
+/* Contenedor de cada bloque (Título + Fila) */
+.filosofia-item {
+  margin-bottom: 40px;
+}
+
+/* El título ahora está fuera de la fila, así que ocupará el 100% */
+.filosofia-item h3 {
+  width: 100%;
+  display:block;
+  margin-bottom: 20px;
+  text-align: left; /* O center, según prefieras */
+}
+
+/* La fila que contiene solo la imagen y el texto */
+.filosofia-row {
+  display: flex;
+  align-items:flex-start;
+  gap: 30px; /* Espacio entre imagen y texto */
+  margin-top: 10px;
+
+}
+
+.filosofia-image, .filosofia-text {
+  flex: 1; /* Esto garantiza que sean exactamente dos columnas de igual ancho */
+}
+
+.filosofia-image img {
+  width: 100%;
+  height: auto;
+  display: block;
+  object-fit: contain;
+}
+
+/* En móviles se ponen una bajo la otra */
+@media (max-width: 768px) {
+  .filosofia-row {
+    flex-direction: column !important;
+  }
+}

@@ -207,12 +207,6 @@ body {
   cursor: pointer;
 }
 
-.navbar-nav.show {
-  display: flex;
-  max-height: 300px;
-  transition: max-height var(--transition-fast) ease-in;
-}
-
 /* ===== LAYOUT & SECTIONS ===== */
 /*
 .slide {

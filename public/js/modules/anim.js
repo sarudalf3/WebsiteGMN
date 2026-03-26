@@ -24,3 +24,10 @@ export function initQueHacemosAnimation() {
 
   observer.observe(section);
 }
+
+export function initHeroAnimation() {
+    const heroContent = document.querySelector('.hero__content');
+    if (heroContent) {
+        heroContent.classList.add('animate-start');
+    }
+}

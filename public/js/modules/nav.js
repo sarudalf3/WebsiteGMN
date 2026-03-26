@@ -4,21 +4,17 @@
  * Maneja el menú desplegable en dispositivos móviles
  */
 export function initMobileMenu() {
-  const menuToggle = document.querySelector('.menu-toggle'); // Asegúrate de que este sea tu selector
-  const navMenu = document.querySelector('.navbar');
+  const menuToggle = document.querySelector('.menu-toggle'); 
+  const navContainer = document.querySelector('.navbar-nav');
 
-  if (menuToggle && navMenu) {
+  if (menuToggle && navContainer) {
     menuToggle.addEventListener('click', () => {
-      navMenu.classList.toggle('navbar--active');
+      const isActive = navContainer.classList.toggle('navbar--active');
+      // Mejora de accesibilidad
+      menuToggle.setAttribute('aria-expanded', isActive);
+      
+      // Animación de la hamburguesa (opcional)
       menuToggle.classList.toggle('is-active');
-    });
-
-    // Cerrar menú al hacer clic en un enlace
-    navMenu.querySelectorAll('a').forEach(link => {
-      link.addEventListener('click', () => {
-        navMenu.classList.remove('navbar--active');
-        menuToggle.classList.remove('is-active');
-      });
     });
   }
 }
@@ -40,10 +36,10 @@ export function handleHeaderScroll() {
 /**
  * Observador para resaltar el enlace activo en la navegación
  */
+
 export function initNavObserver() {
   const sections = document.querySelectorAll("section[id]");
-  const navLinks = document.querySelectorAll(".navbar a");
-
+  const navLinks = document.querySelectorAll("#navbar a"); // Usamos el ID del header
   const observerOptions = {
     threshold: 0.5
   };

@@ -1,31 +1,21 @@
 // public/js/main.js
 import { initLanguage, loadLanguage } from './modules/i18n.js';
 import { initModal } from './modules/modal.js';
-import { initQueHacemosAnimation } from './modules/anim.js';
-import { initMobileMenu, handleHeaderScroll, initNavObserver } from './modules/nav.js';
+import { initNavObserver, initMobileMenu } from './modules/nav.js';
+import { initCarousel } from './modules/carousel.js'; // Nuevo
 
 document.addEventListener('DOMContentLoaded', () => {
-  // --- Módulo de Navegación ---
-  initMobileMenu();
-  handleHeaderScroll();
-  initNavObserver();
+    initMobileMenu();
+    initNavObserver();
+    initModal();
+    initCarousel(); // Inicializamos el carrusel
 
-  // --- Módulo de Modales ---
-  initModal();
-
-  // --- Módulo de Animaciones Visuales ---
-  initQueHacemosAnimation();
-
-  // --- Módulo de Idiomas ---
-  initLanguage(() => {
-    console.log("GMN Group: Web totalmente cargada y modularizada.");
-  });
-
-  // Selector de idioma (UI)
-  const languageSelector = document.getElementById("language-selector");
-  if (languageSelector) {
-    languageSelector.addEventListener("change", (e) => {
-      loadLanguage(e.target.value);
+    initLanguage(() => {
+        // Al cambiar el idioma, refrescamos el carrusel para que se traduzca
+        initCarousel();
     });
-  }
+
+    document.getElementById("language-selector")?.addEventListener("change", (e) => {
+        loadLanguage(e.target.value, () => initCarousel());
+    });
 });

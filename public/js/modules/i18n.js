@@ -1,7 +1,6 @@
 // public/js/modules/i18n.js
 
 let currentLanguageData = {};
-
 /**
  * Obtiene un valor del JSON de traducción usando una clave de punto (ej: "misc.vermas")
  */
@@ -22,7 +21,8 @@ export function getTextFromKey(key) {
  */
 export async function loadLanguage(lang, callback) {
   try {
-    const res = await fetch(`lang/${lang}.json`);
+    // Añade la barra inicial / para que siempre busque en la raíz
+    const res = await fetch(`/lang/${lang}.json`);
     if (!res.ok) throw new Error(`Archivo no encontrado: ${lang}.json`);
     
     currentLanguageData = await res.json();

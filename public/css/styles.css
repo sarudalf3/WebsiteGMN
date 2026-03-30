@@ -242,6 +242,7 @@ body {
         rgba(0, 0, 0, 0.5) 100%
     );
   z-index: 1;
+  pointer-events: none;
 }
 
 .bg-video {
@@ -252,7 +253,6 @@ body {
   height: 100%;
   object-fit: cover;
   z-index: 0;
-  pointer-events: none;
 }
 
 .overlay {
@@ -304,7 +304,7 @@ body {
 
 .goals {
   min-height: 100vh;
-  background-color: rgba(163, 163, 163, 0.12);
+  background-color: rgba(163, 163, 163, 0.10);
 }
 
 .margener {
@@ -384,7 +384,7 @@ body {
 
 .news {
   min-height: 100vh;
-  background-color: rgba(163, 163, 163, 0.15);
+  background-color: rgba(163, 163, 163, 0.17);
 }
 
 .two-columns-container-alt {

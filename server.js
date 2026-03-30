@@ -34,7 +34,7 @@ app.use(
         "script-src": ["'self'", "'unsafe-inline'", "https://www.youtube.com"],        
       },
     },
-    crossOriginEmbedderPolicy: false, // Necesario para que el navegador no bloquee el recurso externo
+    //crossOriginEmbedderPolicy: false, // Necesario para que el navegador no bloquee el recurso externo
   })
 );
 

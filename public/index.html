@@ -18,7 +18,7 @@
             <img src="/img/gmn_icon.svg" alt="GMN Group Logo">
             <div class="logo-text">
               <h1 class="brand-name">GMN Group</h1>
-              <h5 class="brand-tagline" data-key="nav.navbar0"></h5>
+              <h5 class="brand-tagline" data-key="meta.subtitle"></h5>
             </div>
           </a>
         </div> 
@@ -26,13 +26,13 @@
         <nav class="navbar-nav">
           <ul class="nav-links">
             <li><a href="#home" data-key="nav.navbar1"></a></li>
-            <li><a href="#overview" data-key="title.overview"></a></li>
-            <li><a href="#news" data-key="title.news"></a></li>
-            <li><a href="#quienes" data-key="nav.navbar2"></a></li>
-            <li><a href="#quehacemos-intro" data-key="nav.navbar3"></p5></a></li>
-            <li><a href="#logros" data-key="nav.navbar4"></a></li>
-            <li><a href="#filosofia" data-key="nav.navbar5"></a></li>
-            <li><a href="#contacto" data-key="nav.navbar6"></a></li>
+            <li><a href="#achievements" data-key="nav.navbar2"></a></li>
+            <li><a href="#news" data-key="nav.navbar3"></a></li>
+            <li><a href="#quienes" data-key="nav.navbar4"></a></li>
+            <li><a href="#quehacemos-intro" data-key="nav.navbar5"></a></li>
+            <li><a href="#goals" data-key="nav.navbar6"></a></li>
+            <li><a href="#filosofia" data-key="nav.navbar7"></a></li>
+            <li><a href="#contacto" data-key="nav.navbar8"></a></li>
           </ul>
         </nav>
         <!-- Right: Language & Toggle -->
@@ -51,116 +51,105 @@
     </header>
 
 
-
-  <section id="home" class="slide hero"> 
+  <!-- HOME -->
+  <section id="home" class="hero"> 
     <video autoplay muted loop playsinline class="bg-video">
       <source src="https://res.cloudinary.com/dech95yov/video/upload/f_auto,q_auto:best/Portada_xytqox.mp4" type="video/mp4"/>
     </video>
 
     <div class="overlay">
-        <h1><p5 data-key="home.hero.title1"></p5></h1>
-        <h1><p5 class="highlight-orange" data-key="home.hero.title2"></p5></h1>
-        <p1><p5 data-key="home.hero.subtitle"></p5></p1>
+      <h1 data-key="home.title1"></h1>
+      <h1 class="highlight-orange" data-key="home.title2"></h1>
+      <p data-key="home.subtitle"></p>
     </div>
   </section>
 
-<!--
-  <section id="overview" class="slide">
+  <!-- ACHIEVEMENTS -->
+  <section id="achievements" class="slide goals">
     <div class="margener">
       <!-- Title -->
-      <!--<h2><span class="highlight-orange"><p5 data-key="overview.title"></p5></span></h2>
-      
+      <h2 class="highlight-orange" data-key="achievements.title"></h2>
       <!-- Description -->
-      <!--<h3 style="font-style: italic; margin-bottom: 2rem;"><p5 data-key="overview.subtitle"></p5></h3>
-      
+      <h3 style="font-style: italic; margin-bottom: 2rem;" data-key="achievements.subtitle"></h3>
       <!-- Two Columns Container -->
-      <!--<div class="two-columns-container">
-        <!-- Left Column - Cards -->
-       <!-- <div class="cards-column">
-          <div class="cards-container2">
-            <div class="card2">
-              <div class="card2-image">
-                <img src="images/icono1.png" alt="Feature 1">
+      <div class="two-columns-container">
+        <!--Left Column - Cards -->
+        <div class="cards-column">
+          <div class="cards-container">
+            <div class="cards">
+              <div class="cards-image">
+                <img src="img/icono1.webp" alt="card_01">
               </div>
-              <div class="card2-content">
-                <h3 class="card2-title highlight-orange"><p5 data-key="overview.card1"></p5></h3>
-                <p class="card2-subtitle"><p5 data-key="overview.card1_sub"></p5></p>
-              </div>
-            </div>
-            
-            <div class="card2">
-              <div class="card2-image">
-                <img src="images/icono2.png" alt="Feature 2">
-              </div>
-              <div class="card2-content">
-                <h3 class="card2-title highlight-orange"><p5 data-key="overview.card2"></p5></h3>
-                <p class="card2-subtitle"><p5 data-key="overview.card2_sub"></p5></p>
+              <div class="cards-content">
+                <h3 class="cards-title highlight-orange" data-key="achievements.card1"></h3>
+                <p class="cards-subtitle" data-key="achievements.card1_sub"></p>
               </div>
             </div>
-            
-            <div class="card2">
-              <div class="card2-image">
-                <img src="images/icono3.png" alt="Feature 3">
+            <div class="cards">
+              <div class="cards-image">
+                <img src="img/icono2.webp" alt="card_02">
               </div>
-              <div class="card2-content">
-                <h3 class="card2-title highlight-orange"><p5 data-key="overview.card3"></p5></h3>
-                <p class="card2-subtitle"><p5 data-key="overview.card3_sub"></p5></p>
+              <div class="cards-content">
+                <h3 class="cards-title highlight-orange" data-key="achievements.card2"></h3>
+                <p class="cards-subtitle" data-key="achievements.card2_sub"></p>
               </div>
             </div>
-          </div>
+            <div class="cards">
+              <div class="cards-image">
+                <img src="img/icono3.webp" alt="card_03">
+              </div>
+              <div class="cards-content">
+                <h3 class="cards-title highlight-orange" data-key="achievements.card3"></h3>
+                <p class="cards-subtitle" data-key="achievements.card3_sub"></p>
+              </div>
+            </div>
+          </div>  
         </div>
-        
+
         <!-- Right Column - List -->
-        <!--<div class="list-column">
-          <h2><span class="highlight-orange"><p5 data-key="overview.1st"></p5></span></h2>
-          
+        <div class="list-column">
+          <h3 class="highlight-orange" data-key="achievements.list"></h3>
           <div class="list-content">
             <ul>
-              <li><p5 data-key="overview.1st_par1"></p5></li>
-              <li><p5 data-key="overview.1st_par2"></p5></li>
-              <li><p5 data-key="overview.1st_par3"></p5></li>
-              <li><p5 data-key="overview.1st_par4"></p5></li>
-              <li><p5 data-key="overview.1st_par5"></p5></li>
+              <li><p data-key="achievements.list1"></p></li>
+              <li><p data-key="achievements.list2"></p></li>
+              <li><p data-key="achievements.list3"></p></li>
+              <li><p data-key="achievements.list4"></p></li>
+              <li><p data-key="achievements.list5"></p></li>
             </ul>
-            
-            <a href="#logros" class="success-cases-link">
-              <p5 data-key="overview.casosexito"></p5>
-            </a>
+            <a href="#goals"><p class="success-cases-link" data-key="achievements.sucess_cases"></p></a>
           </div>
         </div>
       </div>
+    </div>  
+  </section>       
+
+  <!-- NEWS -->
+  <section id="news" class="slide news">
+    <div class="margener">
+      <h2 class="highlight-orange" data-key="news.title"></h2>
+      <h3 data-key="news.subtitle"></h3>
+
+      <div class="two-columns-container-alt">
+        <!--Left Column - Text -->
+        <div class="cards-column-alt">
+          <p data-key="news.par"></p> 
+        </div>
+              <!-- FIRST BLOCK = VIDEO -->
+        <div class="cards-content">  
+          <div class="news-media">
+            <iframe 
+              src="https://www.youtube.com/embed/mJaABkvlWUo" 
+              title="YouTube video"
+              frameborder="0"
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+              allowfullscreen>
+            </iframe>
+          </div>  
+        </div>
+      </div>    
     </div>
   </section>
-
-
-
-
-
-
-
-  <section id="news" class="slide">
-
-    <div class="margener">
-
-    <h2><span class="highlight-orange"><p5 data-key="news.title"></p5></span></h2>
-
-    <!-- FIRST BLOCK = VIDEO -->
-    <!--<div class="news-block notop-noborders">
-      <div class="news-text">
-        <h3><p5 data-key="news.1st"></p5></h3>
-        <p><p5 data-key="news.1st_par"></p5></p>
-      </div>
-      <div class="news-media large-media">
-        <iframe 
-          src="https://www.youtube.com/embed/mJaABkvlWUo" 
-          title="YouTube video"
-          frameborder="0"
-          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-          allowfullscreen>
-        </iframe>
-      </div>
-    </div>
-
     <!-- SECOND BLOCK -->
     <!-- <div class="news-block notop">
       <div class="news-text">
@@ -667,8 +656,6 @@
     </div>
   </footer>
 
-  <script src="script.js"></script>
-  <script src="index-script.js"></script>
 </body>
 </html>
 

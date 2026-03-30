@@ -4,24 +4,36 @@
  * Maneja el menú desplegable en dispositivos móviles
  */
 export function initMobileMenu() {
-  const menuToggle = document.querySelector('.menu-toggle'); 
+  const menuToggle = document.querySelector('.navbar-toggle'); 
   const navContainer = document.querySelector('.navbar-nav');
 
   if (menuToggle && navContainer) {
     menuToggle.addEventListener('click', () => {
+      // Alternar clase para mostrar/ocultar menú
       const isActive = navContainer.classList.toggle('navbar--active');
-      // Mejora de accesibilidad
+      
+      // Accesibilidad
       menuToggle.setAttribute('aria-expanded', isActive);
       
-      // Animación de la hamburguesa (opcional)
+      // Opcional: animación de las barras (hamburguesa a X)
       menuToggle.classList.toggle('is-active');
+    });
+
+    // Cerrar el menú automáticamente al hacer clic en un enlace
+
+    const links = navContainer.querySelectorAll('.nav-links a');
+    links.forEach(link => {
+      link.addEventListener('click', () => {
+        navContainer.classList.remove('navbar--active');
+        menuToggle.classList.remove('is-active');
+      });
     });
   }
 }
 
 /**
  * Cambia la apariencia del header cuando el usuario hace scroll
- */
+*/
 export function handleHeaderScroll() {
   const header = document.querySelector('header');
   window.addEventListener('scroll', () => {
@@ -59,4 +71,4 @@ export function initNavObserver() {
   }, observerOptions);
 
   sections.forEach((section) => observer.observe(section));
-}
+} 

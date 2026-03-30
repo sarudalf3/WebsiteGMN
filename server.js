@@ -23,9 +23,27 @@ const upload = multer({
 });
 
 // 2. MIDDLEWARES DE SEGURIDAD Y RENDIMIENTO
+
+app.use(
+  helmet({
+    contentSecurityPolicy: {
+      directives: {
+        ...helmet.contentSecurityPolicy.getDefaultDirectives(),
+        "media-src": ["'self'", "https://res.cloudinary.com"], // Permite videos de Cloudinary
+        "frame-src": ["'self'", "https://www.youtube.com", "https://youtube.com"], // Permite YouTube
+        "script-src": ["'self'", "'unsafe-inline'", "https://www.youtube.com"],        
+      },
+    },
+    crossOriginEmbedderPolicy: false, // Necesario para que el navegador no bloquee el recurso externo
+  })
+);
+
+/*
 app.use(helmet({
   contentSecurityPolicy: false, // Desactivar si usas scripts de terceros como Google Fonts o EmailJS en el cliente
-}));
+}));*/
+
+
 app.use(compression()); // Comprime las respuestas para que la web cargue más rápido en Chile
 app.use(cors());
 app.use(bodyParser.json({ limit: '10mb' }));

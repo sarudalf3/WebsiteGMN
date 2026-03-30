@@ -1,32 +1,51 @@
 {
   "meta": {
     "title": "GMN Group | Consultores Expertos",
+    "subtitle": "Consultores Expertos",
     "description": "Especializados en Gestión de Activos Físicos con más de 20 años de experiencia."
   },
 
-
-  
   "nav": {
-    "navbar0": "Consultores Expertos",
     "navbar1": "Inicio",
-    "navbar2": "¿Quiénes somos?",
-    "navbar3": "¿Qué hacemos?",
-    "navbar4": "Casos de éxito",
-    "navbar5": "Filosofía",
-    "navbar6": "Contacto",
-    "home": "Inicio",
-    "servicios": "¿Qué hacemos?",
-    "nosotros": "¿Quiénes somos?",
-    "contacto": "Contacto"
+    "navbar2": "GMN 2025",
+    "navbar3": "Noticias",
+    "navbar4": "¿Quiénes somos?", 
+    "navbar5": "¿Qué hacemos?",       
+    "navbar6": "Casos de éxito",
+    "navbar7": "Filosofía",
+    "navbar8": "Contacto"
   },
+
   "home": {
-    "hero": {
       "title1": "Juntos",
       "title2": "Transformamos",
-      "subtitle": "Especializados en Gestión de Activos Físicos con más de 20 años de experiencia, transformando operaciones industriales a través de soluciones innovadoras y tecnología de vanguardia.",
-      "cta": "Ver casos de éxito"
-    }
+      "subtitle": "Especializados en Gestión de Activos Físicos con más de 20 años de experiencia, transformando operaciones industriales a través de soluciones innovadoras y tecnología de vanguardia."
   },
+
+  "achievements": {
+    "title": "Resultados de GMN en 2025",
+    "subtitle": "Solo en este año, GMN ha ayudado a las empresas a ahorrar más de 200 millones de dólares.",
+    "card1": "$200",
+    "card1_sub": "MILLONES DE DOLARES",
+    "card2": "18%",
+    "card2_sub": "REDUCCIÓN DE COSTOS",
+    "card3": "24%",
+    "card3_sub": "MÁS EFICIENCIA",
+    "list": "Valor creado por GMN",
+    "list1": "20+ años de experiencia en minería y sectores intensivos en capital.",
+    "list2": "8+ operaciones mineras apoyadas en Chile y Latinoamérica.",
+    "list3": "200.000+ Órdenes de Trabajo regularizadas y optimizadas en SAP PM.",
+    "list4": "Experiencia real en proyectos de alta criticidad y gran escala.",
+    "list5": "50+ Profesionales altamente capacitados en múltiples áreas.",
+    "sucess_cases": "Ver nuestros casos de éxito"
+  },
+
+    "news": {
+    "title": "Noticias",
+    "subtitle": "Sobre la baja de productividad",
+    "par": "Sergio Adauy, director ejecutivo de la empresa local de Antofagasta, GMN, en relación a los desafíos que enfrenta la industria minera en términos de competitividad. Este tema ha cobrado relevancia en medio del aumento de los costos de producción, así como otros factores externos como la disminución de la calidad de los minerales y la escasez de recursos hídricos. Sergio Adauy, director ejecutivo de la empresa local de Antofagasta, GMN, en relación a los desafíos que enfrenta la industria minera en términos de competitividad. Este tema ha cobrado relevancia en medio del aumento de los costos de producción, así como otros factores externos como la disminución de la calidad de los minerales y la escasez de recursos hídricos."
+  },
+
   "servicios": {
     "title": "GMN en 2026",
     "subtitle": "Solo en este año, GMN ha ayudado a las empresas a ahorrar más de 200 millones de dólares.",

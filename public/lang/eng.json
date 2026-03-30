@@ -1,31 +1,51 @@
 {
   "meta": {
     "title": "GMN Group | Expert Consultants",
+    "subtitle": "Expert Consultants",
     "description": "Specialized in Physical Asset Management with over 20 years of experience."
   },
   
-
   "nav": {
-    "navbar0": "Expert Consultants",
     "navbar1": "Home",
-    "navbar2": "About us",
-    "navbar3": "Our job",
-    "navbar4": "Results",
-    "navbar5": "Philosopy",
-    "navbar6": "Contact us",
-    "home": "Home",
-    "servicios": "Our Job",
-    "nosotros": "About us",
-    "contacto": "Contact us"
+    "navbar2": "GMN 2025",
+    "navbar3": "Media",
+    "navbar4": "About us", 
+    "navbar5": "Our job",       
+    "navbar6": "Results",
+    "navbar7": "Own Vision",
+    "navbar8": "Contact"
   },
+  
   "home": {
-    "hero": {
       "title1": "Together",
       "title2": "We Transform",
-      "subtitle": "Specialized in Physical Asset Management with over 20 years of experience, transforming industrial operations through innovative solutions and cutting-edge technology.",
-      "cta": "See success stories"
-    }
+      "subtitle": "Specialized in Physical Asset Management with over 20 years of experience, transforming industrial operations through innovative solutions and cutting-edge technology."
   },
+  
+  "achievements": {
+    "title": "GMN Results in 2025",
+    "subtitle": "This year alone, GMN has helped companies save over 200 million dollars.",
+    "card1": "$200",
+    "card1_sub": "MILLION DOLLARS",
+    "card2": "18%",
+    "card2_sub": "COST REDUCTION",
+    "card3": "24%",
+    "card3_sub": "HIGHER EFFICIENCY",
+    "list": "Value created by GMN",
+    "list1": "+20 years of experience in mining and capital-intensive sectors",
+    "list2": "+8 mining operations supported in Chile and Latin America",
+    "list3": "+200,000 Work Orders regularized and optimized in SAP PM",
+    "list4": "Real experience in highly critical and large-scale projects",
+    "list5": "50+ highly skilled workers in multiple areas",
+    "sucess_cases": "See our success stories"
+  },
+  
+  "news": {
+    "title": "Media",
+    "subtitle": "About the decline in productivity",
+    "par": "Sergio Adauy, CEO of Antofagasta-based company GMN, on the challenges facing the mining industry in terms of competitiveness. This issue has become increasingly relevant amid rising production costs and other external factors such as declining mineral quality and water scarcity. Sergio Adauy, CEO of the local Antofagasta company GMN, on the challenges facing the mining industry in terms of competitiveness. This issue has become increasingly relevant amid rising production costs and other external factors such as declining mineral quality and water scarcity."
+  },
+
   "servicios": {
     "title": "GMN in 2026",
     "subtitle": "In this year alone, GMN has helped companies save over $200 million.",

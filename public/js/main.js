@@ -11,11 +11,13 @@ document.addEventListener('DOMContentLoaded', () => {
     initCarousel(); // Inicializamos el carrusel
 
     initLanguage(() => {
-        // Al cambiar el idioma, refrescamos el carrusel para que se traduzca
+        // Al cambiar idioma, i18n ya traduce los data-key automáticamente. 
+        // Si tu i18n.js traduce todo el DOM, no necesitas reinicializar el carrusel aquí.
         initCarousel();
     });
 
     document.getElementById("language-selector")?.addEventListener("change", (e) => {
         loadLanguage(e.target.value, () => initCarousel());
+        // i18n debería encargarse de traducir los textos del carrusel sin mover la posición.
     });
 });

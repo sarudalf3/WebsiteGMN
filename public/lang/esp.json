@@ -90,14 +90,22 @@
 
   "exitos": {
     "title": "Casos de éxito",
-    "bhp": "Más de X proyectos desarrollados: productividad, optimización y gestión de activos, generando un valor agregado aproximado de $ XXXX MUSD.",
-    "codelco": "Empresa estatal chilena dedicada a la explotación minera cuprífera. Hemos desarrado con éxito más de X proyectos, impulsando estandares de operación y logística, los cuales han logrado un aumento en la productividad del X%.",
-    "cerromatoso": "Se han desarrollado modelos de datos y dashboars automatizados, los cuales han generado una reducción de X horas operacionales a la semana para el personal beneficiado.",
-    "cocacola": "",
-    "glencore": "",
-    "antapaccay": "",
-    "spence": "",
-    "sierragorda": ""
+    "exp_title1": "bhp",
+    "exp_desc1": "Más de X proyectos desarrollados: productividad, optimización y gestión de activos, generando un valor agregado aproximado de $ XXXX MUSD.",
+    "exp_title2": "codelco",
+    "exp_desc2": "Empresa estatal chilena dedicada a la explotación minera cuprífera. Hemos desarrado con éxito más de X proyectos, impulsando estandares de operación y logística, los cuales han logrado un aumento en la productividad del X%.",
+    "exp_title3": "cerromatoso",
+    "exp_desc3": "Se han desarrollado modelos de datos y dashboars automatizados, los cuales han generado una reducción de X horas operacionales a la semana para el personal beneficiado.",
+    "exp_title5":"cocacola",
+    "exp_deesc5": "",
+    "exp_title4":"glencore",
+    "exp_desc4": "",
+    "exp_title6":"antapaccay",
+    "exp_desc6": "",
+    "exp_title7":"spence",
+    "exp_desc7": "",
+    "exp_title8":"sierragorda",
+    "exp_desc8": ""
   },
 
   "nosotros": {

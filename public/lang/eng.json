@@ -24,7 +24,7 @@
   
   "achievements": {
     "title": "GMN Results in 2025",
-    "subtitle": "This year alone, GMN has helped companies save over 200 million dollars.",
+    "subtitle": "This year alone, GMN has helped companies save over 200 million dollars",
     "card1": "$200",
     "card1_sub": "MILLION DOLLARS",
     "card2": "18%",
@@ -44,6 +44,61 @@
     "title": "Media",
     "subtitle": "About the decline in productivity",
     "par": "Sergio Adauy, CEO of Antofagasta-based company GMN, on the challenges facing the mining industry in terms of competitiveness. This issue has become increasingly relevant amid rising production costs and other external factors such as declining mineral quality and water scarcity. Sergio Adauy, CEO of the local Antofagasta company GMN, on the challenges facing the mining industry in terms of competitiveness. This issue has become increasingly relevant amid rising production costs and other external factors such as declining mineral quality and water scarcity."
+  },
+
+"about_us": {
+    "title1": "About Us",
+    "par11": "We are Global Maintenance Network (GMN / GSAPGROUP), a Latin American consultancy with more than 25 years of experience enhancing the performance of capital-intensive organizations.",
+    "par12": "We put our team's talent at the service of every operation, integrating ourselves into the client's objectives with discipline, in-depth analysis, and an execution that transforms challenges into sustainable improvements.",
+    "par13": "Our track record in production maximization, cost optimization, and asset reliability has allowed us to drive industrial leaders in Chile and Latin America with measurable results sustained over time.",
+    "subtitle2": "Vision",
+    "par21": "To be global leaders in Physical Asset Management consultancy, driven by high-performance teams that contribute to the development and constant success of our clients.",
+    "subtitle3": "Mission",
+    "par31": "To provide timely and effective solutions to our clients' competitiveness and sustainability challenges, increasing their Economic Value Added (EVA) through sustainable growth.",
+    "title2": "Our Leaders",
+    "subtitle4": "Since our inception, we have held the same conviction: making things happen",
+    "bio_SA": "With three decades dedicated to developing projects in strategy, operational excellence, and continuous improvement, focusing on Asset Management and supply chain.",
+    "highlights_SA1": "Asset Management",
+    "highlights_SA2": "Process Optimization",
+    "bio_MM": "Professional with over 13 years of experience in national and multinational companies within the mining industry.",
+    "highlights_MM1": "Strategic Alliances",
+    "highlights_MM2": "Project Evaluation",
+    "lkdn_profile": "View Profile"
+  },
+
+"we_do": {
+    "title": "What We Do",
+    "intro": "Transforming operations by making your challenges our own",
+    "intro_par1": "We partner with capital-intensive organizations to enhance their performance through operational improvement solutions, asset management, and productivity maximization. Our model—validated across mining, energy, manufacturing, forestry, food and beverage, logistics, aeronautics, agriculture, and aquaculture—combines expert diagnosis, rigorous implementation, and sustainable adoption.",
+    "intro_par2": "We operate across Latin America, supporting companies with proprietary methodologies, applied innovation, and technological integration that drives real-time decision-making.",
+    
+    "title1": "Production Maximization",
+    "par11": "We drive operational performance by ensuring that critical assets meet and exceed the production levels for which they were designed.",
+    "par12": "We apply advanced reliability methodologies to diagnose actual equipment behavior, identify systemic constraints, and eliminate failures that affect operational continuity. Our analysis spans from the entire value chain to specific interventions on each asset, enabling superior levels of availability and throughput.",
+    "par13": "The impact is direct: more tons processed, more stable operational cycles, and an operation aligned with production targets through technical precision and operational discipline.",
+    
+    "title2": "Cost Reduction",
+    "par21": "We turn invisible inefficiencies into concrete savings.",
+    "par22": "We reduce operational costs by identifying structural inefficiencies and optimizing the business's key resources.",
+    "par23": "Our proprietary inventory optimization methodology allows for the recovery of assets that no longer generate returns, the elimination of historical overstock, and the streamlining of processes that currently cause silent losses. We complement this with maintenance strategies designed to prevent costly failures and maximize the useful life of each piece of equipment.",
+    "par24": "The result is a more competitive cost structure, with data-driven decisions and operational financial control that directly impacts business profitability.",
+
+    "title3": "Innovation",
+    "par31": "We take our clients to a higher level of management through digital solutions that integrate data, artificial intelligence, and automation.",
+    "par32": "We develop virtual assistants capable of delivering real-time operational insights, detecting deviations, and proposing immediate actions based on analytical models. We integrate SAP, Power BI, and various information sources to make critical data available.",
+    "par33": "This enables instantaneous decision-making for executives and operational teams, increasing efficiency, agility, and the predictability of the entire operation."
+  },
+
+  "exitos": {
+    "title": "Casos de éxito",
+    "bhp": "Más de X proyectos desarrollados: productividad, optimización y gestión de activos, generando un valor agregado aproximado de $ XXXX MUSD.",
+    "codelco": "Empresa estatal chilena dedicada a la explotación minera cuprífera. Hemos desarrado con éxito más de X proyectos, impulsando estandares de operación y logística, los cuales han logrado un aumento en la productividad del X%.",
+    "cerromatoso": "Se han desarrollado modelos de datos y dashboars automatizados, los cuales han generado una reducción de X horas operacionales a la semana para el personal beneficiado.",
+    "cocacola": "",
+    "glencore": "",
+    "antapaccay": "",
+    "spence": "",
+    "sierragorda": ""
   },
 
   "servicios": {

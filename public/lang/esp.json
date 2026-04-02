@@ -24,7 +24,7 @@
 
   "achievements": {
     "title": "Resultados de GMN en 2025",
-    "subtitle": "Solo en este año, GMN ha ayudado a las empresas a ahorrar más de 200 millones de dólares.",
+    "subtitle": "Solo en este año, GMN ha ayudado a las empresas a ahorrar más de 200 millones de dólares",
     "card1": "$200",
     "card1_sub": "MILLONES DE DOLARES",
     "card2": "18%",
@@ -40,24 +40,66 @@
     "sucess_cases": "Ver nuestros casos de éxito"
   },
 
-    "news": {
+  "news": {
     "title": "Noticias",
     "subtitle": "Sobre la baja de productividad",
-    "par": "Sergio Adauy, director ejecutivo de la empresa local de Antofagasta, GMN, en relación a los desafíos que enfrenta la industria minera en términos de competitividad. Este tema ha cobrado relevancia en medio del aumento de los costos de producción, así como otros factores externos como la disminución de la calidad de los minerales y la escasez de recursos hídricos. Sergio Adauy, director ejecutivo de la empresa local de Antofagasta, GMN, en relación a los desafíos que enfrenta la industria minera en términos de competitividad. Este tema ha cobrado relevancia en medio del aumento de los costos de producción, así como otros factores externos como la disminución de la calidad de los minerales y la escasez de recursos hídricos."
+    "par": "Sergio Adauy, director ejecutivo de Global Maintenance Network (GMN), en relación a los desafíos que enfrenta la industria minera en términos de competitividad. Este tema ha cobrado relevancia en medio del aumento de los costos de producción, así como otros factores externos como la disminución de la calidad de los minerales y la escasez de recursos hídricos. Sergio Adauy, director ejecutivo de la empresa local de Antofagasta, GMN, en relación a los desafíos que enfrenta la industria minera en términos de competitividad. Este tema ha cobrado relevancia en medio del aumento de los costos de producción, así como otros factores externos como la disminución de la calidad de los minerales y la escasez de recursos hídricos."
   },
 
-  "servicios": {
-    "title": "GMN en 2026",
-    "subtitle": "Solo en este año, GMN ha ayudado a las empresas a ahorrar más de 200 millones de dólares.",
-    "s1": {
-      "title": "Valor creado por GMN",
-      "intro": "20+ años de experiencia en minería y sectores intensivos en capital.",
-      "modal": {
-        "visible": "Apoyamos más de 8 operaciones mineras en Chile y Latinoamérica.",
-        "hidden": "Más de 200.000 Órdenes de Trabajo regularizadas y optimizadas en SAP PM."
-      }
-    }
+  "about_us": {
+    "title1": "¿Quiénes somos?",
+    "par11": "Somos Global Maintenance Network (GMN / GSAPGROUP), una consultora latinoamericana con más de 25 años elevando el desempeño de organizaciones intensivas en capital.",
+    "par12": " Ponemos el talento de nuestro equipo al servicio de cada operación, integrándonos a los objetivos del cliente con disciplina, análisis profundo y una ejecución que transforma los desafíos en mejoras sostenibles.",
+    "par13": "Nuestra trayectoria en maximización de producción, optimización de costos y confiabilidad de activos nos ha permitido impulsar a líderes industriales en Chile y Latinoamérica con resultados medibles y sostenidos en el tiempo.",
+    "subtitle2": "Visión",
+    "par21": "Ser líderes globales en consultoría de Gestión de Activos Físicos, impulsados por equipos de alto desempeño que contribuyan al desarrollo y éxito constante de nuestros clientes.",
+    "subtitle3": "Misión",
+    "par31": "Brindar soluciones oportunas y eficaces a los problemas de competitividad y sustentabilidad de nuestros clientes, aumentando su Valor Económico Agregado (EVA) a través de un crecimiento sostenible.",
+    "title2": "Nuestros Lideres",
+    "subtitle4": "Desde nuestros inicios, mantenemos la misma convicción: hacer que las cosas pasen",
+    "bio_SA": "Con tres décadas dedicadas al desarrollo de proyectos en estrategia, excelencia operacional y mejora continua, se ha enfocado en la Gestión de Activos y la cadena de suministro.",
+    "highlights_SA1":"Gestión de Activos",
+    "highlights_SA2":"Optimización de Procesos",
+    "bio_MM": "Profesional con más de 13 años de experiencia en empresas nacionales y multinacionales de la industria minera.",
+    "highlights_MM1":"Alianzas Estratégicas",
+    "highlights_MM2":"Evaluación de Proyectos",
+    "lkdn_profile": "Ver Perfil"  
   },
+
+  "we_do": {
+    "title": "Que hacemos",
+    "intro": "Transformamos operaciones tomando tus desafíos como propios",
+    "intro_par1": "Acompañamos a organizaciones intensivas en capital a elevar su desempeño mediante soluciones de mejora operacional, gestión de activos y maximización de productividad. Nuestro modelo, validado en minería, energía, manufactura, forestal, alimentos y bebidas, logística, aeronáutica, agricultura y acuicultura, combina diagnóstico experto, implementación rigurosa y adopción sostenible.",
+    "intro_par2": "Operamos en toda Latinoamérica, apoyando a las compañías con metodologías propias, innovación aplicada e integración tecnológica que impulsa decisiones en tiempo real.",
+
+    "title1": "Maximización de Producción",
+    "par11": "Impulsamos el rendimiento operacional asegurando que los activos críticos cumplan y superen los niveles de producción para los cuales fueron diseñados.",
+    "par12": "Aplicamos metodologías avanzadas de confiabilidad para diagnosticar el comportamiento real de los equipos, identificar restricciones sistémicas y eliminar fallas que afectan la continuidad operacional. Nuestro análisis va desde la cadena completa de valor hasta la intervención puntual en cada activo, permitiendo alcanzar niveles superiores de disponibilidad y rendimiento.",
+    "par13": "El impacto es directo: más toneladas procesadas, ciclos operacionales más estables y una operación alineada a la producción meta con precisión técnica y disciplina operacional.",
+    "title2": "Reducción de costos",
+    "par21": "Convertimos ineficiencias invisibles en ahorros concretos.",
+    "par22": "Reducimos los costos operacionales mediante la identificación de ineficiencias estructurales y la optimización de los recursos clave del negocio.",
+    "par23": "Nuestra metodología propia de optimización de inventarios permite recuperar activos que ya no generan retorno, eliminar sobrestock histórico y ordenar procesos que hoy generan pérdidas silenciosas. Complementamos esto con estrategias de mantenimiento diseñadas para evitar fallas costosas y maximizar la vida útil de cada equipo.",
+    "par24": "El resultado es una estructura de costos más competitiva, con decisiones sustentadas en datos y un control financiero operacional que impacta directamente la rentabilidad del negocio.",
+
+    "title3": "Innovación",
+    "par31": "Llevamos a nuestros clientes a un nivel superior de gestión mediante soluciones digitales que integran datos, inteligencia artificial y automatización.",
+    "par32": "Desarrollamos asistentes virtuales capaces de entregar insights operacionales en tiempo real, detectando desviaciones y proponiendo acciones inmediatas basadas en modelos analíticos. Integramos SAP, Power BI y diversas fuentes de información para disponibilizar datos críticos.",
+    "par33": "Esto habilita la toma de decisiones instantánea para ejecutivos y equipos operacionales, elevando la eficiencia, la agilidad y la predictibilidad de toda la operación."
+  },
+
+  "exitos": {
+    "title": "Casos de éxito",
+    "bhp": "Más de X proyectos desarrollados: productividad, optimización y gestión de activos, generando un valor agregado aproximado de $ XXXX MUSD.",
+    "codelco": "Empresa estatal chilena dedicada a la explotación minera cuprífera. Hemos desarrado con éxito más de X proyectos, impulsando estandares de operación y logística, los cuales han logrado un aumento en la productividad del X%.",
+    "cerromatoso": "Se han desarrollado modelos de datos y dashboars automatizados, los cuales han generado una reducción de X horas operacionales a la semana para el personal beneficiado.",
+    "cocacola": "",
+    "glencore": "",
+    "antapaccay": "",
+    "spence": "",
+    "sierragorda": ""
+  },
+
   "nosotros": {
     "title": "Nuestra Filosofía",
     "content": "Creemos en la transformación real. No solo entregamos reportes, entregamos resultados tangibles en la operación."

@@ -69,6 +69,33 @@
   --section-padding: 6rem 2rem 3rem;
 }
 
+.gray-subtitle {
+  color: var(--color-text-secondary) !important;
+}
+
+/* ===== ORANGE HIGHLIGHTING ===== */
+.highlight-orange {
+  color: var(--color-primary) !important;
+}
+
+.highlight-bg-orange {
+  background-color: var(--color-primary);
+  color: var(--color-background);
+  padding: 0.2em 0.4em;
+  border-radius: var(--radius-sm);
+  font-weight: 600;
+}
+
+.text-orange {
+  color: var(--color-primary);
+}
+
+.border-orange {
+  border: 2px solid var(--color-primary);
+  padding: var(--spacing-md);
+  border-radius: var(--radius-md);
+}
+
 /* ===== RESET & BASE STYLES ===== */
 * {
   margin: 0;
@@ -293,30 +320,36 @@ body {
 
 .slide {
   min-height: 100vh;
-  padding: 2rem 2rem 2rem;
+  padding: 2rem 2rem;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
   background-color: var(--color-background);
   text-align: left;
+  padding-top: var(--spacing-xl);
 }
 
-.goals {
-  min-height: 100vh;
+.color-bg {
   background-color: rgba(163, 163, 163, 0.10);
 }
 
+.color-bg-alt {
+  background-color: rgba(163, 163, 163, 0.17);
+}
+
 .margener {
-  width: 85%;
-  margin: 0 auto;
+  width: 90%;
+}
+
+.margener p {
+  padding-bottom: 12px;
 }
 
 .two-columns-container {
     display: grid;
     grid-template-columns: 4fr 2fr; /* Define el ancho de cada columna */
     column-gap: 2rem; /* Espacio entre columnas */
-    margin-top: 0rem;
     align-items: flex-start;
 }
 
@@ -335,6 +368,10 @@ body {
   box-sizing: border-box; /* Asegura que el borde no agrande la tarjeta */
 }
 
+.cards:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 15px 40px rgba(0,0,0,0.1);
+}
 
 .cards-container {
   display: flex;
@@ -382,22 +419,46 @@ body {
 
 /*Sección de noticias*/
 
-.news {
-  min-height: 100vh;
-  background-color: rgba(163, 163, 163, 0.17);
+.news-class {
+  min-height: 85vh;
+  /* 1. Evita que el contenido flote en el centro vertical */
+  justify-content: flex !important;
+  /* 2. Reduce el espacio interno superior de la sección */
 }
 
+/* 3. Quita el margen que el navegador pone al título por defecto */
+.margener h2 {
+    margin-top: 0;
+}
+
+.margener h3 {
+    margin-bottom: 5px;
+}
+
+
 .two-columns-container-alt {
-    display: grid;
-    grid-template-columns: 5fr 3fr; /* Define el ancho de cada columna */
-    column-gap: 2rem; /* Espacio entre columnas */
-    margin-top: 0rem;
-    align-items: flex-start;
+  display: grid;
+  grid-template-columns: 7fr 4fr; /* Define el ancho de cada columna */
+  grid-template-areas: "text media";    
+  column-gap: 2rem; /* Espacio entre columnas */
+  margin-top: 0rem;
+  align-items: center;
+  width: 100%;
+  box-sizing: border-box;
+}
+
+.cards-column-alt {
+  grid-area: text;
+
 }
 
 .cards-column-alt p {
   font-size: var(--font-size-hero-sm);
-  line-height: 1.2;
+    line-height: 1.5;
+}
+
+.cards-content {
+  align-self: flex-start;
 }
 
 .news-media {
@@ -407,11 +468,481 @@ body {
 
 .news-media iframe {
   width: 100%;
-  height: auto;
+  height: 100%;
   aspect-ratio: 16 / 9;
   display: block;
   border-radius: 10px;
 }
+
+/*Acerca de nosotros*/
+/* Contenedor de la sección */
+.about-class .margener {
+  padding-bottom: var(--spacing-xxl);
+}
+
+
+.team-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(450px, 1fr));
+    gap: 30px;
+    margin-top: 30px;
+}
+
+/* Tarjeta Individual */
+.team-card {
+    background: #ffffff;
+    display: flex;
+    border-radius: 12px;
+    overflow: hidden;
+    border: 2px solid var(--color-primary-hover);
+    box-shadow: 0 10px 30px rgba(0,0,0,0.05); /* Sombra muy sutil */
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.team-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 15px 40px rgba(0,0,0,0.1);
+}
+
+/* Imagen del Directivo 
+.team-card__image {
+    flex: 0 0 200px;
+    /*background-color: #f0f0f0;*/
+
+.team-card__image {
+    flex: 0 0 200px;
+    position: relative;
+    overflow: hidden;       /* Para que la imagen no se salga de las esquinas redondeadas */
+    padding: 0; 
+}
+
+.team-card__image img {
+    width: 99%;
+    height: 50%;
+    object-fit: cover;
+    filter: grayscale(20%); /* Toque elegante */
+    display: block;
+    border: 2px solid var(--color-border); 
+    border-radius: 12px;  
+    margin-top: 30px;
+    margin-left: 5px;  
+}
+
+/* Contenido de la Tarjeta */
+.team-card__content {
+    padding: 30px;
+    display: flex;
+    flex-direction: column;
+}
+
+.member-name {
+    font-size: 1.4rem;
+    color: var(--color-text-primary);
+    margin-bottom: 5px;
+    font-weight: 700;
+}
+
+.member-role {
+    color: var(--color-primary); /* Naranja GMN */
+    font-weight: 600;
+    font-size: 0.9rem;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    margin-bottom: 7px;
+}
+
+.member-bio {
+    font-size: 0.95rem;
+    color: var(--color-text-secondary);
+    line-height: 1.5;
+    margin-bottom: 5px;
+}
+
+/* Highlights */
+.member-highlights {
+    list-style: none;
+    margin-bottom: 25px;
+}
+
+.member-highlights li {
+    font-size: 0.85rem;
+    font-weight: 600;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    color: var(--color-text-primary);
+    margin-bottom: 5px;
+}
+
+.member-highlights li p{
+  padding-bottom: 2px;
+}
+
+.dot {
+    width: 6px;
+    height: 6px;
+    background: var(--color-primary);
+    border-radius: 50%;
+}
+
+/* Botón LinkedIn */
+.linkedin-link {
+    margin-top: auto;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    text-decoration: none;
+    color: #0077B5; /* Color corporativo LinkedIn */
+    font-weight: 700;
+    font-size: 0.9rem;
+    transition: color 0.3s ease;
+}
+
+.linkedin-link:hover {
+    color: #005582;
+}
+
+/*Our job section*/
+/* ===== QUE HACEMOS SECTIONS ===== */
+.img_job {
+  display: grid;
+  grid-template-columns: 2fr 3fr;
+  gap: var(--spacing-xxl);
+  align-items: start;
+  width: 100%;
+}
+
+/* Text and image columns - Grouped */
+.text-job {
+  flex: 1 1 60%;
+  min-width: 280px;
+  max-width: 100%;
+  box-sizing: border-box;
+  word-wrap: break-word;
+  overflow-wrap: break-word;
+  hyphens: auto;
+}
+
+.text-job p {
+  text-align: left;
+  font-size: var(--font-size-xl);
+  line-height: 1.5;
+  color: var(--color-text-primary);
+  margin-bottom: 0;
+}
+
+.image-job img {
+  width: 100%;
+  max-width: 100%;
+  height: auto;
+  object-fit: contain;
+  border-radius: 5px;
+}
+
+/*nuevos slides*/
+.job-grid {
+  display: grid;
+  /* Obliga a 3 columnas iguales */
+  grid-template-columns: repeat(3, 0.9fr); 
+  gap: 20px;
+  padding: 30px 0;
+  width: 100%;
+  /* Evita que los modales generen scroll horizontal */
+  position: relative; 
+}
+
+.job-card {
+  background: #f4f7f9;
+  padding: 15px 10px;
+  min-height: 100px; /* Altura unificada */
+  border-radius: 8px;
+  border: 1px solid #cccccc;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  position: relative; /* ANCLA para el modal */
+  transition: all 0.3s ease;
+  cursor: pointer;
+  z-index:15
+}
+
+/* --- EL MODAL (Ventana Emergente) --- */
+.job-modal {
+    position: fixed;
+    top: 50%; 
+    /* Cambiamos el ancho a uno más manejable para que no choque con los bordes */
+    width: 700px; 
+    max-width: 90vw;
+    background: white;
+    padding: 25px;
+    border-radius: 6px;
+    box-shadow: 0 20px 50px rgba(0, 0, 0, 0.2);
+    border: 2px solid var(--color-primary);
+    opacity: 0;
+    transform: translate(-50%, -50%) scale(0.85);
+    visibility: hidden;
+    z-index: 19;
+    pointer-events: none;
+    /* Transición suave */
+    transition: all 0.4s cubic-bezier(0.165, 0.84, 0.44, 1);
+}
+
+.job-modal h4 {
+    font-size: 1.2rem;
+    margin-bottom: 10px;
+    color: var(--color-primary);
+    text-align: left; /* O center, según prefieras */
+}
+
+.job-modal p {
+    font-size: 0.8rem;
+    line-height: 1.25;
+    color: var(--color-text-secondary);
+    text-align: left;
+    font-weight: bold;
+}
+
+/*
+.job-left::after { left: 20px; }
+.job-middle::after { left: 50%; transform: translateX(-50%); }
+/* .job-right::after { right: 20px; }**/
+
+
+/* --- ESTADO HOVER --- */
+.job-card:hover {
+  border-color: var(--color-primary);
+  background-color: #f9f9f9;
+  /*transform: translateY(-15px);*/
+  opacity: 1;
+  visibility: visible;
+  z-index: 100;
+    /* Al activarse, vuelve a su escala normal manteniendo el centro */
+  transform: translate(0%, -5%) scale(0.95);
+}
+   
+/* Para que se vea en una sola columna al hacer hover */
+/* Izquierda: Se desplaza hacia la derecha para no salirse del borde izquierdo */
+.job-left {
+    left: 10px;
+}
+
+.job-card:hover .job-left {
+    opacity: 1;
+    visibility: visible;
+    transform: translate(-5%, -50%) scale(0.85);
+}
+
+/* Centro: Centrado perfecto respecto a su tarjeta */
+.job-middle {
+    left: 50%;
+}
+
+.job-card:hover .job-middle {
+    opacity: 1;
+    visibility: visible;
+    transform: translate(-50%, -50%) scale(0.85);
+}
+
+/* Derecha: Se alinea al borde derecho de su tarjeta para no salirse por la derecha */
+.job-right {
+    right: 10px;
+    left: auto;  /*Reseteamos el left por defecto */
+}
+
+.job-card:hover .job-right {
+    opacity: 1;
+    visibility: visible;
+    transform: translate(5%, -50%) scale(0.85);
+}
+
+/*Section sucess cases*/
+/* ===== IMAGE CAROUSEL ===== */
+.carousel-container {
+  width: 100%;
+  background: var(--color-background);
+  border-radius: 20px;
+  padding: 30px;
+  margin-top: 0;
+}
+
+.main-display {
+  position: relative;
+  width: 100%;
+  height: 550px;
+  margin-bottom: 15px;
+  border-radius: 15px;
+  overflow: hidden;
+  box-shadow: 0 5px 35px rgba(0,0,0,0.2);
+}
+
+.main-image {
+  width: 100%;
+  height: 100%;
+  object-fit: fill;
+  display: block;
+  transition: transform 0.5s ease;
+}
+
+.main-display:hover .main-image {
+  transform: scale(1.05);
+}
+
+.overlay-content {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background: linear-gradient(
+    to top,
+    rgba(0, 0, 0, 0.85) 0%,
+    rgba(0, 0, 0, 0.75) 15%,
+    rgba(0, 0, 0, 0.6) 30%,
+    rgba(0, 0, 0, 0.4) 45%,
+    rgba(0, 0, 0, 0.25) 60%,
+    rgba(0, 0, 0, 0.12) 75%,
+    rgba(0, 0, 0, 0.05) 90%,
+    rgba(0, 0, 0, 0) 100%
+  );
+  padding: 90px;
+  min-height: 50%;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+}
+
+.overlay-content,
+.overlay-title,
+.overlay-description {
+  color: var(--color-primary-border) !important;
+}
+
+.overlay-title {
+  font-size: 2.5em;
+  font-weight: bold;
+  margin: 0 0 15px 0;
+}
+
+.overlay-description {
+  font-size: 1.2em;
+  line-height: 1.6;
+  margin: 0;
+  opacity: 0.95;
+  /* max-width: 600px; */
+}
+
+.nav-btn {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  background: rgba(255,255,255,0.9);
+  color: #333;
+  border: none;
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  font-size: 1.5em;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  z-index: 10;
+  box-shadow: 0 5px 15px rgba(0,0,0,0.3);
+}
+
+.nav-btn:hover {
+  background: white;
+  transform: translateY(-50%) scale(1.1);
+  box-shadow: 0 8px 25px rgba(0,0,0,0.4);
+}
+
+.prev-btn { left: 10px; }
+.next-btn { right: 10px; }
+
+.thumbnail-container {
+  width: 100%;
+  position: relative;
+  margin: 20px 0;
+  padding: 0 50px;
+}
+
+.thumbnail-track {
+  display: flex;
+  gap: 15px;
+  padding: 15px 0;
+  overflow-x: auto;
+  scroll-behavior: smooth;
+  scrollbar-width: none;
+  -ms-overflow-style: none;
+}
+
+.thumbnail-track::-webkit-scrollbar {
+  display: none;
+}
+
+.thumbnail-slide {
+  width: 180px;
+  height: 120px;
+  border-radius: 12px;
+  overflow: hidden;
+  cursor: pointer;
+  opacity: 0.7;
+  transition: all 0.3s ease;
+  flex-shrink: 0;
+  position: relative;
+  border: 3px solid transparent;
+  background: var(--color-background);
+}
+
+.thumbnail-slide:hover {
+  opacity: 0.9;
+  transform: translateY(-5px);
+}
+
+.thumbnail-slide.active {
+  opacity: 1;
+  transform: scale(1.1);
+  border-color: var(--color-primary);
+}
+
+.thumbnail-image {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+  padding: 10px;
+}
+
+.thumbnail-title {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background: linear-gradient(transparent, rgba(0,0,0,0.8));
+  color: white;
+  padding: 8px;
+  margin: 0;
+  font-size: 0.9em;
+  text-align: center;
+  font-weight: 600;
+}
+
+.progress-container {
+  width: 100%;
+  height: 4px;
+  background: #e0e0e0;
+  border-radius: 2px;
+  margin-top: 15px;
+  overflow: hidden;
+}
+
+/* Image columns - Grouped 
+.image-column {
+  display: flex;
+  flex: 1 1 35%;  
+  flex-direction: column;
+  width: 100%;
+  min-height: 320px;
+  justify-content: center;
+  align-items: flex-start;   
+}*/
 
 
 
@@ -467,7 +998,7 @@ body {
   margin: 0 !important;
   padding: 0rem 2rem 3rem 2rem !important;
   min-height: 10vh;
-}
+});
 
 .notop-noborders {
   margin: 0 !important;
@@ -482,29 +1013,6 @@ body {
 #filosofia,
 #trabaja {
   background-color: var(--color-background2) !important;
-}
-
-/* ===== ORANGE HIGHLIGHTING ===== */
-.highlight-orange {
-  color: var(--color-primary) !important;
-}
-
-.highlight-bg-orange {
-  background-color: var(--color-primary);
-  color: var(--color-background);
-  padding: 0.2em 0.4em;
-  border-radius: var(--radius-sm);
-  font-weight: 600;
-}
-
-.text-orange {
-  color: var(--color-primary);
-}
-
-.border-orange {
-  border: 2px solid var(--color-primary);
-  padding: var(--spacing-md);
-  border-radius: var(--radius-md);
 }
 
 

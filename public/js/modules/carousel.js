@@ -13,10 +13,12 @@ const successCases = [
     { id: 8, title: "exitos.exp_title08", desc: "exitos.exp_desc08", logo: "/img/logo08.webp", img: "/img/success08.webp"},
 ];
 
-let eventsBound = false;
+/*let eventsBound = false;*/
+let currentIndex = 0;
 let autoPlayTimer;
 
 // 2. Función para generar el HTML dinámicamente
+/*
 function renderCarouselItems(track) {
     track.innerHTML = ''; // Limpiamos el track manual
 
@@ -32,10 +34,35 @@ function renderCarouselItems(track) {
         `;
         track.insertAdjacentHTML('beforeend', itemHTML);
     });
+}*/
+
+function renderCarousel(track, thumbContainer) {
+    track.innerHTML = '';
+    thumbContainer.innerHTML = '';
+
+    successCases.forEach((item, index) => {
+        // Crear Slide Grande
+        const slideHTML = `
+            <div class="carousel-item">
+                <img src="${item.img}" alt="${getTextFromKey(`${item.title}`)}">
+                <div class="carousel-caption">
+                    <h3 data-key="${item.title}">${getTextFromKey(`${item.title}`)}</h3>
+                    <p data-key="${item.desc}">${getTextFromKey(`${item.desc}`)}</p>
+                </div>
+            </div>`;
+        track.insertAdjacentHTML('beforeend', slideHTML);
+
+        // Crear Miniatura
+        const thumbHTML = `
+            <div class="thumbnail ${index === 0 ? 'active' : ''}" data-index="${item.id}">
+                <img src="${item.logo}" alt="${getTextFromKey(`${item.title}`)}">
+            </div>`;
+        thumbContainer.insertAdjacentHTML('beforeend', thumbHTML);
+    });
 }
 
 // 3. Función principal de inicialización
-export function initCarousel() {
+/*export function initCarousel() {
     const track = document.querySelector('.carousel-track');
     const nextBtn = document.querySelector('#nextBtn');
     const prevBtn = document.querySelector('#prevBtn');
@@ -90,5 +117,67 @@ export function initCarousel() {
 
     // F. Arrancamos el carrusel
     updateSlide(0);
+    startAutoPlay();
+}*/
+
+export function initCarousel() {
+    const track = document.querySelector('.carousel-track');
+    const thumbContainer = document.querySelector('.carousel-thumbnails');
+    const nextBtn = document.querySelector('#nextBtn');
+    const prevBtn = document.querySelector('#prevBtn');
+
+    if (!track || !thumbContainer) return;
+
+    // 1. Renderizar todo
+    renderCarousel(track, thumbContainer);
+
+    const slides = Array.from(track.children);
+    const thumbs = Array.from(thumbContainer.children);
+
+    // 2. Función de actualización única
+    const update = (index) => {
+        currentIndex = index;
+        // Mover carril
+        track.style.transform = `translateX(-${currentIndex * 100}%)`;
+        
+        // Actualizar miniaturas
+        thumbs.forEach(t => t.classList.remove('active'));
+        thumbs[currentIndex].classList.add('active');
+    };
+
+    // 3. Eventos de Miniaturas
+    thumbs.forEach((thumb, i) => {
+        thumb.addEventListener('click', () => {
+            update(i);
+            resetAutoPlay();
+        });
+    });
+
+    // 4. Eventos de Flechas
+    nextBtn?.addEventListener('click', () => {
+        let next = (currentIndex + 1) % slides.length;
+        update(next);
+        resetAutoPlay();
+    });
+
+    prevBtn?.addEventListener('click', () => {
+        let prev = (currentIndex - 1 + slides.length) % slides.length;
+        update(prev);
+        resetAutoPlay();
+    });
+
+    // 5. Auto-play
+    const startAutoPlay = () => {
+        autoPlayTimer = setInterval(() => {
+            update((currentIndex + 1) % slides.length);
+        }, 7000);
+    };
+
+    const resetAutoPlay = () => {
+        clearInterval(autoPlayTimer);
+        startAutoPlay();
+    };
+
+    update(0);
     startAutoPlay();
 }

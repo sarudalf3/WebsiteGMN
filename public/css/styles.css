@@ -851,14 +851,25 @@ body {
   overflow-y: visible;
   border-top: 2px solid var(--color-primary-hover);
   border-radius: 0 0 var(--radius-md) var(--radius-md);
-
-  font-weight: 600;  
-  font-size: var(--font-size-base);
-  line-height: 1.4;
-  color: var(--color-text-secondary);
   overflow-wrap: break-word;
   hyphens: auto;
   text-align: justify;
+}
+
+.accordion-item {
+  /* ... tus otras propiedades ... */
+  border-radius: var(--radius-md);
+  overflow: hidden; /* ESTO ES CLAVE: Recorta el fondo naranja para que siga la curva gris */
+  border: 2px solid var(--color-border);
+}
+
+.accordion-text {
+  font-size: 1.05rem; /* Tamaño equilibrado */
+  line-height: 1.6;    /* Espaciado entre líneas para mejor lectura */
+  font-weight: 400;    /* Texto normal, no negrita */
+  color: var(--color-text-secondary); /* Gris intermedio para no cansar la vista */
+  text-align: justify;
+  padding: 5px 0;
 }
 
 /*Section sucess cases*/
@@ -950,6 +961,41 @@ body {
   background: white;
   transform: translateY(-50%) scale(1.1);
   box-shadow: 0 8px 25px rgba(0,0,0,0.4);
+}
+
+/* Miniaturas debajo del carrusel */
+.carousel-thumbnails {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+    margin-top: 20px;
+}
+
+.thumbnail {
+    width: 95%;    
+    height: 65px;
+    cursor: pointer;
+    border-radius: 8px;
+    overflow: hidden;
+    border: 2px solid transparent;
+    transition: var(--transition-standard);
+    opacity: 0.6;
+}
+
+.thumbnail img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.thumbnail:hover {
+    opacity: 1;
+}
+
+.thumbnail.active {
+    border: 2px solid var(--color-primary); /* Borde naranja GMN */
+    opacity: 1;
+    transform: scale(1.05);
 }
 
 /* Image columns - Grouped 

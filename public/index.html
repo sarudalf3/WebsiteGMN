@@ -18,28 +18,28 @@
             <img src="/img/gmn_icon.svg" alt="GMN Group Logo">
             <div class="logo-text">
               <h1 class="brand-name">GMN Group</h1>
-              <h5 class="brand-tagline" data-key="meta.subtitle"></h5>
+              <h4 class="brand-tagline" data-key="meta.subtitle"></h4>
             </div>
           </a>
         </div> 
         <!-- Center: Navigation -->
         <nav class="navbar-nav">
           <ul class="nav-links">
-            <li><a href="#home" data-key="nav.navbar1"></a></li>
-            <li><a href="#achievements" data-key="nav.navbar2"></a></li>
-            <li><a href="#news" data-key="nav.navbar3"></a></li>
-            <li><a href="#about" data-key="nav.navbar4"></a></li>
-            <li><a href="#ourjob" data-key="nav.navbar5"></a></li>
-            <li><a href="#success_cases" data-key="nav.navbar6"></a></li>
-            <li><a href="#filosofia" data-key="nav.navbar7"></a></li>
-            <li><a href="#contacto" data-key="nav.navbar8"></a></li>
+            <li><a href="#home" aria-label="Home" data-key="nav.navbar1"></a></li>
+            <li><a href="#achievements" aria-label="Achievements" data-key="nav.navbar2"></a></li>
+            <li><a href="#news" aria-label="News" data-key="nav.navbar3"></a></li>
+            <li><a href="#about" aria-label="About" data-key="nav.navbar4"></a></li>
+            <li><a href="#ourjob" aria-label="Our Job" data-key="nav.navbar5"></a></li>
+            <li><a href="#success_cases" aria-label="Success Cases" data-key="nav.navbar6"></a></li>
+            <li><a href="#filosofia" aria-label="Philosophy" data-key="nav.navbar7"></a></li>
+            <li><a href="#contacto" aria-label="Contact"data-key="nav.navbar8"></a></li>
           </ul>
         </nav>
         <!-- Right: Language & Toggle -->
         <div class="navbar-right">
-          <button class="navbar-toggle" aria-label="Toggle navigation">☰</button>
+          <button class="navbar-toggle" type="button" aria-label="Toggle navigation">☰</button>
           <div class="navbar-lang">
-            <select id="language-selector" class="lang-select">
+            <select id="language-selector" class="lang-select" aria-label="Select language">
               <option value="esp" selected>ESP</option>
               <option value="eng">ENG</option>
               <option value="prt">PRT</option>
@@ -53,7 +53,7 @@
 
   <!-- HOME -->
   <section id="home" class="hero"> 
-    <video autoplay muted loop playsinline class="bg-video">
+    <video autoplay muted loop class="bg-video">
       <source src="https://res.cloudinary.com/dech95yov/video/upload/f_auto,q_auto:best/Portada_xytqox.mp4" type="video/mp4"/>
     </video>
 
@@ -70,7 +70,7 @@
       <!-- Title -->
       <h2 class="highlight-orange" data-key="achievements.title"></h2>
       <!-- Description -->
-      <h3 style="font-style: italic; margin-bottom: 2rem;" class="gray-subtitle" data-key="achievements.subtitle"></h3>
+      <h3 class="gray-subtitle italic" data-key="achievements.subtitle"></h3>
       <!-- Two Columns Container -->
       <div class="two-columns-container">
         <!--Left Column - Cards -->
@@ -117,7 +117,7 @@
               <li><p data-key="achievements.list4"></p></li>
               <li><p data-key="achievements.list5"></p></li>
             </ul>
-            <a href="#goals"><p class="success-cases-link" data-key="achievements.sucess_cases"></p></a>
+            <a href="#success_cases"><p class="success-cases-link" data-key="achievements.sucess_cases"></p></a>
           </div>
         </div>
       </div>
@@ -165,7 +165,7 @@
       <p data-key="about_us.par31">  
 
       <h2 class="highlight-orange" data-key="about_us.title2"></h2>
-      <h3 style="font-style: italic; margin-bottom: 2rem;" class="gray-subtitle" data-key="about_us.subtitle4"></h3>
+      <h3 class="gray-subtitle italic" data-key="about_us.subtitle4"></h3>
 
       <div class="team-grid">
         <div class="team-card">
@@ -180,7 +180,7 @@
               <li><span class="dot"></span><p data-key="about_us.highlights_SA1"></p></li>
               <li><span class="dot"></span><p data-key="about_us.highlights_SA2"></p></li>
             </ul>
-            <a href="https://www.linkedin.com/in/sergio-adauy-b8407524/" target="_blank" class="linkedin-link" aria-label="LinkedIn Profile">
+            <a href="https://www.linkedin.com/in/sergio-adauy-b8407524/" target="_blank" class="linkedin-link" rel="noopener" aria-label="LinkedIn Profile">
               <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="currentColor"><path d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm-11 19h-3v-11h3v11zm-1.5-12.268c-.966 0-1.75-.79-1.75-1.764s.784-1.764 1.75-1.764 1.75.79 1.75 1.764-.783 1.764-1.75 1.764zm13.5 12.268h-3v-5.604c0-3.368-4-3.113-4 0v5.604h-3v-11h3v1.765c1.396-2.586 7-2.777 7 2.476v6.759z"/></svg>
               <span data-key="about_us.lkdn_profile"></span>
             </a>
@@ -199,7 +199,7 @@
               <li><span class="dot"></span><p data-key="about_us.highlights_MM1"></p></li>
               <li><span class="dot"></span><p data-key="about_us.highlights_MM2"></p></li>
             </ul>
-            <a href="https://www.linkedin.com/in/marcelo-morales-millar-a2b368126/" target="_blank" class="linkedin-link">
+            <a href="https://www.linkedin.com/in/marcelo-morales-millar-a2b368126/" target="_blank" rel="noopener" class="linkedin-link" aria-label="LinkedIn Profile">
               <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="currentColor"><path d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm-11 19h-3v-11h3v11zm-1.5-12.268c-.966 0-1.75-.79-1.75-1.764s.784-1.764 1.75-1.764 1.75.79 1.75 1.764-.783 1.764-1.75 1.764zm13.5 12.268h-3v-5.604c0-3.368-4-3.113-4 0v5.604h-3v-11h3v1.765c1.396-2.586 7-2.777 7 2.476v6.759z"/></svg>
               <span data-key="about_us.lkdn_profile"></span>
             </a>
@@ -213,7 +213,7 @@
   <section id="ourjob" class="slide ourjob-class color-bg-alt">
     <div class="margener">
       <h2 class="highlight-orange" data-key="we_do.title"></h2>
-      <h3 style="font-style: italic; margin-bottom: 2rem;" class="gray-subtitle" data-key="we_do.intro"></h3>
+      <h3 class="gray-subtitle italic" data-key="we_do.intro"></h3>
       <div class="img_job">
         <div class="text-job">
           <p data-key="we_do.intro_par1"></p>
@@ -254,6 +254,41 @@
           </div>
         </div>
       </div>
+      <!--Check new idea-->
+      <div class="accordion">
+        <div class="accordion-item">
+          <button type="button" class="accordion-header highlight-orange" aria-expanded="false" data-key="we_do.title1" aria-label="What we do"></button>
+          <div class="accordion-panel">
+            <div class="accordion-text">
+              <p data-key="we_do.par11"></p>
+              <p data-key="we_do.par12"></p>
+              <p data-key="we_do.par13"></p>
+            </div>
+          </div>
+        </div>
+        <div class="accordion-item">
+          <button type="button" class="accordion-header highlight-orange" aria-expanded="false" data-key="we_do.title2" aria-label="What we do"></button>
+          <div class="accordion-panel">
+            <div class="accordion-text">
+              <p data-key="we_do.par21"></p>
+              <p data-key="we_do.par22"></p>
+              <p data-key="we_do.par23"></p>
+              <p data-key="we_do.par24"></p>
+            </div>
+          </div>
+        </div>
+        <div class="accordion-item">
+          <button type="button" class="accordion-header highlight-orange" aria-expanded="false" data-key="we_do.title3" aria-label="What we do"></button>
+          <div class="accordion-panel">
+            <div class="accordion-text">
+              <p data-key="we_do.par31"></p>
+              <p data-key="we_do.par32"></p>
+              <p data-key="we_do.par33"></p>
+            </div>
+          </div>
+        </div>
+      </div>
+
     </div>
   </section>
 
@@ -263,34 +298,10 @@
       <h2 class="highlight-orange" data-key="exitos.title"></h2>
       <div class="carousel-container">
 <!--Start the new code replace here-->
-        <button class="carousel-btn prev" id="prevBtn">&#10094;</button>
-        <button class="carousel-btn next" id="nextBtn">&#10095;</button>
+        <button class="carousel-btn prev" type="button" id="prevBtn">&#10094;</button>
+        <button class="carousel-btn next" type="button" id="nextBtn">&#10095;</button>
         <div class="carousel-viewport">
           <div class="carousel-track">
-            <div class="carousel-item">
-              <img src="img/success01.webp" alt="carous-1">
-              <div class="carousel-caption">
-                <h3 data-key="exitos.exp_title1"></h3>
-                <p data-key="exitos.exp_desc1"></p>
-              </div>
-            </div>
-
-            <div class="carousel-item">
-              <img src="img/success02.webp" alt="carous-2">
-              <div class="carousel-caption">
-                <h3 data-key="exitos.exp_title2"></h3>
-                <p data-key="exitos.exp_desc2"></p>
-              </div>
-            </div>
-
-            <div class="carousel-item">
-              <img src="img/success03.webp" alt="carous-3">
-              <div class="carousel-caption">
-                <h3 data-key="exitos.exp_title3"></h3>
-                <p data-key="exitos.exp_desc3"></p>
-              </div>
-            </div>
-
           </div>
         </div>
       </div>

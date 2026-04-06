@@ -30,7 +30,7 @@ app.use(
       directives: {
         ...helmet.contentSecurityPolicy.getDefaultDirectives(),
         "media-src": ["'self'", "https://res.cloudinary.com"], // Permite videos de Cloudinary
-        "frame-src": ["'self'", "https://www.youtube.com", "https://youtube.com"], // Permite YouTube
+        "frame-src": ["'self'", "https://www.youtube.com", "https://www.youtube-nocookie.com"], // Permite YouTube
         "script-src": ["'self'", "'unsafe-inline'", "https://www.youtube.com"],        
       },
     },

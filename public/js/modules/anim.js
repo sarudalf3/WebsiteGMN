@@ -2,7 +2,7 @@
 
 /**
  * Animación específica para la sección "Qué Hacemos"
- */
+ 
 export function initQueHacemosAnimation() {
   const section = document.getElementById('quehacemos-intro');
   if (!section) return;
@@ -31,3 +31,5 @@ export function initHeroAnimation() {
         heroContent.classList.add('animate-start');
     }
 }
+*/
+

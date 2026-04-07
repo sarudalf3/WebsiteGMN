@@ -123,8 +123,14 @@ function renderCarousel(track, thumbContainer) {
 export function initCarousel() {
     const track = document.querySelector('.carousel-track');
     const thumbContainer = document.querySelector('.carousel-thumbnails');
-    
-    if (!track || !thumbContainer) return;
+    const nextBtn = document.querySelector('#nextBtn');
+    const prevBtn = document.querySelector('#prevBtn');
+
+// SEGURIDAD: Si no encuentra los elementos, no sigue y evita el error en consola
+    if (!track || !thumbContainer) {
+        console.warn("Contenedores del carrusel no encontrados");
+        return;
+    }
 
     // LIMPIEZA INICIAL para evitar duplicados
     track.innerHTML = '';
@@ -136,10 +142,10 @@ export function initCarousel() {
         const slide = document.createElement('div');
         slide.className = 'carousel-item';
         slide.innerHTML = `
-            <img src="images/exitos/${item.img}" alt="GMN Project">
+            <img src="${item.img}" alt="${getTextFromKey(`${item.title}`)}">
             <div class="carousel-caption">
-                <h3 data-key="exitos.${item.key}_title">${getTextFromKey(`exitos.${item.key}_title`)}</h3>
-                <p data-key="exitos.${item.key}_desc">${getTextFromKey(`exitos.${item.key}_desc`)}</p>
+                <h3 data-key="${item.id}">${getTextFromKey(`${item.title}`)}</h3>
+                <p data-key="${item.id}">${getTextFromKey(`${item.desc}`)}</p>
             </div>
         `;
         track.appendChild(slide);
@@ -147,13 +153,11 @@ export function initCarousel() {
         // Miniatura
         const thumb = document.createElement('div');
         thumb.className = `thumbnail ${index === 0 ? 'active' : ''}`;
-        thumb.dataset.index = index;
-        thumb.innerHTML = `<img src="${item.img}" alt="Logo">`;
-        thumb.addEventListener('click', () => goToSlide(index));
+        thumb.innerHTML = `<img src="${item.logo}" alt="${getTextFromKey(`${item.title}`)}" style="object-fit: contain; width: 100%; height: 100%;">`;
+        thumb.onclick = () => goToSlide(index);
         thumbContainer.appendChild(thumb);
     });
 
-    const slides = track.querySelectorAll('.carousel-item');
     const thumbs = thumbContainer.querySelectorAll('.thumbnail');
 
     function goToSlide(index) {
@@ -169,16 +173,9 @@ export function initCarousel() {
         resetAutoPlay();
     }
 
-    // Botones de navegación (si existen)
-    document.querySelector('#nextBtn')?.onclick = () => {
-        let next = (currentIndex + 1) % successCases.length;
-        goToSlide(next);
-    };
-
-    document.querySelector('#prevBtn')?.onclick = () => {
-        let prev = (currentIndex - 1 + successCases.length) % successCases.length;
-        goToSlide(prev);
-    };
+    // Vinculamos botones si existen
+    if (nextBtn) nextBtn.onclick = () => goToSlide((currentIndex + 1) % successCases.length);
+    if (prevBtn) prevBtn.onclick = () => goToSlide((currentIndex - 1 + successCases.length) % successCases.length);
 
     function startAutoPlay() {
         autoPlayTimer = setInterval(() => {

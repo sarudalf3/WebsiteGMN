@@ -974,8 +974,8 @@ body {
 }
 
 .thumbnail {
-    width: 120%;    
-    height: 70px;
+    width: 100px;    
+    height: 6cqw;
     cursor: pointer;
     border-radius: 6px;
     background: #f9f9f9; /* Fondo claro para que resalten los logos */

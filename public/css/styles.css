@@ -66,6 +66,7 @@
   --transition-smooth: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
   --transition-fast: all 0.2s ease;
   --transition-normal: 0.45s;
+  --transition-carousel: all 0.3s ease;
 
   /* Layout ratios - DESKTOP DEFAULT */
   --margener-ratio: 74%;
@@ -969,23 +970,29 @@ body {
     justify-content: center;
     gap: 15px;
     margin-top: 20px;
+    flex-wrap: wrap; /* Por si añades más en el futuro */
 }
 
 .thumbnail {
-    width: 95%;    
-    height: 65px;
+    width: 120%;    
+    height: 70px;
     cursor: pointer;
-    border-radius: 8px;
+    border-radius: 6px;
+    background: #f9f9f9; /* Fondo claro para que resalten los logos */
+    border: 2px solid #eee;
     overflow: hidden;
-    border: 2px solid transparent;
-    transition: var(--transition-standard);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 5px; /* Espacio interno para que el logo no toque los bordes */
+    transition: var(--transition-carousel);
     opacity: 0.6;
 }
 
 .thumbnail img {
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
+    max-width: 100%;
+    max-height: 100%;
+    object-fit: contain;
 }
 
 .thumbnail:hover {
@@ -996,6 +1003,8 @@ body {
     border: 2px solid var(--color-primary); /* Borde naranja GMN */
     opacity: 1;
     transform: scale(1.05);
+    background: white;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.1);    
 }
 
 /* Image columns - Grouped 

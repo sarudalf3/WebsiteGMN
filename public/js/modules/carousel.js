@@ -59,7 +59,7 @@ function renderCarousel(track, thumbContainer) {
             </div>`;
         thumbContainer.insertAdjacentHTML('beforeend', thumbHTML);
     });
-}
+};
 
 // 3. Función principal de inicialización
 /*export function initCarousel() {
@@ -123,61 +123,75 @@ function renderCarousel(track, thumbContainer) {
 export function initCarousel() {
     const track = document.querySelector('.carousel-track');
     const thumbContainer = document.querySelector('.carousel-thumbnails');
-    const nextBtn = document.querySelector('#nextBtn');
-    const prevBtn = document.querySelector('#prevBtn');
-
+    
     if (!track || !thumbContainer) return;
 
-    // 1. Renderizar todo
-    renderCarousel(track, thumbContainer);
+    // LIMPIEZA INICIAL para evitar duplicados
+    track.innerHTML = '';
+    thumbContainer.innerHTML = '';
 
-    const slides = Array.from(track.children);
-    const thumbs = Array.from(thumbContainer.children);
+    // RENDERIZADO ORDENADO (Garantiza el orden 0, 1, 2, 3...)
+    successCases.forEach((item, index) => {
+        // Slide Principal
+        const slide = document.createElement('div');
+        slide.className = 'carousel-item';
+        slide.innerHTML = `
+            <img src="images/exitos/${item.img}" alt="GMN Project">
+            <div class="carousel-caption">
+                <h3 data-key="exitos.${item.key}_title">${getTextFromKey(`exitos.${item.key}_title`)}</h3>
+                <p data-key="exitos.${item.key}_desc">${getTextFromKey(`exitos.${item.key}_desc`)}</p>
+            </div>
+        `;
+        track.appendChild(slide);
 
-    // 2. Función de actualización única
-    const update = (index) => {
+        // Miniatura
+        const thumb = document.createElement('div');
+        thumb.className = `thumbnail ${index === 0 ? 'active' : ''}`;
+        thumb.dataset.index = index;
+        thumb.innerHTML = `<img src="${item.img}" alt="Logo">`;
+        thumb.addEventListener('click', () => goToSlide(index));
+        thumbContainer.appendChild(thumb);
+    });
+
+    const slides = track.querySelectorAll('.carousel-item');
+    const thumbs = thumbContainer.querySelectorAll('.thumbnail');
+
+    function goToSlide(index) {
         currentIndex = index;
-        // Mover carril
+        
+        // Movimiento suave del carril
         track.style.transform = `translateX(-${currentIndex * 100}%)`;
         
-        // Actualizar miniaturas
+        // Actualizar estado de miniaturas
         thumbs.forEach(t => t.classList.remove('active'));
         thumbs[currentIndex].classList.add('active');
+        
+        resetAutoPlay();
+    }
+
+    // Botones de navegación (si existen)
+    document.querySelector('#nextBtn')?.onclick = () => {
+        let next = (currentIndex + 1) % successCases.length;
+        goToSlide(next);
     };
 
-    // 3. Eventos de Miniaturas
-    thumbs.forEach((thumb, i) => {
-        thumb.addEventListener('click', () => {
-            update(i);
-            resetAutoPlay();
-        });
-    });
+    document.querySelector('#prevBtn')?.onclick = () => {
+        let prev = (currentIndex - 1 + successCases.length) % successCases.length;
+        goToSlide(prev);
+    };
 
-    // 4. Eventos de Flechas
-    nextBtn?.addEventListener('click', () => {
-        let next = (currentIndex + 1) % slides.length;
-        update(next);
-        resetAutoPlay();
-    });
-
-    prevBtn?.addEventListener('click', () => {
-        let prev = (currentIndex - 1 + slides.length) % slides.length;
-        update(prev);
-        resetAutoPlay();
-    });
-
-    // 5. Auto-play
-    const startAutoPlay = () => {
+    function startAutoPlay() {
         autoPlayTimer = setInterval(() => {
-            update((currentIndex + 1) % slides.length);
+            let next = (currentIndex + 1) % successCases.length;
+            goToSlide(next);
         }, 7000);
-    };
+    }
 
-    const resetAutoPlay = () => {
+    function resetAutoPlay() {
         clearInterval(autoPlayTimer);
         startAutoPlay();
-    };
+    }
 
-    update(0);
+    // Iniciar
     startAutoPlay();
 }

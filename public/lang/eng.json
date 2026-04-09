@@ -12,7 +12,7 @@
     "navbar4": "About us", 
     "navbar5": "Our job",       
     "navbar6": "Results",
-    "navbar7": "Own Vision",
+    "navbar7": "Our Culture",
     "navbar8": "Contact"
   },
   
@@ -37,7 +37,7 @@
     "list3": "+200,000 Work Orders regularized and optimized in SAP PM",
     "list4": "Real experience in highly critical and large-scale projects",
     "list5": "50+ highly skilled workers in multiple areas",
-    "sucess_cases": "See our success stories"
+    "success_cases": "See our success stories"
   },
   
   "news": {
@@ -89,13 +89,13 @@
     "par33": "This enables instantaneous decision-making for executives and operational teams, increasing efficiency, agility, and the predictability of the entire operation."
   },
 
-  "exitos": {
+  "success": {
     "title": "Success Cases",
     "exp_title01": "BHP",
     "exp_desc01": "Over X projects developed: focusing on productivity, optimization, and asset management, generating an estimated added value of $XXXX MUSD.",
     "exp_title02": "CODELCO",
     "exp_desc02": "Chilean state-owned company dedicated to copper mining. We have successfully developed over X projects, driving operational and logistics standards that have achieved an X% increase in productivity.",
-    "exp_title03": "CERROMATOSO",
+    "exp_title03": "CERRO MATOSO",
     "exp_desc03": "Automated data models and dashboards have been developed, resulting in a reduction of X operational hours per week for the beneficiary personnel.",
     "exp_title05":"COCA-COLA",
     "exp_desc05": "Implemented SAS System to automatize the Maintenance Plant",
@@ -109,52 +109,42 @@
     "exp_desc08": ""
   },
 
-  "servicios": {
-    "title": "GMN in 2026",
-    "subtitle": "In this year alone, GMN has helped companies save over $200 million.",
-    "s1": {
-      "title": "Value Created by GMN",
-      "intro": "20+ years of experience in mining and capital-intensive sectors.",
-      "modal": {
-        "visible": "Supporting over 8 mining operations in Chile and Latin America.",
-        "hidden": "200,000+ Work Orders regularized and optimized in SAP PM."
-      }
-    }
+"culture": {
+    "title": "Our Culture",
+    "subtitle": "We engage with your challenges as if they were our own, supporting you with commitment and sustainable results",
+
+    "section01": "Corporate Culture",
+    "par11": "We build long-term relationships based on trust, commitment, and a technical excellence perfected over decades. We integrate naturally into our clients' teams, working with rigor, proximity, and a value-oriented discipline that guarantees flawless execution and improvements that consolidate within the operation.",
+    "par12": "At GMN, we don't just advise: we ensure effective implementation, sustained adoption, and results that truly endure.",
+
+    "section02": "Certifications and Standards",
+    "par21": "We promote continuous learning, high safety standards, and responsible management towards people and the environment.",
+    "par22": "GMN is a Triple-Certified company, accredited under international standards:",
+    "par23": "We are accredited in the SICEP system with Category A, achieving 100% in quality, environment, and automation, which validates our comprehensive, safe, and sustainable management.",
+    "par22_li01": "ISO 9001:2015 – Quality Management",
+    "par22_li02": "ISO 14001:2015 – Environmental Management",
+    "par22_li03": "ISO 45001:2018 – Occupational Health and Safety",
+
+    "section03": "Technical and Human Excellence",
+    "par31": "Our value lies in our people; consultants with proven experience who make things happen.",
+    "par32": "Our team brings together more than 25 years of combined experience in operational reliability, maintenance strategies, SAP PM/S4HANA implementation and optimization, inventory management, and advanced analytics applied directly to capital-intensive operations.",
+    "par33": "Field experience and technical discipline are part of our corporate DNA."
   },
-  "nosotros": {
-    "title": "Our Philosophy",
-    "content": "We believe in real transformation. We don't just deliver reports; we deliver tangible operational results."
+
+"contact": {
+    "title": "Contact Us",
+    "client_title": "Looking for a solution to a specific challenge?",
+    "client_text": "We transform complex problems into sustainable results. Tell us about your operation and let's find the best optimization strategy together.",
+    "client_btn": "Start a conversation",
+    
+    "talent_title": "Are you passionate about technical excellence?",
+    "talent_text": "We are looking for professionals who want to make a real impact on the industry. Join our team of expert consultants.",
+    "talent_btn": "View opportunities on LinkedIn"
   },
-  "quehacemos": {
-    "title": "Services that Drive Your Growth",
-    "subtitle": "We provide the support you need for your business to advance solidly."
-  },
-  "trabaja": {
-    "title": "Join GMN",
-    "subtitle": "Leave your details and we will contact you shortly."
-  },
-  "form": {
-    "labels": {
-      "name": "Name:",
-      "email": "Email:",
-      "cv": "CV (PDF format)"
-    },
-    "buttons": {
-      "send_postulation": "Send Application"
-    }
-  },
-  "contacto": {
-    "subtitle": "Do you have a challenge for us?",
-    "address": "Santiago, Chile",
-    "phone": "+56 9 XXXX XXXX"
-  },
-  "misc": {
-    "vermas": "See more",
-    "vermenos": "See less",
-    "scroll": "Scroll"
-  },
-  "title": {
-    "overview": "GMN 2025",
-    "news": "Media"
+
+"footer": {
+    "description": "We support your operational challenges with technical rigor and commitment, ensuring results that endure.",
+    "location_title": "Our Location",
+    "contact_title": "Contact"
   }
 }

@@ -3,7 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title data-key="meta.title"></title>
+    <title data-key="meta.title">GMN</title>
     <link rel="stylesheet" href="/css/styles.css"/>
     <script type="module" src="js/main.js"></script>
   </head>
@@ -31,8 +31,8 @@
             <li><a href="#about" aria-label="About" data-key="nav.navbar4"></a></li>
             <li><a href="#ourjob" aria-label="Our Job" data-key="nav.navbar5"></a></li>
             <li><a href="#success_cases" aria-label="Success Cases" data-key="nav.navbar6"></a></li>
-            <li><a href="#filosofia" aria-label="Philosophy" data-key="nav.navbar7"></a></li>
-            <li><a href="#contacto" aria-label="Contact"data-key="nav.navbar8"></a></li>
+            <li><a href="#culture" aria-label="Culture" data-key="nav.navbar7"></a></li>
+            <li><a href="#contact" aria-label="Contact" data-key="nav.navbar8"></a></li>
           </ul>
         </nav>
         <!-- Right: Language & Toggle -->
@@ -117,7 +117,9 @@
               <li><p data-key="achievements.list4"></p></li>
               <li><p data-key="achievements.list5"></p></li>
             </ul>
-            <a href="#success_cases"><p class="success-cases-link" data-key="achievements.sucess_cases"></p></a>
+            <a href="#success_cases" class="success-cases-link" rel="noopener">
+              <span data-key="achievements.success_cases"></span>
+            </a>
           </div>
         </div>
       </div>
@@ -224,7 +226,8 @@
         </div>
       </div>
     <!--Types of our job-->
-      <div class="job-grid">
+    <!--
+    <div class="job-grid">
         <div class="job-card">
           <h4 class="highlight-orange" data-key="we_do.title1"></h4>
           <div class="job-modal job-left">
@@ -253,11 +256,11 @@
             <p data-key="we_do.par33"></p>
           </div>
         </div>
-      </div>
+      </div>-->
       <!--Check new idea-->
       <div class="accordion">
         <div class="accordion-item">
-          <button type="button" class="accordion-header highlight-orange" aria-expanded="false" data-key="we_do.title1" aria-label="What we do"></button>
+          <button type="button" class="accordion-header highlight-orange" aria-expanded="false" data-key="we_do.title1" aria-label="What we do 01"></button>
           <div class="accordion-panel">
             <div class="accordion-text">
               <p data-key="we_do.par11"></p>
@@ -267,7 +270,7 @@
           </div>
         </div>
         <div class="accordion-item">
-          <button type="button" class="accordion-header highlight-orange" aria-expanded="false" data-key="we_do.title2" aria-label="What we do"></button>
+          <button type="button" class="accordion-header highlight-orange" aria-expanded="false" data-key="we_do.title2" aria-label="What we do 02"></button>
           <div class="accordion-panel">
             <div class="accordion-text">
               <p data-key="we_do.par21"></p>
@@ -278,7 +281,7 @@
           </div>
         </div>
         <div class="accordion-item">
-          <button type="button" class="accordion-header highlight-orange" aria-expanded="false" data-key="we_do.title3" aria-label="What we do"></button>
+          <button type="button" class="accordion-header highlight-orange" aria-expanded="false" data-key="we_do.title3" aria-label="What we do 03"></button>
           <div class="accordion-panel">
             <div class="accordion-text">
               <p data-key="we_do.par31"></p>
@@ -293,310 +296,140 @@
   </section>
 
 <!-- LOGROS section-->
-  <section id="success_cases" class="slide success-class color-bg">
+  <section id="success_cases" class="slide color-bg">
     <div class="margener">
-      <h2 class="highlight-orange" data-key="exitos.title"></h2>
-      <div class="carousel-container">
-<!--Start the new code replace here-->
-        <button id="prevBtn" class="carousel-btn prev" type="button" id="prevBtn">&#10094;</button>
-        <button id="nextBtn"class="carousel-btn next" type="button" id="nextBtn">&#10095;</button>
-        <div class="carousel-viewport">
-          <div class="carousel-track"></div>
-        </div>
-        <div class="carousel-thumbnails"></div>
-          <!--New code to thumbnails
-          <div class="carousel-thumbnails">
-            
-            <div class="thumbnail active" data-index="0">
-                <img src="/img/logo01.webp" alt="exp01">
-            </div>
-            <div class="thumbnail" data-index="1">
-                <img src="/img/logo02.webp" alt="exp02">
-            </div>
-            <div class="thumbnail" data-index="2">
-                <img src="/img/logo03.webp" alt="exp03">
-            </div>
-            <div class="thumbnail" data-index="3">
-                <img src="/img/logo04.webp" alt="exp04">
-            </div>
-            <div class="thumbnail" data-index="3">
-                <img src="/img/logo05.webp" alt="exp05">
-            </div>
-            <div class="thumbnail" data-index="3">
-                <img src="/img/logo06.webp" alt="exp06">
-            </div>
-            <div class="thumbnail" data-index="3">
-                <img src="/img/logo07.webp" alt="exp07">
-            </div>
-            <div class="thumbnail" data-index="3">
-                <img src="/img/logo08.webp" alt="exp08">
-            </div>                                                
+      <h2 class="highlight-orange" data-key="success.title"></h2>
+      <div class="success-class">
+        <div class="carousel-container">
+          <button id="prevBtn" class="carousel-btn prev" type="button" id="prevBtn">&#10094;</button>
+          <button id="nextBtn"class="carousel-btn next" type="button" id="nextBtn">&#10095;</button>
+          <div class="carousel-viewport">
+            <div class="carousel-track"></div>
           </div>
-          <div class="carousel-track">
-          </div>-->
-          <!--End of thumbnails code
-        </div>-->
+          <div class="carousel-thumbnails"></div>
+        </div>
+      </div>  
+    </div>
+  </section>
+
+
+<!-- CULTURE section-->
+  <section id="culture" class="slide culture-class color-bg-alt">
+    <div class="margener">
+      <h2 class="highlight-orange" data-key="culture.title"></h2>
+      <h3 class="gray-subtitle italic" data-key="culture.subtitle"></h3>
+      <div class="culture-container">
+        <div class="culture-item">
+          <h3 class="highlight-orange" data-key="culture.section01"></h3>
+          <div class="culture-row culture-left">
+            <div class="culture-image">
+              <img src="img/cultura_org.webp" alt="Cultura Empresarial">
+            </div>
+            <div class="culture-text">
+              <p data-key="culture.par11"></p>
+              <p data-key="culture.par12"></p>
+            </div>
+          </div>
+        </div>
+
+        <div class="culture-item">
+          <h3 class="highlight-orange" data-key="culture.section02"></h3>
+          <div class="culture-row culture-right">
+            <div class="culture-text">
+              <p data-key="culture.par21"></p>
+              <p data-key="culture.par22"></p>
+              <ul>
+                <li><p style="font-weight: bold" data-key="culture.par22_li01"></p></li>
+                <li><p style="font-weight: bold" data-key="culture.par22_li02"></p></li>
+                <li><p style="font-weight: bold" data-key="culture.par22_li03"></p></li>
+              </ul>
+            </div>
+            <div class="culture-image">
+              <img src="img/iso_certificaciones.webp" alt="Certificaciones">
+            </div>
+          </div>
+        <p data-key="culture.par23"></p>    
+        </div>
+
+        <div class="culture-item">
+          <h3 class="highlight-orange" data-key="culture.section03"></h3>
+          <div class="culture-row culture-left">
+            <div class="culture-image">
+              <img src="img/collage.webp" alt="Cultura Empresarial">
+            </div>
+            <div class="culture-text">
+              <p data-key="culture.par31"></p>
+              <p data-key="culture.par32"></p>
+              <p data-key="culture.par33"></p>
+            </div>
+          </div>
+        </div>
       </div>
     </div>
   </section>
 
-<!-- Main Display 
-        <div class="main-display">
-          <img src="img/bhp2.webp" alt="BHP" class="main-image" id="mainImage">
-          <div class="overlay-content">
-            <h2 class="overlay-title" id="mainTitle">BHP</h2>
-            <p class="overlay-description" id="mainDescription">Global mining and metals company focusing on resources</p>
-          </div>-->
-        <!-- Navigation Buttons 
-          <button class="nav-btn prev-btn" id="prevBtn">❮</button>
-          <button class="nav-btn next-btn" id="nextBtn">❯</button>
-        </div>-->
-        <!-- Thumbnail Carousel -
-        <div class="thumbnail-container">
-          <div class="thumbnail-track" id="thumbnailTrack">
-          </div>
-        </div>
-      </div>
-    </div>
-  </section>->
-
-
-
-<!-- FILOSOFÍA: stacked accordion (place this where your Filosofía section goes) -->
-<!--<section id="filosofia" class="slide">
-
-  <div class="margener">
-
-
-  <h2><span class="highlight-orange"><p5 data-key="filosofia.title"></p5></span></h2>
-
-  <!-- <h4><p style="text-align: center !important; font-style: italic;"><p5 data-key="filosofia.filo1_par1"></p5></p></h4> -->
-<!--  <h4><p style="font-style: italic;"><p5 data-key="filosofia.filo1_par1"></p5></p></h4>
-
-  <div class="accordion">
-    
-
-    <div class="accordion-item">
-      <button class="accordion-header highlight-orange" aria-expanded="false"><p5 data-key="filosofia.filo2"></p5></button>
-      <div class="accordion-panel">
-        <div class="accordion-text">
-          <p><p5 data-key="filosofia.filo2_par1"></p5>
-              <br><br>
-            <p5 data-key="filosofia.filo2_par2"></p5>
-          </p>
-        </div>
-      </div>
-    </div>
-
-
-
-
-    <div class="accordion-item">
-      <button class="accordion-header highlight-orange" aria-expanded="false">
-        <p5 data-key="filosofia.filo3"></p5>
-      </button>
-
-      <!-- Replace ONLY the panel below -->
- <!--     <div class="accordion-panel">
-        <div class="accordion-content">
-          <div class="accordion-text">
-            <p>
-              <p5 data-key="filosofia.filo3_par0"></p5>
-              <br><br>
-              <p5 data-key="filosofia.filo3_par1"></p5>
-            </p>
-
-            <ul>
-              <li><p5 data-key="filosofia.filo3_par1_l1"></p5></li>
-              <li><p5 data-key="filosofia.filo3_par1_l2"></p5></li>
-              <li><p5 data-key="filosofia.filo3_par1_l3"></p5></li>
-            </ul>
-
-            <p>
-              <p5 data-key="filosofia.filo3_par2"></p5>
-            </p>
-          </div>
-
-          <div class="accordion-image">
-            <img
-              src="images/iso_certificaciones.png"
-              alt="Certificaciones ISO 9001, 14001 y 45001"
-            />
-          </div>
-        </div>
-      </div>
-    </div>
-
-
-
-
-    <div class="accordion-item">
-      <button class="accordion-header highlight-orange" aria-expanded="false"><p5 data-key="filosofia.filo4"></p5></button>
-      <div class="accordion-panel">
-
-        
-        <div class="accordion-text quehacemos-content">
-
-          <div class="text-column">            
-            <p><p5 data-key="filosofia.filo4_par1"></p5>
-              <br><br>
-            <p5 data-key="filosofia.filo4_par2"></p5>
-            <br><br>
-          <p5 data-key="filosofia.filo4_par3"></p5></p>
-
-          <div class="button-wrapper">
-              <a href="https://linkedin.com" target="_blank" class="linkedin-link">
-                  <span data-key="filosofia.filo4_btn">Connect on LinkedIn</span>
-              </a>
-          </div>
-
-          </div>
-
-          <div class="image-column">
-            <img src="images/collage.png" alt="Certificación 1">
-          </div>
-
-          
-
-        </div>
-
-      </div>
-    </div>
-  </div>
-
-
-  </div>
-
-
-<!--  MOdify the vision/mision section-->>
-
-<!--
-<section id="filosofia" class="slide">
-  <div class="margener">
-    <h2><span class="highlight-orange"><p5 data-key="filosofia.title"></p5></span></h2>
-    <h4><p style="font-style: italic;"><p5 data-key="filosofia.filo1_par1"></p5></p></h4>
-
-    <div class="filosofia-container">
+<!-- CONTACT section -->
+  <section id="contact" class="slide color-bg">
+    <div class="margener">
+      <h2 class="highlight-orange" data-key="contact.title">Contacto</h2>
       
-      <div class="filosofia-item">
-        <h3 class="highlight-orange"><p5 data-key="filosofia.filo2"></p5></h3>
-        <div class="filosofia-row">
-          <div class="filosofia-image">
-            <img src="images/cultura_org.png" alt="Cultura Empresarial">
-          </div>
-          <div class="filosofia-text">
-            <p>
-              <p5 data-key="filosofia.filo2_par1"></p5>
-              <br><br>
-              <p5 data-key="filosofia.filo2_par2"></p5>
-            </p>
-          </div>
+      <div class="contact-grid">
+        <div class="contact-card">
+          <!-- <div class="contact-icon">🎯</div> -->
+          <h3 class="highlight-orange" data-key="contact.client_title">¿Buscas una solución a un desafío específico?</h3>
+          <p data-key="contact.client_text">Te ayudamos a analizarlo y resolverlo de forma eficiente.</p>
+          <a href="mailto:contacto@gmngroup.cl" class="btn-contact" data-key="contact.client_btn">Contáctanos</a>
+        </div>
+
+        <div class="contact-card">
+          <!-- <div class="contact-icon">🚀</div>-->
+          <h3 class="highlight-orange"data-key="contact.talent_title">¿Te apasiona resolver problemas?</h3>
+          <p data-key="contact.talent_text">Trabaja con nosotros en proyectos reales y de alto impacto.</p>
+          <a href="https://linkedin.com/company/gsapgroup" target="_blank" class="btn-contact secondary" data-key="contact.talent_btn">Conversemos</a>
         </div>
       </div>
-
-      <hr class="separator">
-
-      <div class="filosofia-item">
-        <h3 class="highlight-orange"><p5 data-key="filosofia.filo3"></p5></h3>
-        <div class="filosofia-row">
-          <div class="filosofia-text">
-            <p>
-              <p5 data-key="filosofia.filo3_par0"></p5>
-              <br><br>
-              <p5 data-key="filosofia.filo3_par1"></p5>
-            </p>
-            <ul>
-              <li><p5 data-key="filosofia.filo3_par1_l1"></p5></li>
-              <li><p5 data-key="filosofia.filo3_par1_l2"></p5></li>
-              <li><p5 data-key="filosofia.filo3_par1_l3"></p5></li>
-            </ul>
-            <p><p5 data-key="filosofia.filo3_par2"></p5></p>
-          </div>
-          <div class="filosofia-image">
-            <img src="images/iso_certificaciones.png" alt="Certificaciones ISO">
-          </div>
-        </div>
-      </div>
-
-      <hr class="separator">
-
-      <div class="filosofia-item">
-        <h3 class="highlight-orange"><p5 data-key="filosofia.filo4"></p5></h3>
-        <div class="filosofia-row">
-          <div class="filosofia-image">
-            <img src="images/collage.png" alt="Excelencia">
-          </div>
-          <div class="filosofia-text">
-            <p>
-              <p5 data-key="filosofia.filo4_par1"></p5>
-              <br><br>
-              <p5 data-key="filosofia.filo4_par2"></p5>
-              <br><br>
-              <p5 data-key="filosofia.filo4_par3"></p5>
-            </p>
-          </div>
-        </div>
-      </div>
-
     </div>
-  </div>
-</section>
-
-
-
-
-
-
-
-
-<!-- CONTACTO -->
-<!-- 
-<section id="contacto" class="slide">
-  <div class="margener">
-    
-    <!-- Title above everything -->
-<!--    <div class="contact-header">
-      <h2><span class="highlight-orange"><p5 data-key="contact.title"></p5></span></h2>
-      <h3 class="contact-intro"><p5 data-key="red_contact.negocio_1"></p5></h3>
-      <p class="contact-intro"><p5 data-key="red_contact.negocio_2"></p5>
-        <a href="./contacto.html" target="_blank">
-          <span data-key="red_contact.negocio_3"></span>
-        </a>
-      </p>
-
-      <br><br>
-
-      <h3 class="contact-intro"><p5 data-key="red_contact.trabajo_1"></p5></h3>
-      <p class="contact-intro"><p5 data-key="red_contact.trabajo_2"></p5>
-        <a href="./join.html" target="_blank">
-          <span data-key="red_contact.trabajo_3"></span>
-        </a>
-      </p>
-    </div>
-
-
-</section>
-
-
-
-
-
-
-
-
-
--->
+  </section>
 
   <footer id="footer" class="footer">
-    <div class="footer-content">
-      <p>© 2025 GMN Group. All rights reserved.</p>
-      <div class="socials">
-        <a href="#"><span class="highlight-orange">LinkedIn</span></a> |
-        <a href="#"><span class="highlight-orange">Twitter</span></a>
+    <div class="margener-footer">
+      <div class="footer-container">
+        <div class="footer-column">
+          <h3 class="footer-logo">GMN Group</h3>
+          <p class="footer-description" data-key="footer.description"></p>
+        </div>
+
+        <div class="footer-column">
+          <h4 data-key="footer.location_title"></h4>
+          <p><span>📍</span> Gnral. Manuel Baquedano 239, Oficina 203 <br> Antofagasta, Chile</p>
+        </div>
+
+        <div class="footer-column">
+          <h4 data-key="footer.contact_title"></h4>
+          <a href="mailto:gmn@gmngroup.cl" class="footer-link">
+            <span class="icon">
+              <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="currentColor">
+                <path d="M0 3v18h24v-18h-24zm21.518 2l-9.518 7.713-9.518-7.713h19.036zm-19.518 14v-11.817l10 8.104 10-8.104v11.817h-20z"/>
+              </svg>
+            </span>
+            <span class="text">gmn@gmngroup.cl</span>
+          </a>
+          <a href="https://linkedin.com/company/gsapgroup" target="_blank" rel="noopener" class="footer-link linkedin-link" aria-label="LinkedIn Profile GMN Group">
+            <span class="icon">
+              <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="currentColor">
+                <path d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm-11 19h-3v-11h3v11zm-1.5-12.268c-.966 0-1.75-.79-1.75-1.764s.784-1.764 1.75-1.764 1.75.79 1.75 1.764-.783 1.764-1.75 1.764zm13.5 12.268h-3v-5.604c0-3.368-4-3.113-4 0v5.604h-3v-11h3v1.765c1.396-2.586 7-2.777 7 2.476v6.759z"/>
+              </svg>
+            </span>
+            <span class="text">Global Maintenance Network®</span>
+          </a> 
+        </div>
       </div>
-    </div>
+
+      <div class="footer-bottom">
+        <p>© 2026 GMN Group. All rights reserved.</p>
+      </div>
+    </div>  
   </footer>
 
-</body>
+  </body>
 </html>
-

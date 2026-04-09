@@ -94,6 +94,9 @@ export function closeServicesModal() {
  * Inicializa todos los listeners del modal
  */
 export function initModal() {
+  const verMasButtons = document.querySelectorAll('.ver-mas-btn');
+  if (verMasButtons.length === 0) return; // Si no hay botones, no hagas nada
+
   const modal = ensureModalExists();
 
   // Delegación de eventos para los botones "Ver más"

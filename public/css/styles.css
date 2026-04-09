@@ -429,7 +429,7 @@ body {
 
 /*Sección de noticias*/
 
-.news-class {
+#news-class {
   min-height: 85vh;
   /* 1. Evita que el contenido flote en el centro vertical */
   justify-content: flex !important;
@@ -486,7 +486,7 @@ body {
 
 /*Acerca de nosotros*/
 /* Contenedor de la sección */
-.about-class .margener {
+#about-class .margener {
   padding-bottom: var(--spacing-xxl);
 }
 
@@ -730,7 +730,7 @@ body {
     /* Al activarse, vuelve a su escala normal manteniendo el centro */
   transform: translate(0%, -5%) scale(0.95);
 }
-   
+
 /* Para que se vea en una sola columna al hacer hover */
 /* Izquierda: Se desplaza hacia la derecha para no salirse del borde izquierdo */
 .job-left {
@@ -771,7 +771,7 @@ body {
 /* ===== ACCORDION ===== */
 .accordion {
   width: 100%;
-  max-width: 96%;
+  max-width: 98%;
   margin: var(--spacing-lg) auto 0;
   border-radius: var(--radius-md);
   background: transparent;
@@ -875,9 +875,25 @@ body {
 
 /*Section sucess cases*/
 /* ===== IMAGE CAROUSEL ===== */
+
+#success-class {
+  display: flex;
+  flex-direction: column; /* Alinea carrusel arriba y miniaturas abajo */
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  margin: 0 auto;
+}
+
+#success_cases .margener h2 {
+    margin-bottom: 20px;
+}
+
 .carousel-container {
+    width: 98%;             /* El ancho que definiste originalmente */
+    max-width: 1200px;      /* Opcional: para que no se vea gigante en pantallas 4K */
     position: relative;
-    width: 100%;
+    margin: 0 auto; 
 }
 
 .carousel-viewport {
@@ -901,7 +917,7 @@ body {
 
 .carousel-item img {
     width: 100%;
-    height: 400px;
+    height: 420px;
     object-fit: cover;
     display: block;
 }
@@ -967,31 +983,37 @@ body {
 /* Miniaturas debajo del carrusel */
 .carousel-thumbnails {
     display: flex;
-    justify-content: center;
-    gap: 15px;
-    margin-top: 20px;
-    flex-wrap: wrap; /* Por si añades más en el futuro */
+    justify-content: flex-start;
+    gap: 12px; /* Espaciado entre logos */
+    margin-top: 8px;
+    width: 98%;
+    overflow-x: hidden; /* Cambiamos a hidden para controlar el scroll solo por JS */
+    scrollbar-width: none; /* Oculta scrollbar en Firefox */
+    padding: 10px 0;
+}
+
+.carousel-thumbnails::-webkit-scrollbar {
+  display: none; /* Oculta scrollbar en Chrome/Safari */
 }
 
 .thumbnail {
-    width: 100px;    
-    height: 6cqw;
-    cursor: pointer;
-    border-radius: 6px;
-    background: #f9f9f9; /* Fondo claro para que resalten los logos */
-    border: 2px solid #eee;
-    overflow: hidden;
+    flex: 0 0 120px; /* No permite que el logo se encoja. Ajusta el ancho según tus logos */
+    height: 70px;    /* Ajusta según necesites */
     display: flex;
     align-items: center;
     justify-content: center;
-    padding: 5px; /* Espacio interno para que el logo no toque los bordes */
-    transition: var(--transition-carousel);
-    opacity: 0.6;
-}
+    cursor: pointer;
+    opacity: 0.4; 
+    transition: all 0.3s;
+    border: 2px solid #eee;
+    border-radius: 8px;
+    background: #fff;
+  }
+
 
 .thumbnail img {
-    max-width: 100%;
-    max-height: 100%;
+    max-width: 99%;
+    max-height: 99%;
     object-fit: contain;
 }
 
@@ -1002,9 +1024,206 @@ body {
 .thumbnail.active {
     border: 2px solid var(--color-primary); /* Borde naranja GMN */
     opacity: 1;
-    transform: scale(1.05);
-    background: white;
-    box-shadow: 0 4px 10px rgba(0,0,0,0.1);    
+    transform: scale(1.1);
+    background: var(--color-text-light);
+}
+
+/*Culture section*/
+
+.culture-item {
+  margin-top: 35px;
+  border-top: 2px solid var(--color-primary-hover);
+}
+
+/* El título ahora está fuera de la fila, así que ocupará el 100% */
+.culture-item h3 {
+  display:block;
+  text-align: left; /* O center, según prefieras */
+  border-upper: 
+}
+
+/* La fila que contiene solo la imagen y el texto */
+.culture-row {
+  display: grid;
+  align-items:start;
+  gap: var(--spacing-xl);
+  margin-top: 10px;
+  width: 100%;  
+}
+
+.culture-right {
+  grid-template-columns: 4fr 3fr;
+}
+
+.culture-left {
+  grid-template-columns: 3fr 4fr;
+}
+
+
+.culture-image, .culture-text {
+  flex: 1; /* Esto garantiza que sean exactamente dos columnas de igual ancho */
+}
+
+.culture-image img {
+  width: 100%;
+  height: auto;
+  display: block;
+  object-fit: contain;
+}
+
+/* Ajuste para alinear las viñetas con el texto del párrafo */
+.culture-text ul {
+    list-style-position: outside; /* Asegura que el punto esté fuera del bloque de texto */
+    padding-left: 20px;           /* Empuja la lista a la derecha */
+    margin-bottom: 15px;          /* Espacio con el párrafo siguiente */
+}
+
+.culture-text ul li {
+    margin-bottom: 8px;           /* Espacio entre cada certificación */
+    line-height: 1.4;             /* Mejora la legibilidad */
+}
+
+.culture-text ul li::marker {
+    color: var(--color-primary); 
+}
+
+/*Contact Section*/
+.contact-grid {
+    display: flex;
+    gap: 30px;
+    justify-content: center;
+    margin-top: 40px;
+    flex-wrap: wrap; /* Para móviles */
+}
+
+.contact-card {
+    background: var(--color-surface);
+    padding: 40px;
+    border-radius: var(--radius-md);
+    border: 1px solid var(--color-border);
+    flex: 1;
+    max-width: 450px;
+    text-align: center;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.contact-card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 10px 30px rgba(0,0,0,0.1);
+    border-color: var(--color-primary);
+}
+
+.contact-icon {
+    font-size: 3rem;
+    margin-bottom: 20px;
+}
+
+.btn-contact {
+    display: inline-block;
+    margin-top: 25px;
+    padding: 12px 30px;
+    background-color: var(--color-primary);
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+    font-weight: bold;
+    transition: background 0.3s;
+}
+
+.btn-contact.secondary {
+    background-color: transparent;
+    border: 2px solid var(--color-primary);
+    color: var(--color-primary);
+}
+
+.btn-contact:hover {
+    background-color: var(--color-primary-hover);
+    color: white;
+}
+
+/*Footer */
+.footer {
+    background-color: #1a1a1a; /* Un gris casi negro muy elegante */
+    color: #ffffff;
+    padding: 20px 0 5px;
+    font-size: 0.9rem;
+}
+
+.margener-footer {
+    width: 90%;          /* Un poco menos para dar aire a los costados */
+    max-width: 1200px;   /* Evita que en pantallas gigantes se estire demasiado */
+    margin: 0 auto;      /* ESTO centra el contenedor en la página */
+
+}
+
+.footer-container {
+    display: grid;
+    grid-template-columns: 1.4fr 1.1fr 1fr; /* La descripción ocupa más espacio */
+    gap: 60px;
+    margin-bottom: 20px;
+    align-items: start; 
+
+}
+
+.footer-column {
+    display: flex;
+    flex-direction: column;
+    gap: 3px; /* Espacio vertical entre los enlaces de contacto */
+}
+
+.footer-column h3, .footer-column h4 {
+    color: var(--color-primary); /* Tu naranja corporativo */
+    margin-bottom: 15px;
+}
+
+.footer-link {
+    display: flex;
+    align-items: center; /* ALINEACIÓN VERTICAL CRUCIAL */
+    text-decoration: none;
+    color: #ccc;
+    transition: color 0.3s ease;
+    gap: 10px; /* Espacio horizontal entre icono y texto */
+}
+
+.footer-link:hover {
+    color: var(--color-primary); /* Naranja corporativo al pasar el mouse */
+}
+
+.footer-link .icon {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 20px; /* Ancho fijo para que los textos empiecen en la misma línea */
+    flex-shrink: 0;
+}
+
+.footer-link .icon svg {
+    width: 18px;  /* Ajuste fino para que coincida con el tamaño del emoji */
+    height: 18px;
+}
+
+.footer-link .text {
+    line-height: 1; /* Evita que el interlineado mueva el texto */
+    font-size: 0.9rem;
+}
+
+/* Alineación para la ubicación (párrafo con el pin 📍) */
+.footer-column p {
+    display: flex;
+    align-items: flex-start; /* Alinea el pin con la primera línea de la dirección */
+    gap: 10px;
+    line-height: 1.4;
+}
+
+.footer-bottom {
+    border-top: 1px solid #333;
+    padding: 10px;
+    text-align: center;
+    color: #666;
+    font-size: 0.8rem;
 }
 
 /* Image columns - Grouped 
@@ -2432,8 +2651,6 @@ button:disabled,
   .navbar-nav li {
     margin: var(--spacing-sm) 0;
   }
-
-
 
   .nav-links {
     display: none; /* Ocultar el menú original */

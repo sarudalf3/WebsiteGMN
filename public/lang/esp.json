@@ -9,10 +9,10 @@
     "navbar1": "Inicio",
     "navbar2": "GMN 2025",
     "navbar3": "Noticias",
-    "navbar4": "¿Quiénes somos?", 
-    "navbar5": "¿Qué hacemos?",       
+    "navbar4": "Quienes somos", 
+    "navbar5": "Que hacemos",       
     "navbar6": "Casos de éxito",
-    "navbar7": "Filosofía",
+    "navbar7": "Nuestra cultura",
     "navbar8": "Contacto"
   },
 
@@ -37,7 +37,7 @@
     "list3": "200.000+ Órdenes de Trabajo regularizadas y optimizadas en SAP PM.",
     "list4": "Experiencia real en proyectos de alta criticidad y gran escala.",
     "list5": "50+ Profesionales altamente capacitados en múltiples áreas.",
-    "sucess_cases": "Ver nuestros casos de éxito"
+    "success_cases": "Ver nuestros casos de éxito"
   },
 
   "news": {
@@ -47,7 +47,7 @@
   },
 
   "about_us": {
-    "title1": "¿Quiénes somos?",
+    "title1": "Quienes somos",
     "par11": "Somos Global Maintenance Network (GMN / GSAPGROUP), una consultora latinoamericana con más de 25 años elevando el desempeño de organizaciones intensivas en capital.",
     "par12": " Ponemos el talento de nuestro equipo al servicio de cada operación, integrándonos a los objetivos del cliente con disciplina, análisis profundo y una ejecución que transforma los desafíos en mejoras sostenibles.",
     "par13": "Nuestra trayectoria en maximización de producción, optimización de costos y confiabilidad de activos nos ha permitido impulsar a líderes industriales en Chile y Latinoamérica con resultados medibles y sostenidos en el tiempo.",
@@ -88,13 +88,13 @@
     "par33": "Esto habilita la toma de decisiones instantánea para ejecutivos y equipos operacionales, elevando la eficiencia, la agilidad y la predictibilidad de toda la operación."
   },
 
-  "exitos": {
+  "success": {
     "title": "Casos de éxito",
     "exp_title01": "BHP",
     "exp_desc01": "Más de X proyectos desarrollados: productividad, optimización y gestión de activos, generando un valor agregado aproximado de $ XXXX MUSD.",
     "exp_title02": "CODELCO",
     "exp_desc02": "Empresa estatal chilena dedicada a la explotación minera cuprífera. Hemos desarrado con éxito más de X proyectos, impulsando estandares de operación y logística, los cuales han logrado un aumento en la productividad del X%.",
-    "exp_title03": "CERROMATOSO",
+    "exp_title03": "CERRO MATOSO",
     "exp_desc03": "Se han desarrollado modelos de datos y dashboars automatizados, los cuales han generado una reducción de X horas operacionales a la semana para el personal beneficiado.",
     "exp_title04":"GLENCORE",
     "exp_desc04": "",
@@ -108,40 +108,42 @@
     "exp_desc08": ""
   },
 
-  "nosotros": {
-    "title": "Nuestra Filosofía",
-    "content": "Creemos en la transformación real. No solo entregamos reportes, entregamos resultados tangibles en la operación."
+  "culture": {
+    "title": "Nuestra Cultura",
+    "subtitle": "Nos involucranos con tus desafíos como si fueran propios, acompañándote con compromiso y resultados sostenibles",
+
+    "section01": "Cultura empresarial",
+    "par11": "Construimos relaciones de largo plazo sustentadas en confianza, compromiso y una excelencia técnica que hemos perfeccionado durante décadas. Nos integramos de manera natural a los equipos del cliente, trabajando con rigor, cercanía y una disciplina orientada al valor que garantiza ejecución impecable y mejoras que se consolidan en la operación.",
+    "par12": "En GMN no solo asesoramos: aseguramos implementación efectiva, adopción sostenida y resultados que realmente perduran.",
+
+    "section02": "Certificaciones y estándares",
+    "par21": "Promovemos el aprendizaje continuo, altos estándares de seguridad y una gestión responsable hacia las personas y el entorno.",
+    "par22": "GMN es una empresa Trinorma, certificada bajo estándares internacionales:",
+    "par23": " Estamos acreditados en el sistema SICEP con Categoría A, destacando el 100 % en calidad, medioambiente y automatización, lo que respalda nuestra gestión integral, segura y sostenible.",
+    "par22_li01": "ISO 9001:2015 – Gestión de calidad",
+    "par22_li02": "ISO 14001:2015 – Gestión ambiental",
+    "par22_li03": "ISO 45001:2018 – Seguridad y salud ocupacional",
+
+    "section03": "Excelencia técnica y humana",
+    "par31": "Nuestro valor está en las personas; consultores con experiencia comprobada que hacen que las cosas pasen.",
+    "par32": "Nuestro equipo reúne más de 25 años de experiencia combinada en confiabilidad operacional, estrategias de mantenimiento, implementación y optimización SAP PM/S4HANA, gestión de inventarios y analítica avanzada aplicada directamente a operaciones intensivas en capital",
+    "par33": " La experiencia en terreno y la disciplina técnica son parte de nuestro ADN corporativo."
   },
-  "quehacemos": {
-    "title": "Servicios que Impulsan tu Crecimiento",
-    "subtitle": "Brindamos el respaldo que necesitas para que tu negocio avance con solidez."
+
+"contact": {
+    "title": "Contactanos",
+    "client_title": "¿Buscas una solución a un desafío específico?",
+    "client_text": "Transformamos problemas complejos en resultados sostenibles. Cuéntanos sobre tu operación y busquemos juntos la mejor estrategia de optimización.",
+    "client_btn": "Iniciar conversación",
+    
+    "talent_title": "¿Te apasiona la excelencia técnica?",
+    "talent_text": "Buscamos profesionales que quieran generar un impacto real en la industria. Únete a nuestro equipo de consultores expertos.",
+    "talent_btn": "Ver oportunidades en LinkedIn"
   },
-  "trabaja": {
-    "title": "Únete a GMN",
-    "subtitle": "Déjanos tus datos y te contactaremos a la brevedad."
-  },
-  "form": {
-    "labels": {
-      "name": "Nombre:",
-      "email": "Correo:",
-      "cv": "CV (Formato PDF)"
-    },
-    "buttons": {
-      "send_postulation": "Enviar Postulación"
-    }
-  },
-  "contacto": {
-    "subtitle": "¿Tienes un desafío para nosotros?",
-    "address": "Santiago, Chile",
-    "phone": "+56 9 XXXX XXXX"
-  },
-  "misc": {
-    "vermas": "Ver más",
-    "vermenos": "Ver menos",
-      "scroll": "Desliza"
-  },
-  "title": {
-    "overview": "GMN 2025",
-    "news": "Media"
-  }
+
+"footer": {
+    "description": "Acompañamos tus desafíos operacionales con rigor técnico y compromiso, asegurando resultados que perduran.",
+    "location_title": "Nuestra ubicación",
+    "contact_title": "Contacto"
+  }  
 }

@@ -24,9 +24,6 @@ document.getElementById("language-selector")?.addEventListener("change", (e) => 
     });
 });
 
-// Acordeón Filosofía
-// Accordion logic for Filosofía
-// Accordion behavior (stacked titles)
 (function () {
   const accordion = document.querySelector(".accordion");
   if (!accordion) return;
@@ -62,3 +59,4 @@ document.getElementById("language-selector")?.addEventListener("change", (e) => 
     });
   });
 })();
+

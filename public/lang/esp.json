@@ -130,6 +130,12 @@
     "par33": " La experiencia en terreno y la disciplina técnica son parte de nuestro ADN corporativo."
   },
 
+"footer": {
+    "description": "Acompañamos tus desafíos operacionales con rigor técnico y compromiso, asegurando resultados que perduran.",
+    "location_title": "Nuestra ubicación",
+    "contact_title": "Contacto"
+  },    
+
 "contact": {
     "title": "Contactanos",
     "client_title": "¿Buscas una solución a un desafío específico?",
@@ -139,11 +145,5 @@
     "talent_title": "¿Te apasiona la excelencia técnica?",
     "talent_text": "Buscamos profesionales que quieran generar un impacto real en la industria. Únete a nuestro equipo de consultores expertos.",
     "talent_btn": "Ver oportunidades en LinkedIn"
-  },
-
-"footer": {
-    "description": "Acompañamos tus desafíos operacionales con rigor técnico y compromiso, asegurando resultados que perduran.",
-    "location_title": "Nuestra ubicación",
-    "contact_title": "Contacto"
-  }  
+  }
 }

@@ -22,7 +22,7 @@ export function getTextFromKey(key) {
 export async function loadLanguage(lang, callback) {
   try {
     // Añade la barra inicial / para que siempre busque en la raíz
-    const res = await fetch(`/lang/${lang}.json`);
+    const res = await fetch(`./lang/${lang}.json`);
     if (!res.ok) throw new Error(`Archivo no encontrado: ${lang}.json`);
     
     currentLanguageData = await res.json();

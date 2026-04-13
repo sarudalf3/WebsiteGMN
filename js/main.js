@@ -13,7 +13,35 @@ document.addEventListener('DOMContentLoaded', () => {
         // Si tu i18n.js traduce todo el DOM, no necesitas reinicializar el carrusel aquí.
         initCarousel();
     });
+    // --- INICIO SCROLLSPY ---
+    const sections = document.querySelectorAll('section[id]');
+    const navLinks = document.querySelectorAll('.navbar a');
+
+    window.addEventListener('scroll', () => {
+        let currentId = "";
+        const scrollPosition = window.scrollY + 200; // Offset para detectar la sección antes de llegar arriba
+
+        sections.forEach(section => {
+            const sectionTop = section.offsetTop;
+            const sectionHeight = section.offsetHeight;
+
+            if (scrollPosition >= sectionTop && scrollPosition < sectionTop + sectionHeight) {
+                currentId = section.getAttribute('id');
+            }
+        });
+
+        navLinks.forEach(link => {
+            link.classList.remove('active');
+            // Verificamos que el href coincida con el ID de la sección actual
+            if (link.getAttribute('href') === `#${currentId}`) {
+                link.classList.add('active');
+            }
+        });
+    });
+    // --- FIN SCROLLSPY ---
 });
+
+
 
 document.getElementById("language-selector")?.addEventListener("change", (e) => {
     loadLanguage(e.target.value, () => {

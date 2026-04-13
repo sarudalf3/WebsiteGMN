@@ -55,9 +55,23 @@ export async function loadLanguage(lang, callback) {
 /**
  * Inicializa el idioma basado en preferencia o navegador
  */
-export function initLanguage(callback) {
+/*export function initLanguage(callback) {
   const savedLang = localStorage.getItem('preferredLanguage');
   const browserLang = navigator.language.split('-')[0];
   const defaultLang = savedLang || (browserLang === 'es' ? 'esp' : 'eng');
   loadLanguage(defaultLang, callback);
+}*/
+
+export function initLanguage(callback) {
+  // 1. Obtenemos el idioma guardado o usamos 'esp' por defecto
+  const savedLang = localStorage.getItem('preferredLanguage') || 'esp';
+  
+  // 2. BUSCAMOS EL SELECTOR Y SINCRONIZAMOS EL VALOR VISUAL
+  const languageSelector = document.getElementById("language-selector");
+  if (languageSelector) {
+    languageSelector.value = savedLang;
+  }
+
+  // 3. Cargamos el idioma
+  loadLanguage(savedLang, callback);
 }

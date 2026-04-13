@@ -51,9 +51,13 @@ export function handleHeaderScroll() {
 
 export function initNavObserver() {
   const sections = document.querySelectorAll("section[id]");
-  const navLinks = document.querySelectorAll("#navbar a"); // Usamos el ID del header
+  //const navLinks = document.querySelectorAll("#navbar a"); // Usamos el ID del header
+  const navLinks = document.querySelectorAll(".navbar-nav a, .nav-links a, header nav a");
+
   const observerOptions = {
-    threshold: 0.5
+    root: null,
+    rootMargin: "-20% 0px -70% 0px", // Esto crea una "línea de detección" en la parte superior
+    threshold: 0 
   };
 
   const observer = new IntersectionObserver((entries) => {
@@ -61,8 +65,11 @@ export function initNavObserver() {
       if (entry.isIntersecting) {
         const id = entry.target.getAttribute("id");
         navLinks.forEach((link) => {
+          // 1. LIMPIEZA TOTAL: Quitamos active de todos antes de poner el nuevo
           link.classList.remove("active");
-          if (link.getAttribute("href") === `#${id}`) {
+          // 2. ASIGNACIÓN: Solo al que coincide con el ID actual
+          const href = link.getAttribute("href");
+          if (href === `#${id}` || href.endsWith(`#${id}`)) {
             link.classList.add("active");
           }
         });

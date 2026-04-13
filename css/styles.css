@@ -206,8 +206,14 @@ body {
 }
 
 .navbar-nav a:hover,
-.navbar-nav a.active {
+.navbar-nav a.active, 
+.nav-links a.active {
   color: var(--color-primary);
+}
+
+/* Evita que otros estados interfieran */
+.navbar-nav a:not(.active) {
+    color: #FFFFFF; /* O tu color gris por defecto */
 }
 
 /* Right Menu */
@@ -1176,7 +1182,6 @@ body {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-    text
 }
 
 .contact-card:hover {

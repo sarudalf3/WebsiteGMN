@@ -1355,8 +1355,8 @@ padding-bottom: 4px;
 
 /* ===== RESPONSIVE DESIGN ===== */
 
-/*Nabvar*/
-@media (max-width: 890px) {
+/*Nabvar Links & rolling */
+@media (max-width: 887px) {
     .navbar-nav {
       display: none; /* Se oculta */
       position: absolute;
@@ -1395,8 +1395,7 @@ padding-bottom: 4px;
   }
 }
 
-/* Estado para Desktop */
-@media (min-width: 891px) {
+@media (min-width: 887px) {
     .navbar-toggle {
         display: none; /* Escondemos el botón hamburguesa */
     }
@@ -1409,28 +1408,25 @@ padding-bottom: 4px;
   }      
 }
 
+/*Navbar text size */
 /* --- Ajuste para Laptops Pequeñas / Tablets Grandes (1024px o menos) --- */
 @media (max-width: 1024px) {
     /* Reducimos el tamaño del nombre de la marca */
     .brand-name {
         font-size: 1.2rem; 
     }
-    
     /* Reducimos o quitamos el tagline en pantallas medianas para ahorrar espacio */
     .brand-tagline {
         font-size: 0.8rem;
         margin-top: 5px;
     }
-
     .logo-text {
       min-width: 120px;
     }    
-
     /* Achicamos el espacio entre los enlaces del menú */
     .nav-links {
         gap: 15px; 
     }
-
     .nav-links a {
         font-size: 0.9rem;
     }
@@ -1447,19 +1443,16 @@ padding-bottom: 4px;
         font-size: 0.8rem;
         margin-top: 3px;
     }
-    
     .logo img {
         height: 30px; /* Achicamos un poco el icono de GMN */
     }
-
   .navbar-nav {
     top: 58px;
   }      
 }
 
 
-
-/*Footer*/
+/*Footer order*/
 /* Tablet: Dos columnas (el logo arriba solo, y abajo ubicación y contacto) */
 @media (min-width: 675px) {
   .footer-container {
@@ -1470,11 +1463,9 @@ padding-bottom: 4px;
   .footer-column:first-child {
     grid-column: span 2;
   }
-
   .footer-column h3, .footer-column h4 {
     margin-bottom: 5px;
   }
-
   .footer-link {
     justify-content: center; /* Esto mueve el icono+texto al centro */
     margin: 0px auto;      /* Da espacio vertical */
@@ -1489,22 +1480,18 @@ padding-bottom: 4px;
     text-align: left;
     gap: 18px;
   }
-
   .footer-column:first-child {
     grid-column: span 1;
   }
-
   .footer-column {
     display: flex;
     flex-direction: column;
     align-items: flex-start; /* Fuerza todo el contenido al inicio (izquierda) */
     text-align: left;
   }
-
   .footer-column h3, .footer-column h4 {
     margin-bottom: 18px;
   }
-
   .footer-link {
     justify-content: flex-start !important;
     margin-left: 0;
@@ -1515,12 +1502,19 @@ padding-bottom: 4px;
 }
 
 
+/*Hero Section*/
 @media (max-width: 1400px) {
   .overlay {
     max-width: 60%;
   }
-  :root {
+}
 
+
+/* ===== RESPONSIVE DESIGN ===== */
+/*Text Sizes and margins*/
+
+@media (max-width: 1400px) {
+  :root {
     --font-size-sm: 0.93rem;
     --font-size-base: 0.98rem;  
     --font-size-lg: 1rem;
@@ -1536,6 +1530,99 @@ padding-bottom: 4px;
     --font-size-hero: 4rem;
   }
 }
+
+@media (max-width: 1199px) {
+  :root {
+    /* Typography - Reorganized by size */
+    --font-size-sm: 0.93rem;
+    --font-size-base: 0.98rem;  
+    --font-size-lg: 1rem;
+    --font-size-xl: 1.2rem;
+    /* Heading sizes - Reorganized */
+    --font-size-heading-sm: 1.3rem;
+    --font-size-heading-md: 1.4rem;
+    --font-size-heading-lg: 2.5rem;
+    --font-size-heading-xl: 2rem;
+    --font-size-subheading-lg: 1.8rem;  
+    /* Hero sizes */
+    --font-size-hero-lg: 5rem;
+    --font-size-hero: 4rem;
+  }
+}
+
+@media (max-width: 1023px) {
+  :root {
+    --font-size-hero-lg: 4rem;
+    --font-size-hero: 3.5rem;
+    --font-size-heading-lg: 2.2rem;
+    --font-size-subheading-lg: 1.6rem;
+    --font-size-xl: 1.25rem;
+    --font-size-lg: 1.1rem;
+    
+    --font-size-base: 0.9rem;
+  }
+}
+
+@media (max-width: 768px) {
+  :root {
+    --font-size-hero-lg: 3.5rem;
+    --font-size-hero: 3rem;
+    --font-size-heading-lg: 2rem;
+    --font-size-subheading-lg: 1.5rem;
+    --font-size-xl: 1.15rem;
+    --font-size-lg: 1rem;
+    
+    --font-size-base: 0.875rem;
+  }
+}
+
+@media (max-width: 599px) {
+  :root {
+    --font-size-hero-lg: 3rem;
+    --font-size-hero: 2.5rem;
+    --font-size-heading-lg: 1.8rem;
+    --font-size-subheading-lg: 1.4rem;
+    --font-size-xl: 1.05rem;
+    --font-size-lg: 0.95rem;
+    
+    --font-size-base: 0.85rem;
+  }
+}
+
+@media (max-width: 480px) {
+  :root {
+    --font-size-hero-lg: 2.5rem;
+    --font-size-hero: 2rem;
+    --font-size-heading-lg: 1.6rem;
+    --font-size-subheading-lg: 1.3rem;
+    --font-size-xl: 1rem;
+    --font-size-lg: 0.9rem;
+    
+    --font-size-base: 0.8rem;
+    
+    /* Adjust spacing for mobile */
+    --spacing-xs: 0.2rem;
+    --spacing-sm: 0.35rem;
+    --spacing-md: 0.7rem;
+    --spacing-lg: 1rem;
+    --spacing-xl: 1.5rem;
+    --spacing-xxl: 2rem;
+  }
+}
+
+@media (max-width: 359px) {
+  :root {
+    --font-size-hero-lg: 2rem;
+    --font-size-hero: 1.8rem;
+    --font-size-heading-lg: 1.4rem;
+    --font-size-subheading-lg: 1.2rem;
+    --font-size-xl: 0.95rem;
+    --font-size-lg: 0.85rem;
+    
+    --font-size-base: 0.75rem;
+  }
+}
+
 
 /* High DPI/Retina Displays */
 @media (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi) {
@@ -1568,4 +1655,3 @@ padding-bottom: 4px;
     transform: translateY(0);
   }
 }
-

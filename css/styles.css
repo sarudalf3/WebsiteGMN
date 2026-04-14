@@ -120,6 +120,8 @@
 
 html {
   scroll-behavior: smooth;
+  /* Ajusta este valor según la altura de tu header (aprox 70px - 100px) */
+  scroll-padding-top: 80px; 
 }
 
 body {
@@ -138,13 +140,15 @@ body {
   background: var(--color-header-surface);
   border-bottom: 1px solid var(--color-border);
   z-index: 100;
-  padding: 0.6rem 2rem;
+  padding: 0.6rem 1.2rem;
 }
 
 .navbar-container {
   display: flex;
   align-items: center;
   justify-content: space-between;
+  height: 100%;                   /* Asegura que use todo el alto del header */
+  padding: 0 20px;  
 }
 
 /* Left Menu */
@@ -158,7 +162,7 @@ body {
     display: flex;
     align-items: center;
     text-decoration: none;
-    gap: 12px;
+    gap: 10px;
 }
 
 .logo-link img {
@@ -171,11 +175,17 @@ body {
     display: block;
     unicode-bidi: isolate;
     line-height: 1.1;
+    min-width: 150px;
 } 
+
+.brand-name, .brand-tagline {
+  margin: 0;
+  padding: 0;
+  line-height: 1.2; /* Ajusta para que no ocupen espacio extra */
+}
 
 .brand-name {
   font-size: var(--font-size-xl);
-  margin: 0;
   font-weight: 700;
   color: var(--color-primary);
 }
@@ -183,7 +193,7 @@ body {
 .brand-tagline {
   font-size: var(--font-size-sm);
   color: var(--color-text-header-secondary);
-  margin-top: 6px;
+  margin-top: 3px;
 }
 
 /* Center Menu */
@@ -192,8 +202,8 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
-  gap: var(--spacing-lg);
-  font-size: var(--font-size-lg);
+  gap: var(--spacing-xl);
+  font-size: var(--font-size-sm);
   margin: 0;
   padding: 0;
 }
@@ -203,6 +213,16 @@ body {
   text-decoration: none;
   font-weight: 500;
   transition: color var(--transition-fast);
+  line-height: 1.3; /* Ajusta para que no ocupen espacio extra */
+}
+
+.nav-links a {
+    display: inline-flex; /* Cambia de inline a inline-flex */
+    align-items: center;
+    justify-content: center;
+    text-align: center; /* Centra las líneas entre sí */
+    max-width: 120px;   /* Limita el ancho para forzar el salto si es necesario */
+    word-wrap: break-word; 
 }
 
 .navbar-nav a:hover,
@@ -220,7 +240,8 @@ body {
 .navbar-right {
   display: flex;
   align-items: center;
-  gap: 0.8rem;
+  gap: 15px;           /* Espacio entre el icono y el selector */
+  height: 100%;
 }
 
 .navbar-lang {
@@ -237,6 +258,7 @@ body {
   border: 1px solid var(--color-primary);
   color: var(--color-text-header-primary);
   border-radius: var(--radius-sm);
+  margin-left: 0.8rem;
   padding: var(--spacing-xs) var(--spacing-sm);
   font-size: var(--font-size-sm);
   cursor: pointer;
@@ -247,6 +269,7 @@ body {
   color: var(--color-text-primary);
 }
 
+/*
 .navbar-toggle {
     display: none;
     flex-direction: column;
@@ -257,6 +280,20 @@ body {
     border: none;
     cursor: pointer;
     z-index: 1001;
+}*/
+
+.navbar-toggle {
+    display: flex;       /* Convierte el botón en flex */
+    align-items: center; /* Centra el símbolo ☰ dentro del botón */
+    justify-content: center;
+    background: none;
+    border: none;
+    color: white;
+    font-size: 2rem;
+    padding: 0;
+    margin: 0;
+    line-height: 1;      /* Evita que el alto de línea lo empuje hacia abajo */
+    cursor: pointer;
 }
 
 .navbar-toggle .bar {
@@ -307,17 +344,17 @@ body {
 .overlay {
   position: absolute;
   box-sizing: border-box;
-  background: rgba(0, 0, 0, 0.3);
-  backdrop-filter: blur(3px); 
-  -webkit-backdrop-filter: blur(3px);
+  background: rgba(0, 0, 0, 0.15);
+  backdrop-filter: blur(2px); 
+  -webkit-backdrop-filter: blur(2px);
   padding: var(--spacing-xl);
   border-radius: var(--radius-lg);
   text-align: left;
-  left: 2.7rem;
+  left: 3.5rem;
   top: 30%;
   transform: none;
   margin: 0 auto;
-  max-width: 60%;
+  max-width: 70%;
   width: auto;
   z-index: 2;
 }
@@ -331,7 +368,7 @@ body {
 
 .overlay p {
   color: var(--color-text-banner-secondary);
-  font-size: var(--font-size-base);
+  font-size: var(--font-size-heading);
   gap: 0.8rem;
   font-weight: bold;
 
@@ -723,39 +760,39 @@ body {
 }
 
 /*Slides con hover - Text */
-.job-grid {
+/*.job-grid {
   display: grid;
   /* Obliga a 3 columnas iguales */
-  grid-template-columns: repeat(3, 0.9fr); 
+/*  grid-template-columns: repeat(3, 0.9fr); 
   gap: 20px;
   padding: 30px 0;
   width: 100%;
   /* Evita que los modales generen scroll horizontal */
-  position: relative; 
+/*  position: relative; 
 }
 
 .job-card {
   background: #f4f7f9;
   padding: 15px 10px;
   min-height: 100px; /* Altura unificada */
-  border-radius: 8px;
+/*  border-radius: 8px;
   border: 1px solid #cccccc;
   display: flex;
   align-items: center;
   justify-content: center;
   text-align: center;
   position: relative; /* ANCLA para el modal */
-  transition: all 0.3s ease;
+/*  transition: all 0.3s ease;
   cursor: pointer;
   z-index:15
 }
 
 /* --- EL MODAL (Ventana Emergente) --- */
-.job-modal {
+/*.job-modal {
     position: fixed;
     top: 50%; 
     /* Cambiamos el ancho a uno más manejable para que no choque con los bordes */
-    width: 700px; 
+/*    width: 700px; 
     max-width: 90vw;
     background: white;
     padding: 25px;
@@ -768,7 +805,7 @@ body {
     z-index: 19;
     pointer-events: none;
     /* Transición suave */
-    transition: all 0.4s cubic-bezier(0.165, 0.84, 0.44, 1);
+/*    transition: all 0.4s cubic-bezier(0.165, 0.84, 0.44, 1);
 }
 
 .job-modal h4 {
@@ -776,7 +813,7 @@ body {
     margin-bottom: 10px;
     color: var(--color-primary);
     text-align: left; /* O center, según prefieras */
-}
+/*}
 
 .job-modal p {
     font-size: 0.8rem;
@@ -793,20 +830,20 @@ body {
 
 
 /* --- ESTADO HOVER --- */
-.job-card:hover {
+/*.job-card:hover {
   border-color: var(--color-primary);
   background-color: #f9f9f9;
   /*transform: translateY(-15px);*/
-  opacity: 1;
+/*  opacity: 1;
   visibility: visible;
   z-index: 19;
     /* Al activarse, vuelve a su escala normal manteniendo el centro */
-  transform: translate(0%, -5%) scale(0.95);
+/*  transform: translate(0%, -5%) scale(0.95);
 }
 
 /* Para que se vea en una sola columna al hacer hover */
 /* Izquierda: Se desplaza hacia la derecha para no salirse del borde izquierdo */
-.job-left {
+/*.job-left {
     left: 10px;
 }
 
@@ -817,7 +854,7 @@ body {
 }
 
 /* Centro: Centrado perfecto respecto a su tarjeta */
-.job-middle {
+/*.job-middle {
     left: 50%;
 }
 
@@ -828,10 +865,10 @@ body {
 }
 
 /* Derecha: Se alinea al borde derecho de su tarjeta para no salirse por la derecha */
-.job-right {
+/*.job-right {
     right: 10px;
     left: auto;  /*Reseteamos el left por defecto */
-}
+/*}
 
 .job-card:hover .job-right {
     opacity: 1;
@@ -1233,24 +1270,33 @@ body {
 
 }
 
-.footer-container {
+ /*.footer-container {
     display: grid;
     grid-template-columns: 1.4fr 1.1fr 1fr; /* La descripción ocupa más espacio */
-    gap: 60px;
+ /*    gap: 60px;
     margin-bottom: 20px;
     align-items: start; 
+}*/
 
+.footer-container {
+    display: grid;
+    gap: 10px;
+    /* Por defecto (Móvil): Una sola columna */
+    grid-template-columns: 1fr;
+    text-align: center;
 }
+
 
 .footer-column {
     display: flex;
     flex-direction: column;
     gap: 3px; /* Espacio vertical entre los enlaces de contacto */
-}
+    padding-bottom: 5px;
+  }
 
 .footer-column h3, .footer-column h4 {
     color: var(--color-primary); /* Tu naranja corporativo */
-    margin-bottom: 10px;
+    margin-bottom: 3px;
 }
 
 .footer-link {
@@ -1259,7 +1305,9 @@ body {
     text-decoration: none;
     color: #ccc;
     transition: color 0.3s ease;
-    gap: 15px; /* Espacio horizontal entre icono y texto */
+    gap: 7px; /* Espacio horizontal entre icono y texto */
+    justify-content: center; /* Esto mueve el icono+texto al centro */
+
 }
 
 .footer-link:hover {
@@ -1291,9 +1339,10 @@ padding-bottom: 4px;
 /* Alineación para la ubicación (párrafo con el pin 📍) */
 .footer-column p {
     display: flex;
-    align-items: flex-start; /* Alinea el pin con la primera línea de la dirección */
+    align-items: center; /* Alinea el pin con la primera línea de la dirección */
     gap: 10px;
     line-height: 1.4;
+    justify-content: center;
 }
 
 .footer-bottom {
@@ -1305,6 +1354,167 @@ padding-bottom: 4px;
 }
 
 /* ===== RESPONSIVE DESIGN ===== */
+
+/*Nabvar*/
+@media (max-width: 890px) {
+    .navbar-nav {
+      display: none; /* Se oculta */
+      position: absolute;
+      top: 70px; /* Ajusta según la altura de tu header */
+      left: 0;
+      width: 100%;
+      background-color: #343434; /* Fondo oscuro corporativo */
+      flex-direction: column;
+      padding: 20px 0;
+      text-align: center;
+      box-shadow: 0 4px 6px rgba(0,0,0,0.3);
+    }
+
+    /* Clase que activa el JS al hacer click en el botón */
+    .navbar-nav.active {
+        display: flex;
+    }
+
+  .nav-links {
+    flex-direction: column;
+    gap: 20px;
+  }
+
+.navbar-nav ul {
+  gap: var(--spacing-xs);
+}
+
+  /* Aseguramos que el botón sea visible en móvil */
+  .navbar-toggle {
+    display: block;
+    font-size: 1.8rem;
+    background: none;
+    border: none;
+    color: white;
+    cursor: pointer;
+  }
+}
+
+/* Estado para Desktop */
+@media (min-width: 891px) {
+    .navbar-toggle {
+        display: none; /* Escondemos el botón hamburguesa */
+    }
+    .navbar-nav {
+        display: flex;
+        flex-direction: row;
+    }
+  .navbar-nav ul {
+    gap: var(--spacing-md);
+  }      
+}
+
+/* --- Ajuste para Laptops Pequeñas / Tablets Grandes (1024px o menos) --- */
+@media (max-width: 1024px) {
+    /* Reducimos el tamaño del nombre de la marca */
+    .brand-name {
+        font-size: 1.2rem; 
+    }
+    
+    /* Reducimos o quitamos el tagline en pantallas medianas para ahorrar espacio */
+    .brand-tagline {
+        font-size: 0.8rem;
+        margin-top: 5px;
+    }
+
+    .logo-text {
+      min-width: 120px;
+    }    
+
+    /* Achicamos el espacio entre los enlaces del menú */
+    .nav-links {
+        gap: 15px; 
+    }
+
+    .nav-links a {
+        font-size: 0.9rem;
+    }
+}
+
+/* --- Ajuste para Tablets (768px o menos) --- */
+@media (max-width: 768px) {
+    /* Aquí es donde usualmente el menú se convierte en hamburguesa, 
+       pero si aún se ve horizontal, bajamos más los tamaños */
+    .brand-name {
+        font-size: 1.1rem; 
+    }
+    .brand-tagline {
+        font-size: 0.8rem;
+        margin-top: 3px;
+    }
+    
+    .logo img {
+        height: 30px; /* Achicamos un poco el icono de GMN */
+    }
+
+  .navbar-nav {
+    top: 58px;
+  }      
+}
+
+
+
+/*Footer*/
+/* Tablet: Dos columnas (el logo arriba solo, y abajo ubicación y contacto) */
+@media (min-width: 675px) {
+  .footer-container {
+    grid-template-columns: 1fr 1fr;
+    gap: 15px;
+  }
+  /* Hacemos que la primera columna (Logo) ocupe todo el ancho arriba */
+  .footer-column:first-child {
+    grid-column: span 2;
+  }
+
+  .footer-column h3, .footer-column h4 {
+    margin-bottom: 5px;
+  }
+
+  .footer-link {
+    justify-content: center; /* Esto mueve el icono+texto al centro */
+    margin: 0px auto;      /* Da espacio vertical */
+    gap: 10px;
+  }
+}  
+
+/* Desktop: Volvemos a las 3 columnas originales */
+@media (min-width: 1024px) {
+  .footer-container {
+    grid-template-columns: 1.5fr 1.2fr 1.0fr;
+    text-align: left;
+    gap: 18px;
+  }
+
+  .footer-column:first-child {
+    grid-column: span 1;
+  }
+
+  .footer-column {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start; /* Fuerza todo el contenido al inicio (izquierda) */
+    text-align: left;
+  }
+
+  .footer-column h3, .footer-column h4 {
+    margin-bottom: 18px;
+  }
+
+  .footer-link {
+    justify-content: flex-start !important;
+    margin-left: 0;
+    padding-left: 0;
+    width: 100%;
+    gap: 15px;
+  }
+}
+
+
 @media (max-width: 1400px) {
   .overlay {
     max-width: 60%;

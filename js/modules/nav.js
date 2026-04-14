@@ -5,27 +5,23 @@
  */
 export function initMobileMenu() {
   const menuToggle = document.querySelector('.navbar-toggle'); 
-  const navContainer = document.querySelector('.navbar-nav');
+  const navMenu = document.querySelector('.navbar-nav');
+  const navLinks = document.querySelectorAll('.nav-links a');
 
-  if (menuToggle && navContainer) {
+  if (menuToggle && navMenu) {
     menuToggle.addEventListener('click', () => {
-      // Alternar clase para mostrar/ocultar menú
-      const isActive = navContainer.classList.toggle('navbar--active');
-      
-      // Accesibilidad
-      menuToggle.setAttribute('aria-expanded', isActive);
-      
-      // Opcional: animación de las barras (hamburguesa a X)
-      menuToggle.classList.toggle('is-active');
+      // Alternamos la clase 'active' que creamos en el CSS
+      navMenu.classList.toggle('active');
+
+   // Accesibilidad: cambia de ☰ a X opcionalmente o solo cambia el aria
+      const expanded = navMenu.classList.contains('active');
+      menuToggle.setAttribute('aria-expanded', expanded);
     });
 
-    // Cerrar el menú automáticamente al hacer clic en un enlace
-
-    const links = navContainer.querySelectorAll('.nav-links a');
-    links.forEach(link => {
+    // Cerrar el menú automáticamente cuando el usuario haga clic en una sección
+    navLinks.forEach(link => {
       link.addEventListener('click', () => {
-        navContainer.classList.remove('navbar--active');
-        menuToggle.classList.remove('is-active');
+        navMenu.classList.remove('active');
       });
     });
   }

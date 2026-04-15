@@ -1827,6 +1827,7 @@ padding-bottom: 4px;
     --font-size-hero: 4rem;
     --font-size-hero-sm: 3.5rem;
 
+    --font-size-heading-md: 1.6rem;
     --font-size-heading-lg: 2.2rem;
     --font-size-subheading-lg: 1.6rem;
 
@@ -1840,7 +1841,6 @@ padding-bottom: 4px;
   }
 }
 
-
 @media (max-width: 768px) {
   :root {
     --font-size-hero-lg: 3.5rem;
@@ -1849,6 +1849,8 @@ padding-bottom: 4px;
     --font-size-hero-sm: 2.8rem;
 
     --font-size-heading-lg: 2rem;
+    --font-size-heading-md: 1.6rem;
+
     --font-size-subheading-lg: 1.5rem;
 
     --font-size-xl: 1.1rem;
@@ -1869,6 +1871,8 @@ padding-bottom: 4px;
     --font-size-hero-sm: 2.3rem;
 
     --font-size-heading-lg: 1.8rem;
+    --font-size-heading-md: 1.3rem;
+
     --font-size-subheading-lg: 1.4rem;
     --font-size-xl: 1.05rem;
     --font-size-lg: 0.95rem;
@@ -1889,6 +1893,7 @@ padding-bottom: 4px;
     --font-size-hero-sm: 1.7rem;
 
     --font-size-heading-lg: 1.6rem;
+    
     --font-size-subheading-lg: 1.3rem;
     --font-size-xl: 1rem;
     --font-size-lg: 0.9rem;

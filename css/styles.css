@@ -1110,7 +1110,7 @@ body {
 .accordion-header[aria-expanded="true"]::after {
   transform: rotate(45deg);
   content: "×";
-  margin-right: 25px;
+  margin-right: 15px;
   font-size: var(--spacing-xxl);
 }
 

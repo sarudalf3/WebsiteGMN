@@ -8,7 +8,7 @@
   --color-background2: #f8f8f8;
   --color-surface: #ffffff;
   --color-header-surface: #080808;
-  --color-surface-light: #ffdaaa;
+  --color-surface-light: #fcf5ec;
   /* --color-surface-light: var(--color-primary-hover); */
 
   --color-background-accordion: #f9f9f9;
@@ -1077,7 +1077,7 @@ body {
 
 .accordion-header {
   width: 100%;
-  padding: var(--spacing-lg);
+  padding: var(--spacing-sm) var(--spacing-md);
   font-weight: bold;
   background: transparent;
   border: none;
@@ -1102,7 +1102,7 @@ body {
   position: static;
   margin-left: 15px;
   transition: transform 0.3s ease;
-  color: var(--color-text-secondary);
+  color: var(--color-primary);
   font-size: var(--spacing-xxl);
   flex-shrink: 0;
 }
@@ -1160,13 +1160,16 @@ body {
 /*Section sucess cases*/
 /* ===== IMAGE CAROUSEL ===== */
 
-#success-class {
+.success-class {
   display: flex;
+  flex: 0 0 100%; /* Por defecto, un caso por pantalla (móvil) */
   flex-direction: column; /* Alinea carrusel arriba y miniaturas abajo */
   align-items: center;
   justify-content: center;
   width: 100%;
   margin: 0 auto;
+  padding: 0 var(--spacing-md);
+  box-sizing: border-box;  
 }
 
 #success_cases .margener h2 {
@@ -1212,10 +1215,10 @@ body {
     bottom:0;
     left:0;
     right:0;
-    top: 50%;
-    padding: 20px 14px 14px;
-    /* Degradado oscuro para legibilidad (Gris 20% - 80%) */
-    background: rgba(0, 0, 0, 0.1);
+    top: 40%;
+    padding: var(--spacing-lg);
+    /* Degradado oscuro para legibilidad (Gris 20% - 80%) 
+    background: rgba(0, 0, 0, 0.1);*/
     -webkit-backdrop-filter: blur(1px); /* Safari support */
     backdrop-filter: blur(1px); 
     border-radius: 0 0 15px 15px;
@@ -1224,16 +1227,14 @@ body {
 }
 
 .carousel-caption h3 {
-    font-size: var(--font-size-heading-xxl);
+    font-size: var(--font-size-subheading-lg);
     color: var(--color-text-header-primary); /* Tu naranja corporativo */
-    margin-top: 0px;
-    padding-top: 0px;
     font-weight: 800;
     text-shadow: 2px 2px 5px rgba(0,0,0,0.3);
 }
 
 .carousel-caption p {
-    font-size: var(--font-size-heading-md);
+    font-size: var(--font-size-xl);
     max-width: 800px;
     line-height: 1.3;
     color: var(--color-text-header-primary);
@@ -1248,11 +1249,11 @@ body {
     z-index: 10;
     background: rgba(255, 255, 255, 0.8);
     border: none;
-    padding: 5px;
+    padding: 0;
     cursor: pointer;
     border-radius: 50%;
     width: 40px;
-    height: 40px;    
+    height: 40px;   
 }
 
 .prev { left: 20px; }
@@ -1267,13 +1268,14 @@ body {
 /* Miniaturas debajo del carrusel */
 .carousel-thumbnails {
     display: flex;
-    justify-content: flex-start;
-    gap: 12px; /* Espaciado entre logos */
-    margin-top: 8px;
-    width: 98%;
+    flex-wrap: nowrap; /* Permite que bajen si hay muchos */
     overflow-x: hidden; /* Cambiamos a hidden para controlar el scroll solo por JS */
-    scrollbar-width: none; /* Oculta scrollbar en Firefox */
-    padding: 10px 0;
+    scroll-behavior: smooth;
+    gap: var(--spacing-md); /* Espaciado entre logos */
+    padding: var(--spacing-lg) 0;
+    width: 98%;
+    justify-content: flex-start;
+    cursor: grab;
 }
 
 .carousel-thumbnails::-webkit-scrollbar {
@@ -1286,9 +1288,10 @@ body {
     display: flex;
     align-items: center;
     justify-content: center;
-    cursor: pointer;
     opacity: 0.4; 
-    transition: all 0.3s;
+    transition: all 0.3s ease;
+    filter: grayscale(35%);    
+    padding: 2px;
     border: 2px solid #eee;
     border-radius: 8px;
     background: #fff;
@@ -1296,8 +1299,8 @@ body {
 
 
 .thumbnail img {
-    max-width: 99%;
-    max-height: 99%;
+    max-width: 100%;
+    max-height: 100%;
     object-fit: contain;
 }
 
@@ -1307,12 +1310,26 @@ body {
 
 .thumbnail.active {
     border: 2px solid var(--color-primary); /* Borde naranja GMN */
+    filter: grayscale(5%);  
     opacity: 1;
-    transform: scale(1.1);
-    background: var(--color-text-light);
+    transform: scale(1.15);
+    background: var(--color-surface-light);
 }
 
 /*Culture section*/
+.culture-container {
+  display: flex;
+  flex-direction: column;
+  gap: var(--spacing-xxl); /* Espacio amplio entre los 3 bloques de cultura */
+}
+
+/* La fila que contiene solo la imagen y el texto */
+.culture-row {
+  display: flex;
+  align-items:flex-start;
+  gap: var(--spacing-md);
+  margin-top: var(--spacing-md);
+}
 
 .culture-item {
   margin-top: 35px;
@@ -1326,15 +1343,6 @@ body {
   padding-top: 5px;
 }
 
-/* La fila que contiene solo la imagen y el texto */
-.culture-row {
-  display: grid;
-  align-items:start;
-  gap: var(--spacing-xl);
-  margin-top: 10px;
-  width: 100%;  
-}
-
 .culture-right {
   grid-template-columns: 4fr 3fr;
 }
@@ -1343,9 +1351,12 @@ body {
   grid-template-columns: 3fr 4fr;
 }
 
+.culture-image {
+  flex: 1; 
+}
 
-.culture-image, .culture-text {
-  flex: 1; /* Esto garantiza que sean exactamente dos columnas de igual ancho */
+.culture-text {
+  flex: 1.2; 
 }
 
 .culture-image img {
@@ -1356,19 +1367,38 @@ body {
 }
 
 /* Ajuste para alinear las viñetas con el texto del párrafo */
-.culture-text ul {
+/*.culture-text ul {
     list-style-position: outside; /* Asegura que el punto esté fuera del bloque de texto */
-    padding-left: 20px;           /* Empuja la lista a la derecha */
-    margin-bottom: 15px;          /* Espacio con el párrafo siguiente */
-}
+/*    padding-left: 20px;           /* Empuja la lista a la derecha */
+/*    margin-bottom: 15px;          /* Espacio con el párrafo siguiente */
+/*}
 
 .culture-text ul li {
     margin-bottom: 8px;           /* Espacio entre cada certificación */
-    line-height: 1.4;             /* Mejora la legibilidad */
+/*    line-height: 1.4;             /* Mejora la legibilidad */
+/*}
+
+/*.culture-text ul li::marker {
+    color: var(--color-primary); 
+}*/
+
+.culture-text ul {
+  list-style: none;
+  padding-left: 0;
+  margin-top: var(--spacing-md);
 }
 
-.culture-text ul li::marker {
-    color: var(--color-primary); 
+.culture-text li {
+  margin-bottom: 10px;
+  padding-left: 20px;
+  position: relative;
+}
+
+.culture-text li::before {
+  content: "→";
+  color: var(--color-primary);
+  position: absolute;
+  left: 0;
 }
 
 /*Contact Section*/
@@ -2027,6 +2057,83 @@ padding-bottom: 4px;
   }
 }
 
+
+/*Success cases section*/
+@media (max-width: 921px) {
+.carousel-item img {
+    height: 350px;
+}
+.thumbnail {
+    flex: 0 0 110px;
+    height: 65px;
+  }  
+}
+
+@media (max-width: 768px) {
+  .carousel-item img {
+      height: 280px;
+    }
+  .carousel-btn {
+      top: 20%; 
+    }
+  .carousel-caption {
+    top: 30%;
+  }
+  .thumbnail {
+    flex: 0 0 100px;
+    height: 60px;
+  }
+}  
+
+@media (max-width: 480px) {
+  .carousel-item img {
+      height: 250px;
+    }
+  .carousel-caption p {
+    font-size: var(--font-size-base);
+  }
+  .thumbnail {
+    flex: 0 0 70px;
+    height: 40px;
+  }
+
+}
+
+@media (max-width: 768px) {
+.carousel-btn {
+    width: 30px;
+    height: 30px;   
+  }
+}
+
+
+/*Culture section*/
+@media (max-width: 1023px) {
+  .culture-row {
+    flex-direction: column; /* Apilado normal para culture-left */
+    gap: var(--spacing-lg);
+  }
+
+  /* Invertimos el orden solo en las filas que tienen la imagen a la derecha */
+  .culture-row.culture-right {
+    flex-direction: column;
+  }
+
+  .culture-image, .culture-text {
+    width: 100%;
+  }
+
+  .culture-image img {
+    max-width: 600px; /* Evitamos que las fotos se vuelvan gigantes en tablets */
+    margin: 0 auto;
+  }
+}
+
+@media (max-width: 768px) {
+  .culture-class h3 {
+    text-align: center; /* Centramos subtítulos en móviles */
+  }
+}
 
 /* ===== RESPONSIVE DESIGN ===== */
 /*Text Sizes and margins*/

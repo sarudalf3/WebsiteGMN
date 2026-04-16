@@ -31,7 +31,7 @@ export function initCarousel() {
     thumbContainer.innerHTML = '';
 
     // 1. Crear Slides Principales
-    successCases.forEach((item, index) => {
+    successCases.forEach((item) => {
         // Slide Principal
         const slide = document.createElement('div');
         slide.className = 'carousel-item';
@@ -51,7 +51,7 @@ export function initCarousel() {
         thumb.className = 'thumbnail';
         thumb.setAttribute('data-index', index);
         thumb.innerHTML = `<img src="${item.logo}" alt="Logo ${index}">`;
-        thumb.onclick = () => goToSlide(index);
+        thumb.addEventListener('click', () => goToSlide(index));
         thumbContainer.appendChild(thumb);
     });
 
@@ -62,7 +62,7 @@ export function initCarousel() {
     originalThumbs.forEach(thumb => {
         const clone = thumb.cloneNode(true);
         clone.classList.add('clone');
-        clone.onclick = () => goToSlide(parseInt(clone.getAttribute('data-index')));
+        clone.addEventListener('click', () => goToSlide(parseInt(clone.getAttribute('data-index'))));
         thumbContainer.appendChild(clone);
     });    
 
@@ -83,23 +83,20 @@ export function initCarousel() {
         // Actualizar estado activo en todos (originales y clones)
         const allThumbs = thumbContainer.querySelectorAll('.thumbnail');
         allThumbs.forEach(t => {
-            if (parseInt(t.getAttribute('data-index')) === currentIndex) {
-                t.classList.add('active');
-            } else {
-                t.classList.remove('active');
-            }
+            const isMatch = parseInt(t.getAttribute('data-index')) === currentIndex;
+            t.classList.toggle('active', isMatch);      
         });
-
         // --- LÓGICA DE CENTRADO ---
         // Buscamos el thumbnail "original" (el que está en medio de los clones)
         // Los originales ahora empiezan después de la primera tanda de clones
         const targetThumb = originalThumbs[currentIndex];
 
         if (targetThumb) {
+
             const containerWidth = thumbContainer.offsetWidth;
             const thumbWidth = targetThumb.offsetWidth;
+            
             const thumbOffset = targetThumb.offsetLeft;
-
             const scrollAmount = thumbOffset - (containerWidth / 2) + (thumbWidth / 2);
 
             thumbContainer.scrollTo({

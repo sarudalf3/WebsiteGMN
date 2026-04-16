@@ -1077,7 +1077,7 @@ body {
 
 .accordion-header {
   width: 100%;
-  padding: var(--spacing-sm) var(--spacing-md);
+  padding: var(--spacing-md) var(--spacing-lg);
   font-weight: bold;
   background: transparent;
   border: none;
@@ -1100,7 +1100,7 @@ body {
 .accordion-header::after {
   content: "▸";
   position: static;
-  margin-left: 15px;
+  margin-right: 15px;
   transition: transform 0.3s ease;
   color: var(--color-primary);
   font-size: var(--spacing-xxl);
@@ -1110,7 +1110,8 @@ body {
 .accordion-header[aria-expanded="true"]::after {
   transform: rotate(45deg);
   content: "×";
-  font-size: var(--spacing-xl);
+  margin-right: 25px;
+  font-size: var(--spacing-xxl);
 }
 
 .accordion-item.active .accordion-header::after {
@@ -1332,7 +1333,7 @@ body {
 }
 
 .culture-item {
-  margin-top: 35px;
+  margin-top: var(--spacing-sm);
   border-top: 2px solid var(--color-primary-hover);
 }
 

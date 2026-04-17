@@ -3,6 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
     <title data-key="meta.title">GMN</title>
     <link rel="stylesheet" href="css/styles.css"/>
     <script type="module" src="js/main.js"></script>
@@ -52,10 +53,9 @@
 
   <!-- HOME -->
   <section id="home" class="hero"> 
-    <video autoplay muted loop class="bg-video">
-      <source src="https://res.cloudinary.com/dech95yov/video/upload/f_auto,q_auto:best/Portada_xytqox.mp4" type="video/mp4"/>
+    <video autoplay muted loop playsinline webkit-playsinline poster="./img/hero_video.webm"  class="bg-video">
+      <source src="./video/hero_video.webm" type="video/webm"/>
     </video>
-
     <div class="overlay">
       <h1 data-key="home.title1"></h1>
       <h1 class="highlight-orange" data-key="home.title2"></h1>
@@ -187,7 +187,7 @@
       <div class="team-grid">
         <div class="team-card">
           <div class="team-card__image">
-            <img src="./images/sa.jfif" alt="Sergio Adauy">
+            <img src="./img/sa.webp" alt="Sergio Adauy">
           </div>
           <div class="team-card__content">
             <h3 class="member-name">Sergio Adauy</h3>
@@ -206,7 +206,7 @@
         
         <div class="team-card">
           <div class="team-card__image">
-            <img src="./images/mm.jfif" alt="Marcelo Morales">
+            <img src="./img/mm.webp" alt="Marcelo Morales">
           </div>
           <div class="team-card__content">
             <h3 class="member-name">Marcelo Morales</h3>
@@ -316,8 +316,8 @@
       <h2 class="highlight-orange" data-key="success.title"></h2>
       <div class="success-class">
         <div class="carousel-container">
-          <button id="prevBtn" class="carousel-btn prev" type="button" id="prevBtn">&#10094;</button>
-          <button id="nextBtn"class="carousel-btn next" type="button" id="nextBtn">&#10095;</button>
+          <button id="prevBtn" class="carousel-btn prev" type="button">&#10094;</button>
+          <button id="nextBtn"class="carousel-btn next" type="button">&#10095;</button>
           <div class="carousel-viewport">
             <div class="carousel-track"></div>
           </div>

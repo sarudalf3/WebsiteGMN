@@ -1220,7 +1220,7 @@ body {
     padding: var(--spacing-lg);
     /* Degradado oscuro para legibilidad (Gris 20% - 80%) 
     background: rgba(0, 0, 0, 0.1);*/
-    -webkit-backdrop-filter: blur(1px); /* Safari support */
+    -webkit-backdrop-filter: blur(1px); 
     backdrop-filter: blur(1px); 
     border-radius: 0 0 15px 15px;
     pointer-events: none; /* No interfiere con clics */
@@ -1361,7 +1361,7 @@ body {
 }
 
 .culture-image img {
-  width: 100%;
+  width: 95%;
   height: auto;
   display: block;
   object-fit: contain;

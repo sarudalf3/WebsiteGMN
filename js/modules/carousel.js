@@ -2,14 +2,14 @@
 import { getTextFromKey } from './i18n.js';
 
 const successCases = [
-    { id: 1, title: "success.exp_title01", desc: "success.exp_desc01", logo: "./img/logo01.webp", img: "./img/success01.webp"},
-    { id: 2, title: "success.exp_title02", desc: "success.exp_desc02", logo: "./img/logo02.webp", img: "./img/success02.webp"},
-    { id: 3, title: "success.exp_title03", desc: "success.exp_desc03", logo: "./img/logo03.webp", img: "./img/success03.webp"},
-    { id: 4, title: "success.exp_title04", desc: "success.exp_desc04", logo: "./img/logo04.webp", img: "./img/success04.webp"},
-    { id: 5, title: "success.exp_title05", desc: "success.exp_desc05", logo: "./img/logo05.webp", img: "./img/success05.webp"},
-    { id: 6, title: "success.exp_title06", desc: "success.exp_desc06", logo: "./img/logo06.webp", img: "./img/success06.webp"},
-    { id: 7, title: "success.exp_title07", desc: "success.exp_desc07", logo: "./img/logo07.webp", img: "./img/success07.webp"},
-    { id: 8, title: "success.exp_title08", desc: "success.exp_desc08", logo: "./img/logo08.webp", img: "./img/success08.webp"},
+    { id: 1, title: "success.exp_title01", desc: "success.exp_desc01", logo: "./img/logo01.webp", img: "./img/success01.jpg"},
+    { id: 2, title: "success.exp_title02", desc: "success.exp_desc02", logo: "./img/logo02.webp", img: "./img/success02.jpg"},
+    { id: 3, title: "success.exp_title03", desc: "success.exp_desc03", logo: "./img/logo03.webp", img: "./img/success03.jpg"},
+    { id: 4, title: "success.exp_title04", desc: "success.exp_desc04", logo: "./img/logo04.webp", img: "./img/success04.jpg"},
+    { id: 5, title: "success.exp_title05", desc: "success.exp_desc05", logo: "./img/logo05.webp", img: "./img/success05.jpg"},
+    { id: 6, title: "success.exp_title06", desc: "success.exp_desc06", logo: "./img/logo06.webp", img: "./img/success06.jpg"},
+    { id: 7, title: "success.exp_title07", desc: "success.exp_desc07", logo: "./img/logo07.webp", img: "./img/success07.jpg"},
+    { id: 8, title: "success.exp_title08", desc: "success.exp_desc08", logo: "./img/logo08.webp", img: "./img/success08.jpg"},
 ];
 
 let currentIndex = 0; // Empezamos en 0

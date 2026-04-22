@@ -31,14 +31,14 @@ export async function loadLanguage(lang, callback) {
     // Traducir elementos estándar
     document.querySelectorAll("[data-key]").forEach(el => {
       const value = getTextFromKey(el.dataset.key);
-      if (value) el.textContent = value;
+      if (value) el.innerHTML = value;
     });
 
     // Traducir botones con estructura específica
     document.querySelectorAll("button[data-key]").forEach(button => {
       const value = getTextFromKey(button.dataset.key);
       const btnText = button.querySelector('.btn-text');
-      if (value && btnText) btnText.textContent = value;
+      if (value && btnText) btnText.innerHTML = value;
     });
 
     console.log(`Idioma cargado: ${lang}`);

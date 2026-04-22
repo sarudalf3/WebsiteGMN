@@ -48,12 +48,14 @@
   --font-size-xs: 0.9rem;
   --font-size-sm: 0.95rem;
   --font-size-base: 1rem;  
+  --font-size-md: 1.1rem;  
   --font-size-lg: 1.2rem;
   --font-size-xl: 1.5rem;
+  --font-size-xxl: 1.6rem;
 
   /* Heading sizes - Reorganized */
   --font-size-heading-sm: 1.6rem;
-  --font-size-heading-md: 1.7rem;
+  --font-size-heading-md: 2.1rem;
   --font-size-heading-lg: 3rem;
   --font-size-heading-xl: 2.2rem;
   --font-size-heading-xxl: 2.6rem;
@@ -63,7 +65,7 @@
   --font-size-hero-lg: 6rem;
   --font-size-hero-md: 5rem;
   --font-size-hero: 4rem;
-  --font-size-hero-sm: 3rem;
+  --font-size-hero-sm: 3.5rem;
 
   /* Transitions */
   --transition-smooth: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
@@ -149,7 +151,8 @@ body {
   align-items: center;
   justify-content: space-between;
   height: 100%;                   /* Asegura que use todo el alto del header */
-  padding: 0 20px;  
+  padding: 0 10px;
+  gap: var(--spacing-md);              /* Espacio entre los elementos del header */  
 }
 
 /* Left Menu */
@@ -192,9 +195,10 @@ body {
 }
 
 .brand-tagline {
-  font-size: var(--font-size-sm);
+  font-size: var(--font-size-md);
   color: var(--color-text-header-secondary);
   margin-top: 3px;
+  margin-bottom: 5px;
 }
 
 /* Center Menu */
@@ -390,7 +394,7 @@ body {
   color: white;
   transform: none;
   margin: 0 auto;
-  max-width: 800px;
+  max-width: 900px;
   width: auto;
   z-index: 1;
 }
@@ -405,12 +409,12 @@ body {
 
 .overlay p {
   color: var(--color-text-banner-secondary);
-  font-size: var(--font-size-xl);
+  font-size: var(--font-size-xxl);
   margin-top: var(--spacing-md);
-  max-width: 700px;
+  max-width: 830px;
   gap: 0.8rem;
   font-weight: bold;
-
+  white-space: pre-line;
 }
 
 
@@ -427,7 +431,7 @@ body {
 }
 
 .slide h2 {
-  font-size: var(--font-size-hero);
+  font-size: var(--font-size-hero-md);
   line-height: 1.1;
 }
 
@@ -459,11 +463,14 @@ body {
 }
 
 .margener h2 {
-    margin-top: 0;
+    margin-top: var(--spacing-lg);
+    margin-bottom: var(--spacing-xs);
+
 }
 
 .margener h3 {
-    margin-bottom: 5px;
+    margin: var(--spacing-lg) 0;
+    line-height: 1.2;
 }
 
 .margener p {
@@ -482,7 +489,7 @@ body {
   display: flex;
   gap: var(--spacing-md); /* Usando tus variables de espacio */
   align-items: stretch;
-  margin-top: var(--spacing-md);
+  margin-top: var(--spacing-xl);
 }
 
 /* El contenedor padre se convierte en un flexbox */
@@ -491,12 +498,12 @@ body {
   flex-direction: column; /* ESTO cambia la orientación a vertical */
   align-items: center; /* Centra la imagen y el texto verticalmente */
   gap: 0;         /* Espacio entre la imagen y el texto */
-  padding: 0.5rem 1rem;
+  padding: var(--spacing-sm) var(--spacing-md);
   background-color: #ffffff;
   border: 2px solid var(--color-primary); 
   border-radius: 8px; 
-  width: 100%; 
-  max-width: 350px;
+  width: 85%; 
+  max-width: 420px;
   box-sizing: border-box; /* Asegura que el borde no agrande la tarjeta */
   transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
@@ -508,18 +515,17 @@ body {
 
 .cards-container {
   display: flex;
-  justify-content: center;
+  justify-content: center; /* Centra las tarjetas dentro del contenedor */
   gap: 20px;
   flex-wrap: wrap;
-  max-width: 1100px;
+  max-width: 600px;
   margin: 0 auto;
-  padding: 20px;
 }
 
 .cards-image {
   flex: 0 0 auto;     /* No crece, no se encoge, ancho fijo de 100px */
-  width: 100px; /* Tamaño controlado para que no opaque al número */
-
+  width: 70px; /* Tamaño controlado para que no opaque al número */
+  margin: 5px;
 }
 
 .cards-image img {
@@ -538,10 +544,15 @@ body {
     display: flex;
     align-items: center; /* Alinea el centro del icono con el centro del número */
     justify-content: center; /* Centrado horizontal dentro de la caja */
-    gap: var(--spacing-lg); /* Usa tus variables para el espacio entre icono y número */
+    gap: 0; /* Usa tus variables para el espacio entre icono y número */
     width: 100%; /* Asegura que use el ancho de la tarjeta */
-    height:auto;
+    height: auto;
     margin: 0;
+  }
+
+.card-top-row h3 {
+    margin: 0;
+    padding: 0 var(--spacing-md);
   }
 
 .card-bottom-row {
@@ -551,12 +562,13 @@ body {
 }
 
 .cards-title {
-  font-size: var(--font-size-hero) !important;
+  font-size: var(--font-size-hero-md) !important;
   font-weight: 600;
   margin: 0; /* CRUCIAL: Elimina el espacio arriba y abajo del número */
   line-height: 1; /* Hace que el cuadro de texto sea del tamaño exacto de la letra */
-  margin-right: 0.50rem; 
+  margin-left: var(--spacing-md); 
   margin-bottom: 0;
+  text-align: left;
 }
 
 .cards-subtitle {
@@ -565,8 +577,9 @@ body {
   text-align: center;      /* Fuerza el centrado del texto */
   font-size: var(--font-size-heading-md) !important;
   display: block;
-  width: 100%;  
+  width: 95%;  
   font-weight: bold;
+  align-items: center;
 }
 
 .cards-column {
@@ -574,12 +587,15 @@ body {
 }
 
 .list-column {
-  flex: 1;
+  flex: 1.2;
   background: rgba(255, 255, 255, 0.05); /* Un fondo sutil para diferenciar la zona */
   padding: 0 var(--spacing-sm);
   border-radius: 8px;
 }
 
+.list-column h3 {
+  margin-top: 0;
+}
 /*.list-column,
 .cards-column {
   flex: 1;
@@ -598,26 +614,31 @@ body {
 }
 
 .list-content li {
-  margin-bottom: 1rem;
   padding-left: 1.5rem;
+  margin-bottom: var(--spacing-md);
   position: relative;
 }
 
 .list-content li:before {
   content: "•";
   color: #ff6b35; /* Highlight orange color */
-  font-size: 1.5rem;
+  font-size: var(--font-size-lg);
   position: absolute;
   left: 0;
-  top: -0.2rem;
+  top: 0.5rem;
+}
+
+.resaltado-gmn {
+    font-weight: bold;
+    color: #ff6600; /* El naranja de tu logo */
 }
 
 .list-content p {
-  font-size: var(--font-size-heading-md);
+  font-size: var(--font-size-xxl);
 }
 
 .list-content span {
-  font-size: var(--font-size-heading-sm);
+  font-size: var(--font-size-xxl);
 }
 
 .success-cases-link {
@@ -717,7 +738,7 @@ body {
 }
 
 .about-class p {
-  font-size: var(--font-size-lg);
+  font-size: var(--font-size-xl);
 }
 
 .team-grid {
@@ -742,7 +763,9 @@ body {
 }
 
 .team-card h3 {
-  font-size: var(--font-size-heading-lg);
+  font-size: var(--font-size-subheading-lg);
+  margin: var(--spacing-md) 0;
+  font-weight: 700;  
 }
 
 .team-card:hover {
@@ -786,9 +809,6 @@ body {
 
 .member-name {
   color: var(--color-text-primary);
-  margin-bottom: 5px;
-  font-size: var(--font-size-xl);
-  font-weight: 700;
 }
 
 .member-role {
@@ -913,9 +933,10 @@ body {
 
 .image-job img {
   width: auto;
-  height: 100%;
-  border-radius: 12px;
+  height: auto;
+  border-radius: 8px;
   display: block; /* Elimina espacios vacíos debajo de la imagen */
+  margin: 0 auto; /* CLAVE: Esto centra la imagen horizontalmente */
   box-shadow: 0 10px 20px rgba(0,0,0,0.2);
 }
 /*
@@ -1100,7 +1121,7 @@ body {
 .accordion-header::after {
   content: "▸";
   position: static;
-  margin-right: 15px;
+  margin-right: 12px;
   transition: transform 0.3s ease;
   color: var(--color-primary);
   font-size: var(--spacing-xxl);
@@ -1110,8 +1131,8 @@ body {
 .accordion-header[aria-expanded="true"]::after {
   transform: rotate(45deg);
   content: "×";
-  margin-right: 15px;
-  font-size: var(--spacing-xxl);
+  margin-right: 20px;
+  font-size: var(--spacing-xl);
 }
 
 .accordion-item.active .accordion-header::after {
@@ -1200,14 +1221,16 @@ body {
 .carousel-item {
     min-width: 100%; /* Obliga a cada slide a ocupar todo el ancho del viewport */
     position: relative;
-    box-sizing: border-box;    
+    box-sizing: border-box;          
 }
 
 .carousel-item img {
     width: 100%;
-    height: 420px;
+    height: 500px;
     object-fit: cover;
-    display: block;
+    display: block;  
+    -webkit-filter: blur(1px); 
+    filter: blur(1px);     
 }
 
 /* El texto sobre la imagen (Caption) */
@@ -1219,9 +1242,9 @@ body {
     top: 40%;
     padding: var(--spacing-lg);
     /* Degradado oscuro para legibilidad (Gris 20% - 80%) 
-    background: rgba(0, 0, 0, 0.1);*/
-    -webkit-backdrop-filter: blur(1px); 
-    backdrop-filter: blur(1px); 
+    background: rgba(0, 0, 0, 0.1);
+    -webkit-backdrop-filter: blur(0.5px); 
+    backdrop-filter: blur(0.5px); */
     border-radius: 0 0 15px 15px;
     pointer-events: none; /* No interfiere con clics */
     z-index: 10;
@@ -1249,12 +1272,13 @@ body {
     transform: translateY(-50%);
     z-index: 10;
     background: rgba(255, 255, 255, 0.8);
-    border: none;
+    border: 0;
     padding: 0;
     cursor: pointer;
     border-radius: 50%;
     width: 40px;
     height: 40px;   
+    color: var(--color-primary);
 }
 
 .prev { left: 20px; }
@@ -1342,6 +1366,11 @@ body {
   display:block;
   text-align: left; /* O center, según prefieras */
   padding-top: 5px;
+  margin: var(--spacing-sm) 0 var(--spacing-md);
+}
+
+.culture-item h4 {
+  margin-bottom: var(--spacing-sm);
 }
 
 .culture-right {
@@ -1386,11 +1415,10 @@ body {
 .culture-text ul {
   list-style: none;
   padding-left: 0;
-  margin-top: var(--spacing-md);
 }
 
 .culture-text li {
-  margin-bottom: 10px;
+  margin-bottom: var(--spacing-sm);
   padding-left: 20px;
   position: relative;
 }
@@ -1464,12 +1492,12 @@ body {
     background-color: #1a1a1a; /* Un gris casi negro muy elegante */
     color: #ffffff;
     padding: 20px 0 5px;
-    font-size: 0.9rem;
+    font-size: var(--font-size-heading-lg);
 }
 
 .margener-footer {
     width: 90%;          /* Un poco menos para dar aire a los costados */
-    max-width: 1200px;   /* Evita que en pantallas gigantes se estire demasiado */
+    max-width: 1400px;   /* Evita que en pantallas gigantes se estire demasiado */
     margin: 0 auto;      /* ESTO centra el contenedor en la página */
 
 }
@@ -1495,12 +1523,14 @@ body {
     display: flex;
     flex-direction: column;
     gap: 3px; /* Espacio vertical entre los enlaces de contacto */
-    padding-bottom: 5px;
+    padding-bottom: 10px;
   }
 
 .footer-column h3, .footer-column h4 {
     color: var(--color-primary); /* Tu naranja corporativo */
     margin-bottom: 3px;
+    font-size: var(--font-size-lg);
+    font-weight: bold;
 }
 
 .footer-link {
@@ -1537,8 +1567,8 @@ padding-bottom: 4px;
 }
 
 .footer-link .text {
-    line-height: 1; /* Evita que el interlineado mueva el texto */
-    font-size: 0.9rem;
+    line-height: 1.1; /* Evita que el interlineado mueva el texto */
+    font-size: var(--font-size-lg);
 }
 
 /* Alineación para la ubicación (párrafo con el pin 📍) */
@@ -1548,6 +1578,8 @@ padding-bottom: 4px;
     gap: 10px;
     line-height: 1.4;
     justify-content: center;
+    font-size: var(--font-size-lg);
+
 }
 
 .footer-bottom {
@@ -1555,13 +1587,13 @@ padding-bottom: 4px;
     padding: 10px;
     text-align: center;
     color: #666;
-    font-size: 0.8rem;
+    font-size: var(--font-size-md);
 }
 
 /* ===== RESPONSIVE DESIGN ===== */
 
 /*Nabvar Links & rolling */
-@media (max-width: 850px) {
+@media (max-width: 873px) {
     .navbar-nav {
       display: none; /* Se oculta */
       position: absolute;
@@ -1582,7 +1614,6 @@ padding-bottom: 4px;
 
   .nav-links {
     flex-direction: column;
-    gap: 20px;
   }
 
 .navbar-nav ul {
@@ -1600,7 +1631,7 @@ padding-bottom: 4px;
   }
 }
 
-@media (min-width: 851px) {
+@media (min-width: 874px) {
     .navbar-toggle {
         display: none; /* Escondemos el botón hamburguesa */
     }
@@ -1609,22 +1640,13 @@ padding-bottom: 4px;
         flex-direction: row;
     }
   .navbar-nav ul {
-    gap: var(--spacing-md);
+    gap: var(--spacing-lg);
   }      
 }
 
 /*Navbar text size */
 /* --- Ajuste para Laptops Pequeñas / Tablets Grandes (1024px o menos) --- */
-@media (max-width: 1024px) {
-    /* Reducimos el tamaño del nombre de la marca */
-    .brand-name {
-        font-size: 1.2rem; 
-    }
-    /* Reducimos o quitamos el tagline en pantallas medianas para ahorrar espacio */
-    .brand-tagline {
-        font-size: 0.8rem;
-        margin-top: 5px;
-    }
+@media (max-width: 1075px) {
     .logo-text {
       min-width: 120px;
     }    
@@ -1636,16 +1658,16 @@ padding-bottom: 4px;
         font-size: var(--font-size-base);
     }
     .navbar-nav ul {
-    gap: var(--spacing-lg);  
+    gap: var(--spacing-md);  
   }
 }
 
-@media (max-width: 921px) {
+@media (max-width: 951px) {
   .nav-links a {
     font-size: var(--font-size-sm);  
   }
   .navbar-nav ul {
-    gap: var(--spacing-md);       
+    gap: var(--spacing-sm);       
   }
 }
 
@@ -1673,11 +1695,12 @@ padding-bottom: 4px;
 
 /*Footer order*/
 /* Tablet: Dos columnas (el logo arriba solo, y abajo ubicación y contacto) */
-@media (min-width: 675px) {
+@media (min-width: 709px) {
   .footer-container {
     grid-template-columns: 1fr 1fr;
     gap: 15px;
   }
+
   /* Hacemos que la primera columna (Logo) ocupe todo el ancho arriba */
   .footer-column:first-child {
     grid-column: span 2;
@@ -1693,11 +1716,11 @@ padding-bottom: 4px;
 }  
 
 /* Desktop: Volvemos a las 3 columnas originales */
-@media (min-width: 1024px) {
+@media (min-width: 1205px) {
   .footer-container {
     grid-template-columns: 1.5fr 1.2fr 1.0fr;
     text-align: left;
-    gap: 18px;
+    gap: 30px;
   }
   .footer-column:first-child {
     grid-column: span 1;
@@ -1709,7 +1732,7 @@ padding-bottom: 4px;
     text-align: left;
   }
   .footer-column h3, .footer-column h4 {
-    margin-bottom: 18px;
+    margin-bottom: var(--spacing-sm);
   }
   .footer-link {
     justify-content: flex-start !important;
@@ -1738,10 +1761,12 @@ padding-bottom: 4px;
 
   .overlay p {
     font-size: var(--font-size-md);
+    max-width: 750px;
+
   }
 
   .overlay {
-    max-width: 70% ;
+    max-width: 80% ;
   }
 }
 
@@ -1775,7 +1800,7 @@ padding-bottom: 4px;
   }
 
   .overlay {
-    max-width: 65%;
+    max-width: 70%;
     top: 7rem;
 
   }
@@ -1818,7 +1843,7 @@ padding-bottom: 4px;
 /*Achievemnts section*/
 /* --- Tablets y Laptops Pequeñas (Pantallas < 1024px) --- */
 
-@media (max-width: 1032px) {
+@media (max-width: 1073px) {
   .two-columns-container {
     flex-direction: column; /* Apilamos las tarjetas sobre la lista gris */
     align-items: center;
@@ -1828,17 +1853,20 @@ padding-bottom: 4px;
   .cards-column, 
   .list-column {
     flex: 1;
-    width: 100%; /* Ocupan todo el ancho disponible */
-    max-width: 800px; /* Evita que la lista se estire demasiado en tablets */
+    width: 99%; /* Ocupan todo el ancho disponible */
   }
 
   .cards-container {
     /* Mantenemos las 3 tarjetas en horizontal si hay espacio, o se envuelven */
-    justify-content: space-around;
+    padding: var(--spacing-lg) 0;
   }
 
+  .cards {
+    max-width: 410px;
+  }  
+
   .cards-image {
-    width: 90px; /* Icono un poco más pequeño para móviles */
+    width: 80px; /* Icono un poco más pequeño para móviles */
   }
 
   .two-columns-container {
@@ -1868,11 +1896,11 @@ padding-bottom: 4px;
   }
 
   .cards {
-    max-width: 320px; /* La tarjeta usa el ancho del celular */
+    max-width: 340px; /* La tarjeta usa el ancho del celular */
   }
 
   .card-top-row {
-    gap: var(--spacing-md); /* Reducimos el espacio interno */
+    gap: 0; /* Reducimos el espacio interno */
   }
 
   .cards-image {
@@ -1887,20 +1915,20 @@ padding-bottom: 4px;
 /* --- Ajuste para pantallas muy pequeñas (< 480px) --- */
 @media (max-width: 480px) {
   .cards{
-    max-width: 280px; /* La tarjeta usa el ancho del celular */
+    max-width: 300px; /* La tarjeta usa el ancho del celular */
   }
   .cards-title {
     font-size: var(--font-size-heading-xl) !important; /* Achicamos el $200M */
   }
   .cards-subtitle {
-    font-size: var(--font-size-heading-base) !important; /* Achicamos el $200M */
+    font-size: var(--font-size-heading-md) !important; /* Achicamos el $200M */
     padding-bottom: var(--spacing-sm);
   }  
   .list-content li {
     font-size: var(--font-size-base); /* Texto de la lista más legible */
   }
   .cards-image {
-    width: 65px; /* Icono un poco más pequeño para móviles */
+    width: 58px; /* Icono un poco más pequeño para móviles */
   }  
 }
 
@@ -2028,7 +2056,8 @@ padding-bottom: 4px;
   }
 
   .image-job img {
-  width: 95%;
+  width: 85%;
+  margin: 0 auto; /* Reforzamos el centrado aquí también */
   }
 
   .text-job {
@@ -2043,13 +2072,13 @@ padding-bottom: 4px;
   }
   
   .image-job img {
-    width: 98%;
+    width: 85%;
   }
 }
 
 @media (max-width: 851px) {
   .image-job img {
-    width: 90%;
+    width: 70%;
   }
 }
 
@@ -2141,24 +2170,26 @@ padding-bottom: 4px;
 /* ===== RESPONSIVE DESIGN ===== */
 /*Text Sizes and margins*/
 
-@media (max-width: 1400px) {
+@media (max-width: 1421px) {
   :root {
     --font-size-xs: 0.88rem;
     --font-size-sm: 0.93rem;
     --font-size-base: 1rem;  
+    --font-size-md: 1.05rem;  
     --font-size-lg: 1.1rem;
     --font-size-xl: 1.2rem;
+    --font-size-xxl: 1.25rem;
 
-    --font-size-heading-sm: 1.3rem;
-    --font-size-heading-md: 1.4rem;
+    --font-size-heading-sm: 1.2rem;
+    --font-size-heading-md: 1.7rem;
     --font-size-heading-lg: 2rem;
     --font-size-heading-xl: 2.5rem;
     --font-size-subheading-lg: 1.8rem;  
 
-    --font-size-hero-lg: 6rem;
-    --font-size-hero-md: 5.5rem;
-    --font-size-hero: 5rem;
-    --font-size-hero-sm: 4rem;
+    --font-size-hero-lg: 5rem;
+    --font-size-hero-md: 4rem;
+    --font-size-hero: 3rem;
+    --font-size-hero-sm: 3rem;
 
     --spacing-lg: 2rem;
   }
@@ -2176,8 +2207,10 @@ padding-bottom: 4px;
     --font-size-heading-lg: 2.2rem;
     --font-size-subheading-lg: 1.6rem;
 
+    --font-size-xxl: 1.2rem;
     --font-size-xl: 1.1rem;
     --font-size-lg: 1rem;
+    --font-size-md: 0.98rem;
     --font-size-base: 0.95rem;
     --font-size-sm: 0.9rem;
     --font-size-xs: 0.85rem;
@@ -2198,8 +2231,10 @@ padding-bottom: 4px;
 
     --font-size-subheading-lg: 1.5rem;
 
+    --font-size-xxl: 1.2rem;
     --font-size-xl: 1.1rem;
     --font-size-lg: 1rem;
+    --font-size-md: 0.95rem;
     --font-size-base: 0.9rem;
     --font-size-sm: 0.85rem;
     --font-size-xs: 0.8rem;
@@ -2219,6 +2254,7 @@ padding-bottom: 4px;
     --font-size-heading-md: 1.3rem;
 
     --font-size-subheading-lg: 1.4rem;
+    --font-size-xxl: 1.15rem;
     --font-size-xl: 1.05rem;
     --font-size-lg: 0.95rem;
     
@@ -2240,8 +2276,10 @@ padding-bottom: 4px;
     --font-size-heading-lg: 1.6rem;
     
     --font-size-subheading-lg: 1.3rem;
+    --font-size-xxl: 1.1rem;
     --font-size-xl: 1rem;
     --font-size-lg: 0.9rem;
+    --font-size-md: 0.85rem;
     --font-size-base: 0.8rem;
     --font-size-sm: 0.8rem;
     --font-size-xs: 0.7rem;    
@@ -2264,7 +2302,7 @@ padding-bottom: 4px;
     --font-size-subheading-lg: 1.2rem;
     --font-size-xl: 0.95rem;
     --font-size-lg: 0.85rem;
-    
+    --font-size-md: 0.8rem;
     --font-size-base: 0.75rem;
     --font-size-sm: 0.65rem;
     --font-size-xs: 0.62rem;     

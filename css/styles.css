@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Tenor+Sans&display=swap');
+
 /* ===== CSS CUSTOM PROPERTIES (THEME VARIABLES) ===== */
 :root {
   /* Colors */
@@ -133,6 +135,36 @@ body {
   color: var(--color-text-primary);
   background-color: var(--color-background);
   overflow-x: hidden;
+}
+
+.font-brand {
+    /* Prioridad: 1. Tenor Sans (Web), 2. Optima (Mac), 3. Zapf Humanist (Linux) */
+    font-family: 'Tenor Sans', 'Optima', 'Zapf Humanist', 'Segoe UI', sans-serif;
+    
+    /* El logo de GMN usa un peso normal/medio, pero muy nítido */
+    font-weight: 400;
+    
+    /* El logo siempre se ve mejor con un ligero espaciado entre letras */
+    letter-spacing: 0.05em; 
+    
+    /* Para "Global Maintenance Network" usa siempre mayúsculas */
+    text-transform: uppercase;
+    
+    /* Ajuste de suavizado de fuente para que se vea premium */
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+.gmn-font {
+  font-family: 'Inter', 'Roboto', sans-serif;  
+  -webkit-font-smoothing: antialiased;
+  letter-spacing:  0 0.02em !important; /* Espaciado sutil para un look más moderno */
+}
+
+.gmn-font-extd {
+  font-family: 'Cinzel', serif;
+  letter-spacing: 0.02em; 
+  -webkit-font-smoothing: antialiased;
 }
 
 /* ===== NAVBAR ===== */
@@ -308,6 +340,12 @@ body {
     background-color: var(--color-text-light);
     border-radius: 10px;
     transition: all 0.3s ease;
+}
+
+.nav-logo .font-brand {
+    font-size: var(--font-size-xl);
+    color: var(--color-primary); /* Naranja GMN */
+    font-weight: 700; /* Un poco más de peso para el logo pequeño */
 }
 
 /* Section Home*/
@@ -499,11 +537,11 @@ body {
   align-items: center; /* Centra la imagen y el texto verticalmente */
   gap: 0;         /* Espacio entre la imagen y el texto */
   padding: var(--spacing-sm) var(--spacing-md);
-  background-color: #ffffff;
+  background-color: var(--color-surface-light);
   border: 2px solid var(--color-primary); 
   border-radius: 8px; 
   width: 85%; 
-  max-width: 420px;
+  max-width: 400px;
   box-sizing: border-box; /* Asegura que el borde no agrande la tarjeta */
   transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
@@ -511,6 +549,8 @@ body {
 .cards:hover {
     transform: translateY(-5px);
     box-shadow: 0 15px 40px rgba(0,0,0,0.1);
+    background-color: var(--color-surface);
+    filter:grayscale(5%)
 }
 
 .cards-container {
@@ -1179,6 +1219,140 @@ body {
   padding: var(--spacing-sm);
 }
 
+/*Thrid opinion*/
+/* Contenedor Principal */
+.grid-container {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr); /* 4 columnas en desktop */
+  gap: var(--spacing-md); /* Líneas divisorias finas */
+  margin: 0 auto;
+  padding: var(--spacing-md); /* Líneas divisorias finas */
+  max-width: 1200px;
+}
+
+/* Tarjeta Individual */
+.solucion-card {
+  background-color:  var(--color-surface-light); /* #fdf8f1c2; Fondo oscuro */
+  border: 2px solid var(--color-primary); /* Borde naranja GMN */
+  border-radius: 6px;
+  filter: grayscale(0%);  
+  height: 220px;
+  position: relative;
+  overflow: hidden;
+  padding: 0 var(--spacing-md);
+  display: flex;
+  flex-direction: column;
+  transition: all 0.4s ease;
+  cursor: pointer;
+}
+
+.card-main {
+    display: flex;
+    flex-direction: column;
+}
+
+/* Número 01, 02... */
+.solucion-number {
+  color: var(--color-primary);
+  font-size: var(--font-size-hero-md);
+  font-weight: bold;
+
+  line-height: 0.8;   
+  display: inline-block; 
+  width: fit-content;
+  margin-bottom: var(--spacing-sm);
+  margin-top: var(--spacing-xl);  
+  transition: color 0.3s ease;
+  padding-left: var(--spacing-md);  
+
+}
+
+.solucion-title {
+  color: var(--color-text-secondary);
+  font-size: var(--font-size-heading-sm) !important;
+  margin: var(--spacing-sm) 0 !important;
+  line-height: var(--spacing-xs);
+  
+  min-height: 2.8em; /* Ajusta este valor según tu tamaño de fuente */
+  display: flex;
+  align-items: flex-end; /* Alinea el texto a la base para mayor orden */
+}
+
+.solucion-title h3 {
+  font-size: var(--font-size-heading-sm);
+  margin: 0 var(--spacing-sm);
+  line-height: 1.2;
+}
+
+.solucion-tag {
+  color: var(--color-primary); /* Naranja GMN */
+  font-size: var(--font-size-lg);
+  text-transform: uppercase;
+  letter-spacing: 0.6px;
+  font-style: italic;
+  line-height: 1.1;
+  text-shadow: 1px 1px 2px white;
+
+}
+
+/* Contenido que aparece en el HOVER */
+.card-hover-content {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: var(--color-primary); /* Fondo naranja al hacer hover */
+  padding:  var(--spacing-sm) ;
+  display: flex;
+  align-items: center;
+  transform: translateY(100%); /* Escondido abajo */
+  transition: transform 0.5s cubic-bezier(0.4, 0, 0.2, 1);
+  box-sizing: border-box;
+}
+
+.card-hover-content p {
+  color: var(--color-text-header-primary); /* Texto negro sobre fondo naranja */
+  font-weight: 700;
+  line-height: 1.1;
+  margin: 0;
+}
+
+/* Efectos de HOVER */
+
+.solucion-card:hover {
+  border: 2px solid var(--color-background); 
+}
+
+.solucion-card:hover .card-hover-content {
+  transform: translateY(0); /* Sube el contenido naranja */
+}
+
+
+
+
+.solucion-card:hover .solucion-number {
+  color: var(--color-primary-border);
+}
+
+/* Responsive */
+@media (max-width: 981px) {
+  .grid-container { grid-template-columns: repeat(3, 1fr); } /* 2 columnas en tablets */
+
+}
+
+@media (max-width: 691px) {
+  .grid-container { grid-template-columns: repeat(2, 1fr); } /* 2 columnas en tablets */
+  .solucion-card { height: 207px; }  
+
+}
+
+@media (max-width: 516px) {
+  .grid-container { grid-template-columns: 1fr; } /* 1 columna en móviles */
+  .solucion-card { height: 190px; max-width: 240px}
+}
+
+
 /*Section sucess cases*/
 /* ===== IMAGE CAROUSEL ===== */
 
@@ -1226,28 +1400,30 @@ body {
 
 .carousel-item img {
     width: 100%;
-    height: 500px;
+    height: 400px;
     object-fit: cover;
-    display: block;  
-    -webkit-filter: blur(1px); 
-    filter: blur(1px);     
+    display: block;
+    filter: blur(1px); 
+    -webkit-filter: blur(1px);        
 }
 
 /* El texto sobre la imagen (Caption) */
 .carousel-caption {
     position: absolute;
-    bottom:0;
+    margin: var(--spacing-md);
+    bottom:5%;
     left:0;
-    right:0;
-    top: 40%;
-    padding: var(--spacing-lg);
-    /* Degradado oscuro para legibilidad (Gris 20% - 80%) 
-    background: rgba(0, 0, 0, 0.1);
-    -webkit-backdrop-filter: blur(0.5px); 
-    backdrop-filter: blur(0.5px); */
-    border-radius: 0 0 15px 15px;
+    right:20%;
+    top: 55;
+    padding: var(--spacing-sm);
+    /* Degradado oscuro para legibilidad (Gris 20% - 80%) */
     pointer-events: none; /* No interfiere con clics */
     z-index: 10;
+
+    background: rgba(0, 0, 0, 0.05);
+    backdrop-filter: blur(1px); 
+    -webkit-backdrop-filter: blur(1px);
+    border-radius: var(--radius-lg);        
 }
 
 .carousel-caption h3 {
@@ -1255,6 +1431,8 @@ body {
     color: var(--color-text-header-primary); /* Tu naranja corporativo */
     font-weight: 800;
     text-shadow: 2px 2px 5px rgba(0,0,0,0.3);
+    margin-top: var(--spacing-sm);
+    margin-bottom: var(--spacing-md);
 }
 
 .carousel-caption p {
@@ -1268,7 +1446,7 @@ body {
 /* Posicionamiento de flechas */
 .carousel-btn {
     position: absolute;
-    top: 30%;
+    top: 20%;
     transform: translateY(-50%);
     z-index: 10;
     background: rgba(255, 255, 255, 0.8);
@@ -1583,11 +1761,71 @@ padding-bottom: 4px;
 }
 
 .footer-bottom {
-    border-top: 1px solid #333;
+    border-top: 1px solid #b0afaf;
     padding: 10px;
     text-align: center;
-    color: #666;
+    color: white;
     font-size: var(--font-size-md);
+    display: flex;
+    flex-direction: column;  /* Apila los contenedores verticalmente (una fila abajo de la otra) */
+    align-items: center;     /* Centra todo horizontalmente */      
+}
+
+.footer-links {
+  display: flex;
+  justify-content: space-between;
+  width: 100%; 
+  gap: var(--spacing-md);
+  margin: 0 var(var(--spacing-xxl));
+}                 /* Separación entre los 3 enlaces */
+
+.footer-link-bottom {
+    flex: 1; /* Obliga a los 3 cuadros a medir exactamente lo mismo */
+    padding: var(--spacing-sm) var(--spacing-md);
+    text-align: center;
+    transition: all 0.3s ease;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #ffffff;
+    text-decoration: none;
+  }
+
+.footer-link-bottom:hover {
+  color: var(--color-primary)      /* Color naranja corporativo GMN al pasar el mouse */
+}
+
+/*
+.footer-link-bottom a {
+    font-size: 0.9rem;
+    width: 100%;
+    display: block;
+}*/
+
+
+.footer-bottom p {
+  margin: 0;               /* Limpia los márgenes por defecto */
+}
+
+.grey-footer {
+    color: rgb(86, 86, 86);
+    padding: 3px 0;
+    text-align: center;
+    font-size: var(--font-size-md);
+}
+
+/* Ajuste responsivo para móviles pequeños */
+@media (max-width: 768px) {
+  .footer-links {
+    gap: 0px;           /* Reduce el espacio en pantallas pequeñas */
+    flex-direction: column; /* Opcional: los apila verticalmente en celulares */
+  }
+
+    .footer-link-bottom {
+      width: 100%;
+      padding: 0 var(--spacing-md)
+    }
+
 }
 
 /* ===== RESPONSIVE DESIGN ===== */
@@ -1879,7 +2117,7 @@ padding-bottom: 4px;
 
 @media (max-width: 921px) {
   .cards-image {
-    width: 80px; /* Icono un poco más pequeño para móviles */
+    width: 90px; /* Icono un poco más pequeño para móviles */
   }
   .cards {
     max-width: 320px;
@@ -1904,7 +2142,7 @@ padding-bottom: 4px;
   }
 
   .cards-image {
-    width: 70px; /* Icono un poco más pequeño para móviles */
+    width: 80px; /* Icono un poco más pequeño para móviles */
   }
 
   .list-column {
@@ -1928,7 +2166,7 @@ padding-bottom: 4px;
     font-size: var(--font-size-base); /* Texto de la lista más legible */
   }
   .cards-image {
-    width: 58px; /* Icono un poco más pequeño para móviles */
+    width: 65px; /* Icono un poco más pequeño para móviles */
   }  
 }
 
@@ -2109,6 +2347,7 @@ padding-bottom: 4px;
     }
   .carousel-caption {
     top: 30%;
+    right:15%;    
   }
   .thumbnail {
     flex: 0 0 100px;
@@ -2120,6 +2359,11 @@ padding-bottom: 4px;
   .carousel-item img {
       height: 250px;
     }
+
+  .carousel-caption {
+    top: 35%;
+    right:10%;    
+  }    
   .carousel-caption p {
     font-size: var(--font-size-sm);
     font-weight: bold;
@@ -2147,8 +2391,8 @@ padding-bottom: 4px;
   }
 
   /* Invertimos el orden solo en las filas que tienen la imagen a la derecha */
-  .culture-row.culture-right {
-    flex-direction: column;
+  .culture-row .culture-right {
+    flex-direction: row-reverse;
   }
 
   .culture-image, .culture-text {

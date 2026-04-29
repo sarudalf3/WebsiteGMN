@@ -10,6 +10,7 @@ const successCases = [
     { id: 6, title: "success.exp_title06", desc: "success.exp_desc06", logo: "./img/logo06.webp", img: "./img/success06.jpg"},
     { id: 7, title: "success.exp_title07", desc: "success.exp_desc07", logo: "./img/logo07.webp", img: "./img/success07.jpg"},
     { id: 8, title: "success.exp_title08", desc: "success.exp_desc08", logo: "./img/logo08.webp", img: "./img/success08.jpg"},
+    { id: 9, title: "success.exp_title09", desc: "success.exp_desc09", logo: "./img/logo09.webp", img: "./img/success09.jpg"},
 ];
 
 let currentIndex = 0; // Empezamos en 0

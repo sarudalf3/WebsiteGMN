@@ -2,149 +2,208 @@
   "meta": {
     "title": "GMN Group",
     "subtitle": "Expert Consultants",
-    "description": "Specialized in Physical Asset Management with over 20 years of experience."
+    "description": "Specialized in Physical Asset Management with more than 25 years of experience."
   },
-  
+
   "nav": {
     "navbar1": "Home",
-    "navbar2": "GMN 2025",
-    "navbar3": "Media",
-    "navbar4": "About us", 
-    "navbar5": "Our job",       
-    "navbar6": "Results",
-    "navbar7": "Our Culture",
-    "navbar8": "Contact"
+    "navbar2": "Milestones",
+    "navbar3": "News",
+    "navbar4": "GMN DNA", 
+    "navbar5": "Solutions",       
+    "navbar6": "Experience",
+    "navbar7": "GMN Seal",
+    "navbar8": "Let's Talk"
   },
-  
+
   "home": {
       "title1": "Together",
-      "title2": "We Transform",
-      "subtitle": "Specialized in Physical Asset Management with over 20 years of experience, transforming industrial operations through innovative solutions and cutting-edge technology."
+      "title2": "We Advance",
+      "subtitle": "We move forward alongside our clients to achieve and sustain operational efficiency.\nWe combine process vision, advanced analytics, and SAP PM to ensure assets meet productivity goals."
   },
-  
+
   "achievements": {
-    "title": "GMN Results in 2025",
-    "subtitle": "This year alone, GMN has helped companies save over 200 million dollars",
+    "title": "<span class='gmn-font'>GMN</span><sup>®</sup> Strategic Impact",
+    "subtitle": "Over the past year, our management has enabled major industrial operations to optimize resources by more than <span class='resaltado-gmn'>200 million dollars</span>",
     "card1": "$200",
-    "card1_sub": "MILLION DOLLARS",
+    "card1_sub": "MUSD Value Generated",
     "card2": "18%",
-    "card2_sub": "COST REDUCTION",
+    "card2_sub": "Cost Optimization",
     "card3": "24%",
-    "card3_sub": "HIGHER EFFICIENCY",
-    "list": "Value created by GMN",
-    "list1": "+20 years of experience in mining and capital-intensive sectors",
-    "list2": "+8 mining operations supported in Chile and Latin America",
-    "list3": "+200,000 Work Orders regularized and optimized in SAP PM",
-    "list4": "Real experience in highly critical and large-scale projects",
-    "list5": "50+ highly skilled workers in multiple areas",
-    "success_cases": "See our success stories"
-  },
-  
-  "news": {
-    "title": "Media",
-    "subtitle": "About the decline in productivity",
-    "par": "Sergio Adauy, CEO of Antofagasta-based company GMN, on the challenges facing the mining industry in terms of competitiveness. This issue has become increasingly relevant amid rising production costs and other external factors such as declining mineral quality and water scarcity. Sergio Adauy, CEO of the local Antofagasta company GMN, on the challenges facing the mining industry in terms of competitiveness. This issue has become increasingly relevant amid rising production costs and other external factors such as declining mineral quality and water scarcity."
+    "card3_sub": "Asset Availability",
+    "list": "Value created by <span class='gmn-font'>GMN</span><sup>®</sup>",
+    "list1": "25+ years of experience leading asset management in capital-intensive sectors.",
+    "list2": "8+ critical mining operations empowered in Chile and Latin America.",
+    "list3": "200,000+ Work Orders regularized and optimized in SAP PM, ensuring total information integrity.",
+    "list4": "Specialists in high-criticality projects, where operational continuity is non-negotiable.",
+    "list5": "Multidisciplinary team of 50+ professionals focused on making things happen.",
+    "success_cases": "Review our experience through concrete success cases."
   },
 
-"about_us": {
-    "title1": "About Us",
-    "par11": "We are Global Maintenance Network (GMN / GSAPGROUP), a Latin American consultancy with more than 25 years of experience enhancing the performance of capital-intensive organizations.",
-    "par12": "We put our team's talent at the service of every operation, integrating ourselves into the client's objectives with discipline, in-depth analysis, and an execution that transforms challenges into sustainable improvements.",
-    "par13": "Our track record in production maximization, cost optimization, and asset reliability has allowed us to drive industrial leaders in Chile and Latin America with measurable results sustained over time.",
-    "subtitle2": "Vision",
-    "par21": "To be global leaders in Physical Asset Management consultancy, driven by high-performance teams that contribute to the development and constant success of our clients.",
-    "subtitle3": "Mission",
-    "par31": "To provide timely and effective solutions to our clients' competitiveness and sustainability challenges, increasing their Economic Value Added (EVA) through sustainable growth.",
-    "title2": "Our Leaders",
-    "subtitle4": "Since our inception, we have held the same conviction: making things happen",
-    "bio_SA": "With three decades dedicated to developing projects in strategy, operational excellence, and continuous improvement, focusing on Asset Management and supply chain.",
-    "highlights_SA1": "Asset Management",
-    "highlights_SA2": "Process Optimization",
-    "bio_MM": "Professional with over 13 years of experience in national and multinational companies within the mining industry.",
-    "highlights_MM1": "Strategic Alliances",
-    "highlights_MM2": "Project Evaluation",
-    "lkdn_profile": "View Profile"
+  "we_do": {
+    "title": "Our Solutions",
+    "intro": "Transforming operational complexity into business continuity",
+    "intro_par1": "We accompany capital-intensive organizations to elevate their performance through world-class asset management. We are not external consultants; we integrate as part of your team to ensure every technical solution translates into real and sustainable improvement in the field.",
+    "intro_par2": "With a presence throughout Latin America, we combine expert diagnostics with disciplined execution that drives decision-making based on real and real-time data.",
+    "job": "Integral Solutions for Asset Management and Reliability",
+    "par_job": "At <span class='gmn-font-extd1'>GMN®</span>, we transform maintenance into a profitability engine. Through an ecosystem that integrates technology, data analysis, and strategy, we cover the entire asset lifecycle —from the Technological Core in SAP PM to Reliability Engineering— to guarantee measurable and sustainable results over time.",
+    "title1": "Availability and Operational Reliability",
+    "par11": "We ensure your critical assets exceed design levels through advanced reliability methodologies.",
+    "par12": "We diagnose the real behavior of your equipment to eliminate systemic constraints and chronic failures that interrupt continuity.",
+    "par13": "From the value chain to specific interventions, we guarantee more stable processes and an operation aligned with your production goals.",
+    "title2": "Cost Efficiency and Inventory Management",
+    "par21": "We transform visible inefficiencies into strategic savings.",
+    "par22": "We optimize key resources through a proprietary inventory management methodology that allows for asset recovery, elimination of historical overstock, and the cleanup of processes that generate silent losses.",
+    "par23": "The result is robust operational financial control and a competitive cost structure supported by data.",
+    "title3": "Operational Intelligence and Reporting",
+    "par31": "We take your management to the next level through the integration of SAP, Advanced Reporting in Power BI, and Artificial Intelligence.",
+    "par32": "We develop digital ecosystems that detect deviations in real-time and propose immediate actions.",
+    "par33": "We convert massive data flows into strategic insights, increasing predictability, agility, and transparency across your entire operation."
   },
 
-"we_do": {
-    "title": "What We Do",
-    "intro": "Transforming operations by making your challenges our own",
-    "intro_par1": "We partner with capital-intensive organizations to enhance their performance through operational improvement solutions, asset management, and productivity maximization. Our model—validated across mining, energy, manufacturing, forestry, food and beverage, logistics, aeronautics, agriculture, and aquaculture—combines expert diagnosis, rigorous implementation, and sustainable adoption.",
-    "intro_par2": "We operate across Latin America, supporting companies with proprietary methodologies, applied innovation, and technological integration that drives real-time decision-making.",
-    
-    "title1": "Production Maximization",
-    "par11": "We drive operational performance by ensuring that critical assets meet and exceed the production levels for which they were designed.",
-    "par12": "We apply advanced reliability methodologies to diagnose actual equipment behavior, identify systemic constraints, and eliminate failures that affect operational continuity. Our analysis spans from the entire value chain to specific interventions on each asset, enabling superior levels of availability and throughput.",
-    "par13": "The impact is direct: more tons processed, more stable operational cycles, and an operation aligned with production targets through technical precision and operational discipline.",
-    
-    "title2": "Cost Reduction",
-    "par21": "We turn invisible inefficiencies into concrete savings.",
-    "par22": "We reduce operational costs by identifying structural inefficiencies and optimizing the business's key resources.",
-    "par23": "Our proprietary inventory optimization methodology allows for the recovery of assets that no longer generate returns, the elimination of historical overstock, and the streamlining of processes that currently cause silent losses. We complement this with maintenance strategies designed to prevent costly failures and maximize the useful life of each piece of equipment.",
-    "par24": "The result is a more competitive cost structure, with data-driven decisions and operational financial control that directly impacts business profitability.",
-
-    "title3": "Innovation",
-    "par31": "We take our clients to a higher level of management through digital solutions that integrate data, artificial intelligence, and automation.",
-    "par32": "We develop virtual assistants capable of delivering real-time operational insights, detecting deviations, and proposing immediate actions based on analytical models. We integrate SAP, Power BI, and various information sources to make critical data available.",
-    "par33": "This enables instantaneous decision-making for executives and operational teams, increasing efficiency, agility, and the predictability of the entire operation."
+  "servicios": {
+    "s01_title": "SAP PM / EAM",
+    "s01_tag": "Technological core",
+    "s01_desc": "Implementation, support, and evolution of maintenance ERP. Configuration, master data, and analytical enablement.",
+    "s02_title": "Analytics, KPI & Reporting",
+    "s02_tag": "Data-driven decisions",
+    "s02_desc": "Power BI and configurable dashboards. Tree KPI structure (Main → Sub KPI → Process KPI). Real-time visibility.",
+    "s03_title": "Master Data",
+    "s03_tag": "Management foundation",
+    "s03_desc": "Governance, standardization, and data quality. Basis for real and accurate reliability analysis.",
+    "s04_title": "Maintenance Strategy",
+    "s04_tag": "Operational reliability",
+    "s04_desc": "Maintenance plans, asset criticality, and reliability. Redesign of preventive and predictive strategies.",
+    "s05_title": "Repairables and Inventories",
+    "s05_tag": "Capital optimization",
+    "s05_desc": "Comprehensive management of repairables. Optimization and cataloging of critical spare parts. Stock aligned with real criticality.",
+    "s06_title": "Training and Change",
+    "s06_tag": "Culture and Management",
+    "s06_desc": "Change management and team strengthening. Culture of continuous improvement and people development.",
+    "s07_title": "Reliability Engineering",
+    "s07_tag": "RCM & FMEA",
+    "s07_desc": "Reliability Centered Maintenance (RCM) with certified consultants. Weibull analysis, RCM Cost, and equipment replacement.",
+    "s08_title": "Work Management",
+    "s08_tag": "Work administration",
+    "s08_desc": "Complete process: Identification → Planning → Scheduling → Execution → Closure → Analysis. Management of WOs and backlog.",
+    "s09_title": "Budgeting and Costing",
+    "s09_tag": "Financial control",
+    "s09_desc": "Maintenance budgeting, full management cycle. Control and analysis of unit costs.",
+    "s10_title": "Planning and Major Shutdowns",
+    "s10_tag": "Shutdown management",
+    "s10_desc": "Planning, scheduling, and control of planned shutdowns. MTTR optimization and execution efficiency.",
+    "s11_title": "Insourcing and Outsourcing",
+    "s11_tag": "Operational autonomy",
+    "s11_desc": "We support companies in regaining control of their maintenance, from diagnosis to autonomous operation.",
+    "s12_title": "SAP PM / EAM Implementation",
+    "s12_tag": "Global projects",
+    "s12_desc": "Global SAP PM project management. Data conversion, configuration, and custom development.",
+    "s13_title": "Productive Loss Analysis",
+    "s13_tag": "Business Analytics",
+    "s13_desc": "Identification, quantification, and elimination of losses. Economic waterfall, RCA, and improvement plan with ROI.",
+    "s14_title": "Business Process Blueprinting",
+    "s14_tag": "Process redesign",
+    "s14_desc": "Development of BPR (Business Process Re-engineering). Optimization of business processes and functional architecture.",
+    "s15_title": "Coaching and Training",
+    "s15_tag": "Team development",
+    "s15_desc": "On-Site and One-to-One coaching. Induction programs in maintenance best practices and connection with ERP/EAM.",
+    "s16_title": "Quality Assurance",
+    "s16_tag": "QA & Audits",
+    "s16_desc": "Maintenance audits: People, Processes, and Tools. Monitoring and follow-up of benefits (PIR)."
   },
 
   "success": {
-    "title": "Success Cases",
-    "exp_title01": "BHP",
-    "exp_desc01": "Over X projects developed: focusing on productivity, optimization, and asset management, generating an estimated added value of $XXXX MUSD.",
+    "title": "Our Experience",
+    "exp_title01": "Escondida | BHP",
+    "exp_desc01": "Automatic KPI reporting · 52,669 technical objects / 5,071 SAP PM plans · loss analysis by area (OLAP, ECT) · Support for executive reporting",
     "exp_title02": "CODELCO",
-    "exp_desc02": "Chilean state-owned company dedicated to copper mining. We have successfully developed over X projects, driving operational and logistics standards that have achieved an X% increase in productivity.",
+    "exp_desc02": "KPIs integrated with productive loss analysis in BW · Task lists oriented toward loss reduction · Corporate SAP PM master data standard",
     "exp_title03": "CERRO MATOSO",
-    "exp_desc03": "Automated data models and dashboards have been developed, resulting in a reduction of X operational hours per week for the beneficiary personnel.",
-    "exp_title05":"COCA-COLA",
-    "exp_desc05": "Implemented SAS System to automatize the Maintenance Plant",
+    "exp_desc03": "Data models and automated dashboards have been developed, generating a reduction of X operational hours per week for the benefited personnel.",
     "exp_title04":"GLENCORE",
-    "exp_desc04": "",
+    "exp_desc04": "SAP/SOMA implementation with defect elimination and operational reliability support",
+    "exp_title05":"COCA-COLA",
+    "exp_deesc05": "SAP PM implementation for plant maintenance automation.",
     "exp_title06":"MINERA ANTAPACCAY",
     "exp_desc06": "",
-    "exp_title07":"SPENCE",
-    "exp_desc07": "",
+    "exp_title07":"SPENCE | BHP",
+    "exp_desc07": "Complete insourcing: 15,131 technical objects / 382 plans / 230 people trained · Repairables process as a key lever for loss reduction",
     "exp_title08":"SIERRA GORDA",
-    "exp_desc08": ""
+    "exp_desc08": "Master data and plans for new operation · SAP/SOMA implementation with defect elimination",
+    "exp_title09":"CASERONES",
+    "exp_desc09": ""
   },
 
-"culture": {
-    "title": "Our Culture",
-    "subtitle": "We engage with your challenges as if they were our own, supporting you with commitment and sustainable results",
+  "about_us": {
+    "title1": "<span class='gmn-font'>GMN</span><sup>®</sup> DNA: 25 years transforming the industry",
+    "par11": "<span class='gmn-font'>GLOBAL MAINTENANCE NETWORK</span><sup>®</sup>, also known as <span class='gmn-font'>GMN</span><sup>®</sup> by its initials, is a consultancy specialized in physical asset management, with more than 25 years of experience supporting mining, oil & gas, energy, and manufacturing operations in LATAM & Globally.",
+    "par12": "Our approach integrates SAP PM technology, advanced analytics, and world-class methodology to generate measurable and sustainable results.",
+    "par13": "Our history is written in mining sites, power plants, and logistics centers, where we have empowered industrial leaders through measurable results that last over time.",
+    "subtitle2": "Vision",
+    "par21": "To consolidate ourselves as the global benchmark in Physical Asset Management, driven by high-performance teams that redefine our clients' operational success through excellence and applied innovation.",
+    "subtitle3": "Mission",
+    "par31": "To ensure our clients' competitiveness and sustainability through agile solutions that maximize their economic value. We achieve this through sustainable growth, ensuring that each asset reaches its maximum return potential.",
+    "title2": "Our Leadership",
+    "subtitle4": "Leadership with purpose: We make things happen",
+    "par41": "We believe in leadership that gets involved on the ground. Our executives combine strategic vision with decades of real-world execution in the most demanding industries.",
+    "bio_SA": "Strategist with three decades leading operational excellence and supply chain projects. His approach integrates Asset Management with a systemic vision of process optimization to generate real value.",
+    "highlights_SA1":"Asset Management",
+    "highlights_SA2":"Process Optimization",
+    "bio_MM": "With more than 13 years of experience in the national and multinational mining industry, Marcelo leads the expansion of <span class='gmn-font'>GMN</span><sup>®</sup> through strategic alliances and rigorous evaluation of high-criticality projects.",
+    "highlights_MM1":"Strategic Alliances",
+    "highlights_MM2":"Project Evaluation",
+    "lkdn_profile": "View Profile"  
+  },
 
-    "section01": "Corporate Culture",
-    "par11": "We build long-term relationships based on trust, commitment, and a technical excellence perfected over decades. We integrate naturally into our clients' teams, working with rigor, proximity, and a value-oriented discipline that guarantees flawless execution and improvements that consolidate within the operation.",
-    "par12": "At GMN, we don't just advise: we ensure effective implementation, sustained adoption, and results that truly endure.",
+  "news": {
+    "title": "News",
+    "subtitle": "The engine to recover mining competitiveness",
+    "par1": "In an interview with Reporte Minero, our Managing Director, Sergio Adauy, analyzed the competitiveness gap facing the industry, highlighting that productivity has fallen by 27% over the last two decades. Given rising costs and lower ore grades, Adauy emphasized that maintenance represents about one-third of the operating cost (OPEX) of a site.",
+    "par2": "From the <span class='gmn-font'>GMN</span><sup>®</sup> perspective, the solution lies not only in traditional cost reduction but in Physical and Human Asset Management with a long-term vision. <span class='italic bold-text'>Productivity is not the same as production</span>, underlining that the key lies in integrating advanced technology with highly trained work teams to ensure business continuity in highly complex scenarios."
+  },
 
-    "section02": "Certifications and Standards",
-    "par21": "We promote continuous learning, high safety standards, and responsible management towards people and the environment.",
-    "par22": "GMN is a Triple-Certified company, accredited under international standards:",
-    "par23": "We are accredited in the SICEP system with Category A, achieving 100% in quality, environment, and automation, which validates our comprehensive, safe, and sustainable management.",
+  "culture": {
+    "title": "<span class='gmn-font'>GMN</span><sup>®</sup> Seal: Technical excellence and field presence",
+    "subtitle": "We involve ourselves in your challenges as if they were our own. We are not observers; we are strategic partners who accompany every step with discipline, rigor, and a vision oriented toward sustainable results",
+
+    "section01": "Our Operational Identity",
+    "subsection01": "Discipline that generates value",
+    "par11": "We build long-term relationships based on technical trust and impeccable execution. The <span class='gmn-font'>GMN</span><sup>®</sup> Seal means natural integration with client teams: we work with the closeness of an ally and the rigor of an expert. We don't just advise; we ensure effective implementation and the adoption of improvements that truly last in the operation.",
+    "par12": "At <span class='gmn-font'>GMN</span><sup>®</sup> we don't just advise: we ensure effective implementation, sustained adoption, and results that truly last.",
+
+    "section02": "World-Class Standards",
+    "subsection02": "Support in Management and Certified Safety",
+    "par21": "Technical excellence is sustained by certified processes. <span class='gmn-font'>GMN</span><sup>®</sup> is a Trinorma company, operating under the highest international standards:",
+    "par22": "<span class='gmn-font'>GMN<sup>®</sup></span> is a Trinorma company, certified under international standards:",
+    "par23": "We are accredited in the SICEP system with Category A, highlighting 100% in quality, environment, and automation, which supports our comprehensive, safe, and sustainable management.",
     "par22_li01": "ISO 9001:2015 – Quality Management",
     "par22_li02": "ISO 14001:2015 – Environmental Management",
     "par22_li03": "ISO 45001:2018 – Occupational Health and Safety",
 
-    "section03": "Technical and Human Excellence",
-    "par31": "Our value lies in our people; consultants with proven experience who make things happen.",
-    "par32": "Our team brings together more than 25 years of combined experience in operational reliability, maintenance strategies, SAP PM/S4HANA implementation and optimization, inventory management, and advanced analytics applied directly to capital-intensive operations.",
-    "par33": "Field experience and technical discipline are part of our corporate DNA."
+    "section03": "Applied Technical Specialization",
+    "subsection03": "Experts who make things happen",
+    "par31": "The value of the <span class='gmn-font'>GMN</span><sup>®</sup> Seal lies in our human capital: senior consultants who combine field experience with advanced analytical capacity.",
+    "par33": "Technical discipline is not a service; it is our corporate DNA.",
+    "par32_li01": "25+ years of experience in critical assets and maintenance strategies.",
+    "par32_li02": "Expert mastery in SAP PM / S4HANA and massive data optimization.",
+    "par32_li03": "Advanced analytics and inventory management applied to business profitability."
   },
 
 "contact": {
-    "title": "Contact Us",
-    "client_title": "Looking for a solution to a specific challenge?",
-    "client_text": "We transform complex problems into sustainable results. Tell us about your operation and let's find the best optimization strategy together.",
-    "client_btn": "Start a conversation",
+    "title": "Let's Talk",
+    "client_title": "Ready to optimize your operational continuity?",
+    "client_text": "Data complexity should not stop your production. Tell us about your challenges in SAP, reporting, or asset management; we are ready to integrate as part of your team and transform your problems into measurable results.",
+    "client_btn": "Let's talk about your project",
     
-    "talent_title": "Are you passionate about technical excellence?",
-    "talent_text": "We are looking for professionals who want to make a real impact on the industry. Join our team of expert consultants.",
-    "talent_btn": "View opportunities on LinkedIn"
+    "talent_title": "Join <span class='gmn-font'>GMN</span><sup>®</sup>",
+    "talent_text": "We are looking for senior consultants who don't just advise, but make things happen. If you are passionate about technical excellence and want to generate a real impact on the most critical operations in Latin America, this is the place for you.",
+    "talent_linkedIn_btn": "View opportunities on LinkedIn",
+    "talent_mail_btn": "Send us your CV"
   },
 
 "footer": {
-    "description": "We support your operational challenges with technical rigor and commitment, ensuring results that endure.",
-    "location_title": "Our Location",
+    "description": "We integrate with your challenges with technical rigor and closeness, ensuring sustainable results that drive the value of your assets.",
+    "location_title": "Our location",
     "contact_title": "Contact"
   }
 }

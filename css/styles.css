@@ -110,7 +110,6 @@
 
 .italic {
   font-style: italic;
-  margin-bottom: 2rem
 }
 
 .bold-text {
@@ -137,34 +136,11 @@ body {
   overflow-x: hidden;
 }
 
-.font-brand {
-    /* Prioridad: 1. Tenor Sans (Web), 2. Optima (Mac), 3. Zapf Humanist (Linux) */
-    font-family: 'Tenor Sans', 'Optima', 'Zapf Humanist', 'Segoe UI', sans-serif;
-    
-    /* El logo de GMN usa un peso normal/medio, pero muy nítido */
-    font-weight: 400;
-    
-    /* El logo siempre se ve mejor con un ligero espaciado entre letras */
-    letter-spacing: 0.05em; 
-    
-    /* Para "Global Maintenance Network" usa siempre mayúsculas */
-    text-transform: uppercase;
-    
-    /* Ajuste de suavizado de fuente para que se vea premium */
-    -webkit-font-smoothing: antialiased;
-    -moz-osx-font-smoothing: grayscale;
-}
-
 .gmn-font {
-  font-family: 'Inter', 'Roboto', sans-serif;  
-  -webkit-font-smoothing: antialiased;
-  letter-spacing:  0 0.02em !important; /* Espaciado sutil para un look más moderno */
-}
-
-.gmn-font-extd {
-  font-family: 'Cinzel', serif;
-  letter-spacing: 0.02em; 
-  -webkit-font-smoothing: antialiased;
+    font-family: 'Century Gothic', 'AppleGothic', sans-serif;
+    letter-spacing: 0.5px;
+    /*font-weight: 400;*/
+    text-transform: uppercase; /* Para emular el logo */
 }
 
 /* ===== NAVBAR ===== */
@@ -1303,7 +1279,7 @@ body {
   width: 100%;
   height: 100%;
   background-color: var(--color-primary); /* Fondo naranja al hacer hover */
-  padding:  var(--spacing-sm) ;
+  padding:  var(--spacing-md) ;
   display: flex;
   align-items: center;
   transform: translateY(100%); /* Escondido abajo */
@@ -1313,7 +1289,7 @@ body {
 
 .card-hover-content p {
   color: var(--color-text-header-primary); /* Texto negro sobre fondo naranja */
-  font-weight: 700;
+  font-weight: 600;
   line-height: 1.1;
   margin: 0;
 }
@@ -1623,7 +1599,7 @@ body {
     border-radius: var(--radius-md);
     border: 1px solid var(--color-border);
     flex: 1;
-    max-width: 450px;
+    max-width: 520px;
     text-align: center;
     transition: transform 0.3s ease, box-shadow 0.3s ease;
     display: flex;
@@ -1749,6 +1725,8 @@ padding-bottom: 4px;
     font-size: var(--font-size-lg);
 }
 
+
+
 /* Alineación para la ubicación (párrafo con el pin 📍) */
 .footer-column p {
     display: flex;
@@ -1801,6 +1779,13 @@ padding-bottom: 4px;
     width: 100%;
     display: block;
 }*/
+
+
+.linkedin-footer span {
+  line-height: 1;
+  font-size: var(--font-size-xs);
+  font-weight: bold;
+}
 
 
 .footer-bottom p {

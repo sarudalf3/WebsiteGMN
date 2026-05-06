@@ -23,7 +23,7 @@
   },
 
   "achievements": {
-    "title": "Impacto Estratégico <span class='gmn-font'>GMN</span><sup>®</sup>",
+    "title": "Impacto Estratégico <span class='gmn-font bold-text'>GMN</span><sup>®</sup>",
     "subtitle": "Durante el último año, nuestra gestión ha permitido a grandes operaciones industriales optimizar recursos por más de <span class='resaltado-gmn'>200 millones de dólares</span>",
     "card1": "$200",
     "card1_sub": "MUSD Valor Generado",
@@ -31,7 +31,7 @@
     "card2_sub": "Optimización de Costos",
     "card3": "24%",
     "card3_sub": "Disponibilidad de Activos",
-    "list": "Valor creado por <span class='gmn-font'>GMN</span><sup>®</sup>",
+    "list": "Valor creado por <span class='gmn-font bold-text'>GMN</span><sup>®</sup>",
     "list1": "25+ años de experiencia liderando la gestión de activos en sectores intensivos en capital.",
     "list2": "8+ operaciones mineras críticas impulsadas en Chile y Latinoamérica.",
     "list3": "200.000+ Órdenes de Trabajo regularizadas y optimizadas en SAP PM, asegurando integridad total de la información.",
@@ -136,7 +136,7 @@
   },
 
   "about_us": {
-    "title1": "ADN <span class='gmn-font'>GMN</span><sup>®</sup>: 25 años transformando la industria",
+    "title1": "ADN <span class='gmn-font bold-text'>GMN</span><sup>®</sup>: 25 años transformando la industria",
     "par11": "<span class='gmn-font'>GLOBAL MAINTENANCE NETWORK</span><sup>®</sup>, llamada también <span class='gmn-font'>GMN</span><sup>®</sup> por sus iniciales, es una consultora especializada en gestión de activos físicos, con más de 25 años de experiencia apoyando operaciones de minería, petróleo & gas, energía y manufactura LATAM & Global.",
     "par12": "Nuestro enfoque integra tecnología SAP PM, analítica avanzada y metodología de clase mundial para generar resultados medibles y sostenibles.",
     "par13": "Nuestra historia está escrita en faenas mineras, plantas de energía y centros logísticos, donde hemos impulsado a líderes industriales mediante resultados medibles que perduran en el tiempo.",
@@ -164,7 +164,7 @@
   },
 
   "culture": {
-    "title": "Sello <span class='gmn-font'>GMN</span><sup>®</sup>: Excelencia técnica y presencia en terreno",
+    "title": "Sello <span class='gmn-font bold-text'>GMN</span><sup>®</sup>: Excelencia técnica y presencia en terreno",
     "subtitle": "Nos involucramos en sus desafíos como si fueran propios. No somos observadores; somos socios estratégicos que acompañan cada paso con disciplina, rigor y una visión orientada a resultados sostenibles",
 
     "section01": "Nuestra Identidad Operativa",
@@ -196,7 +196,7 @@
     "client_text": "La complejidad de los datos no debe detener su producción. Cuéntenos sobre sus desafíos en SAP, reportabilidad o gestión de activos; estamos listos para integrarnos como parte de su equipo y transformar sus problemas en resultados medibles.",
     "client_btn": "Hablemos de su proyecto",
     
-    "talent_title": "Súmate a <span class='gmn-font'>GMN</span><sup>®</sup>",
+    "talent_title": "Súmate a <span class='gmn-font bold-text'>GMN</span><sup>®</sup>",
     "talent_text": "Buscamos consultores senior que no solo asesoren, sino que hagan que las cosas pasen. Si te apasiona la excelencia técnica y quieres generar un impacto real en las operaciones más críticas de Latinoamérica, este es su lugar.",
     "talent_linkedIn_btn": "Ver oportunidades en LinkedIn",
     "talent_mail_btn": "Envianos tu CV"

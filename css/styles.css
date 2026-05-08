@@ -138,9 +138,22 @@ body {
 
 .gmn-font {
     font-family: 'Century Gothic', 'AppleGothic', sans-serif;
-    letter-spacing: 0.5px;
+    letter-spacing: 0.3px;
     text-transform: uppercase; /* Para emular el logo */
+    font-weight: bold;
 }
+
+.gmn-color {
+  color: var(--color-text-secondary);
+}
+
+.font-others {
+    font-family: 'Century Gothic', 'AppleGothic', sans-serif;
+    letter-spacing: 0.25px;
+    line-height: 1.4rem;    
+}
+
+
 
 /* ===== NAVBAR ===== */
 #navbar {
@@ -1373,14 +1386,28 @@ body {
     box-sizing: border-box;          
 }
 
+/* Esta es la capa transparente */
+.carousel-item::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(255, 255, 255, 0.08); /* 0.5 es 50% de oscuridad */
+    pointer-events: none; /* Permite hacer clic a través de la capa */
+}
+
 .carousel-item img {
     width: 100%;
     height: 400px;
     object-fit: cover;
     display: block;
-    filter: blur(1px); 
-    -webkit-filter: blur(1px);        
+    filter: brightness(1.02);
 }
+
+
+
 
 /* El texto sobre la imagen (Caption) */
 .carousel-caption {
@@ -1395,9 +1422,9 @@ body {
     pointer-events: none; /* No interfiere con clics */
     z-index: 10;
 
-    background: rgba(0, 0, 0, 0.05);
-    backdrop-filter: blur(1px); 
-    -webkit-backdrop-filter: blur(1px);
+    background: rgba(0, 0, 0, 0.12);
+    /*backdrop-filter: blur(1px); 
+    -webkit-backdrop-filter: blur(1px);*/
     border-radius: var(--radius-lg);        
 }
 
@@ -1415,7 +1442,7 @@ body {
     max-width: 800px;
     line-height: 1.3;
     color: var(--color-text-header-primary);
-    text-shadow: 2px 2px 5px rgba(0,0,0,0.4);              /* Limpia márgenes por defecto */
+    text-shadow: 1px 1px 3px rgba(0,0,0,0.3);              /* Limpia márgenes por defecto */
 }
 
 /* Posicionamiento de flechas */

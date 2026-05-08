@@ -1,6 +1,6 @@
 {
   "meta": {
-    "title": "GMN Group",
+    "title": "GMN",
     "subtitle": "Consultores Expertos",
     "description": "Especializados en Gestión de Activos Físicos con más de 25 años de experiencia."
   },
@@ -23,7 +23,7 @@
   },
 
   "achievements": {
-    "title": "Impacto Estratégico <span class='gmn-font bold-text'>GMN</span><sup>®</sup>",
+    "title": "Impacto Estratégico <span class='gmn-font'>GMN</span><sup>®</sup>",
     "subtitle": "Durante el último año, nuestra gestión ha permitido a grandes operaciones industriales optimizar recursos por más de <span class='resaltado-gmn'>200 millones de dólares</span>",
     "card1": "$200",
     "card1_sub": "MUSD Valor Generado",
@@ -31,7 +31,7 @@
     "card2_sub": "Optimización de Costos",
     "card3": "24%",
     "card3_sub": "Disponibilidad de Activos",
-    "list": "Valor creado por <span class='gmn-font bold-text'>GMN</span><sup>®</sup>",
+    "list": "Valor creado por <span class='gmn-font'>GMN</span><sup>®</sup>",
     "list1": "25+ años de experiencia liderando la gestión de activos en sectores intensivos en capital.",
     "list2": "8+ operaciones mineras críticas impulsadas en Chile y Latinoamérica.",
     "list3": "200.000+ Órdenes de Trabajo regularizadas y optimizadas en SAP PM, asegurando integridad total de la información.",
@@ -46,7 +46,7 @@
     "intro_par1": "Acompañamos a organizaciones intensivas en capital a elevar su desempeño mediante una gestión de activos de clase mundial. No somos consultores externos; nos integramos como parte de su equipo para asegurar que cada solución técnica se traduzca en una mejora real y sostenible en terreno.",
     "intro_par2": "Con presencia en toda Latinoamérica, combinamos diagnóstico experto con una ejecución disciplinada que impulsa la toma de decisiones basada en datos reales y en tiempo real.",
     "job":"Soluciones Integrales para la Gestión de Activos y Confiabilidad",
-    "par_job": "En <span class='gmn-font'>GMN</span><sup>®</sup> transformamos el mantenimiento en un motor de rentabilidad. Mediante un ecosistema que integra tecnología, análisis de datos y estrategia, cubrimos todo el ciclo de vida del activo —desde el Core Tecnológico en SAP PM hasta la Ingeniería de Confiabilidad— para garantizar resultados medibles y sostenibles en el tiempo.",
+    "par_job": "En <span class='gmn-font gmn-color'>GMN</span><sup>®</sup> transformamos el mantenimiento en un motor de rentabilidad. Mediante un ecosistema que integra tecnología, análisis de datos y estrategia, cubrimos todo el ciclo de vida del activo —desde el Core Tecnológico en SAP PM hasta la Ingeniería de Confiabilidad— para garantizar resultados medibles y sostenibles en el tiempo.",
     "title1": "Disponibilidad y Confiabilidad Operacional",
     "par11": "Aseguramos que sus activos críticos superen los niveles de diseño mediante metodologías avanzadas de confiabilidad.",
     "par12": "Diagnosticamos el comportamiento real de sus equipos para eliminar restricciones sistémicas y fallas crónicas que interrumpen la continuidad.",
@@ -136,8 +136,8 @@
   },
 
   "about_us": {
-    "title1": "ADN <span class='gmn-font bold-text'>GMN</span><sup>®</sup>: 25 años transformando la industria",
-    "par11": "<span class='gmn-font'>GLOBAL MAINTENANCE NETWORK</span><sup>®</sup>, llamada también <span class='gmn-font'>GMN</span><sup>®</sup> por sus iniciales, es una consultora especializada en gestión de activos físicos, con más de 25 años de experiencia apoyando operaciones de minería, petróleo & gas, energía y manufactura LATAM & Global.",
+    "title1": "ADN <span class='gmn-font'>GMN</span><sup>®</sup>: 25 años transformando la industria",
+    "par11": "<span class='gmn-font gmn-color'>GLOBAL MAINTENANCE NETWORK</span><sup>®</sup>, llamada también <span class='gmn-font gmn-color'>GMN</span><sup>®</sup> por sus iniciales, es una consultora especializada en gestión de activos físicos, con más de 25 años de experiencia apoyando operaciones de minería, petróleo & gas, energía y manufactura LATAM & Global.",
     "par12": "Nuestro enfoque integra tecnología SAP PM, analítica avanzada y metodología de clase mundial para generar resultados medibles y sostenibles.",
     "par13": "Nuestra historia está escrita en faenas mineras, plantas de energía y centros logísticos, donde hemos impulsado a líderes industriales mediante resultados medibles que perduran en el tiempo.",
     "subtitle2": "Visión",
@@ -150,7 +150,7 @@
     "bio_SA": "Estratega con tres décadas liderando proyectos de excelencia operacional y cadena de suministro. Su enfoque integra la Gestión de Activos con una visión sistémica de la optimización de procesos para generar valor real.",
     "highlights_SA1":"Gestión de Activos",
     "highlights_SA2":"Optimización de Procesos",
-    "bio_MM": "Con más de 13 años de trayectoria en la industria minera nacional y multinacional, Marcelo lidera la expansión de <span class='gmn-font'>GMN</span><sup>®</sup> mediante alianzas estratégicas y una rigurosa evaluación de proyectos de alta criticidad.",
+    "bio_MM": "Con más de 13 años de trayectoria en la industria minera nacional y multinacional, Marcelo lidera la expansión de <span class='gmn-font gmn-color' style='font-weight: 500;'>GMN</span><sup>®</sup> mediante alianzas estratégicas y una rigurosa evaluación de proyectos de alta criticidad.",
     "highlights_MM1":"Alianzas Estratégicas",
     "highlights_MM2":"Evaluación de Proyectos",
     "lkdn_profile": "Ver Perfil"  
@@ -160,22 +160,22 @@
     "title": "Noticias",
     "subtitle": "El motor para recuperar la competitividad minera",
     "par1": "En entrevista con Reporte Minero, nuestro Managing Director, Sergio Adauy, analizó la brecha de competitividad que enfrenta la industria, destacando que la productividad ha caído un 27% en las últimas dos décadas. Frente al aumento de costos y la baja en las leyes de mineral, Adauy enfatizó que el mantenimiento representa cerca de un tercio del costo operativo (OPEX) de una faena.",
-    "par2": "Desde la perspectiva de <span class='gmn-font'>GMN</span><sup>®</sup>, la solución no reside únicamente en la reducción de costos tradicional, sino en una Gestión de Activos Físicos y Humanos con visión de largo plazo. <span class='italic bold-text'>La productividad no es lo mismo que la producción</span>, subrayando que la clave está en integrar tecnología avanzada con equipos de trabajo altamente capacitados para asegurar la continuidad del negocio en escenarios de alta complejidad."
+    "par2": "Desde la perspectiva de <span class='gmn-font gmn-color'>GMN</span><sup>®</sup>, la solución no reside únicamente en la reducción de costos tradicional, sino en una Gestión de Activos Físicos y Humanos con visión de largo plazo. <span class='italic bold-text'>La productividad no es lo mismo que la producción</span>, subrayando que la clave está en integrar tecnología avanzada con equipos de trabajo altamente capacitados para asegurar la continuidad del negocio en escenarios de alta complejidad."
   },
 
   "culture": {
-    "title": "Sello <span class='gmn-font bold-text'>GMN</span><sup>®</sup>: Excelencia técnica y presencia en terreno",
+    "title": "Sello <span class='gmn-font'>GMN</span><sup>®</sup>: Excelencia técnica y presencia en terreno",
     "subtitle": "Nos involucramos en sus desafíos como si fueran propios. No somos observadores; somos socios estratégicos que acompañan cada paso con disciplina, rigor y una visión orientada a resultados sostenibles",
 
     "section01": "Nuestra Identidad Operativa",
     "subsection01": "Disciplina que genera valor",
-    "par11": "Construimos relaciones de largo plazo basadas en la confianza técnica y la ejecución impecable. El Sello <span class='gmn-font'>GMN</span><sup>®</sup> significa integración natural con los equipos del cliente: trabajamos con la cercanía de un aliado y el rigor de un experto. No solo asesoramos; aseguramos la implementación efectiva y la adopción de mejoras que realmente perduran en la operación.",
-    "par12": "En <span class='gmn-font'>GMN</span><sup>®</sup> no solo asesoramos: aseguramos implementación efectiva, adopción sostenida y resultados que realmente perduran.",
+    "par11": "Construimos relaciones de largo plazo basadas en la confianza técnica y la ejecución impecable. El Sello <span class='gmn-font gmn-color'>GMN</span><sup>®</sup> significa integración natural con los equipos del cliente: trabajamos con la cercanía de un aliado y el rigor de un experto. No solo asesoramos; aseguramos la implementación efectiva y la adopción de mejoras que realmente perduran en la operación.",
+    "par12": "En <span class='gmn-font'>GMN</span><sup class='text-orange'>®</sup> no solo asesoramos: aseguramos implementación efectiva, adopción sostenida y resultados que realmente perduran.",
 
     "section02": "Estándares de Clase Mundial",
     "subsection02": "Respaldo en Gestión y Seguridad Certificada",
-    "par21": "La excelencia técnica se sustenta en procesos certificados. <span class='gmn-font'>GMN</span><sup>®</sup> es una empresa Trinorma, operando bajo los más altos estándares internacionales:",
-    "par22": "<span class='gmn-font'>GMN<sup>®</sup></span> es una empresa Trinorma, certificada bajo estándares internacionales:",
+    "par21": "La excelencia técnica se sustenta en procesos certificados. <span class='gmn-font gmn-color'>GMN</span><sup>®</sup> es una empresa Trinorma, operando bajo los más altos estándares internacionales:",
+    "par22": "<span class='gmn-font gmn-color'>GMN<sup>®</sup></span> es una empresa Trinorma, certificada bajo estándares internacionales:",
     "par23": " Estamos acreditados en el sistema SICEP con Categoría A, destacando el 100 % en calidad, medioambiente y automatización, lo que respalda nuestra gestión integral, segura y sostenible.",
     "par22_li01": "ISO 9001:2015 – Gestión de calidad",
     "par22_li02": "ISO 14001:2015 – Gestión ambiental",
@@ -183,7 +183,7 @@
 
     "section03": "Especialización Técnica Aplicada",
     "subsection03": "Expertos que hacen que las cosas pasen",
-    "par31": "El valor del Sello <span class='gmn-font'>GMN</span><sup>®</sup> reside en nuestro capital humano: consultores senior que combinan experiencia en terreno con una capacidad analítica avanzada.",
+    "par31": "El valor del Sello <span class='gmn-font gmn-color'>GMN</span><sup>®</sup> reside en nuestro capital humano: consultores senior que combinan experiencia en terreno con una capacidad analítica avanzada.",
     "par33": "La disciplina técnica no es un servicio, es nuestro ADN corporativo.",
     "par32_li01": "25+ años de trayectoria en activos críticos y estrategias de mantenimiento.",
     "par32_li02": "Dominio experto en SAP PM / S4HANA y optimización masiva de datos.",

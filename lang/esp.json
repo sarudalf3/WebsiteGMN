@@ -150,7 +150,7 @@
     "bio_SA": "Estratega con tres décadas liderando proyectos de excelencia operacional y cadena de suministro. Su enfoque integra la Gestión de Activos con una visión sistémica de la optimización de procesos para generar valor real.",
     "highlights_SA1":"Gestión de Activos",
     "highlights_SA2":"Optimización de Procesos",
-    "bio_MM": "Con más de 13 años de trayectoria en la industria minera nacional y multinacional, Marcelo lidera la expansión de <span class='gmn-font gmn-color' style='font-weight: 500;'>GMN</span><sup>®</sup> mediante alianzas estratégicas y una rigurosa evaluación de proyectos de alta criticidad.",
+    "bio_MM": "Con más de 13 años de trayectoria en la industria minera nacional y multinacional, Marcelo lidera la expansión de <span class='gmn-font gmn-color gmn-size-xs'>GMN</span><sup>®</sup> mediante alianzas estratégicas y una rigurosa evaluación de proyectos de alta criticidad.",
     "highlights_MM1":"Alianzas Estratégicas",
     "highlights_MM2":"Evaluación de Proyectos",
     "lkdn_profile": "Ver Perfil"  
@@ -196,7 +196,7 @@
     "client_text": "La complejidad de los datos no debe detener su producción. Cuéntenos sobre sus desafíos en SAP, reportabilidad o gestión de activos; estamos listos para integrarnos como parte de su equipo y transformar sus problemas en resultados medibles.",
     "client_btn": "Hablemos de su proyecto",
     
-    "talent_title": "Súmate a <span class='gmn-font bold-text'>GMN</span><sup>®</sup>",
+    "talent_title": "Súmate a <span class='gmn-font gmn-size-title'>GMN</span><sup>®</sup>",
     "talent_text": "Buscamos consultores senior que no solo asesoren, sino que hagan que las cosas pasen. Si te apasiona la excelencia técnica y quieres generar un impacto real en las operaciones más críticas de Latinoamérica, este es su lugar.",
     "talent_linkedIn_btn": "Ver oportunidades en LinkedIn",
     "talent_mail_btn": "Envianos tu CV"

@@ -67,12 +67,12 @@
     
     "title_per":"Análisis de Pérdidas Operativas",
     "par_per": "Identificamos, cuantificamos y eliminamos las pérdidas operativas mediante metodología probada y analítica avanzada en operaciones de clase mundial.",
-    "item_per1":"<b class='text-orange'>Detenciones No Programadas:</b> Soluciones para operaciones de alto desempeño.",
-    "item_per2":"<b class='text-orange'>Planificación y Procesos Ineficientes:</b> Eficiencia y suministro sostenible.",
-    "item_per3":"<b class='text-orange'>Rendimiento Reducido:</b> Manufactura, Forestal, Transporte y Aeronáutica.",        
-    "item_per4":"<b class='text-orange'>Otros Sectores:</b> Manufactura, Forestal, Transporte y Aeronáutica.",        
-    "item_per5":"<b class='text-orange'>Calidad de Datos:</b> Manufactura, Forestal, Transporte y Aeronáutica.",        
-    "item_per6":"<b class='text-orange'>Cultura y gestión Organizacional:</b> Manufactura, Forestal, Transporte y Aeronáutica."        
+    "item_per1":"<b class='text-orange'>Detenciones No Programadas:</b> Fallas de equipos críticos o paradas no operacionales. La fuente más costosa y visible de pérdida productiva.",
+    "item_per2":"<b class='text-orange'>Planificación y Procesos Ineficientes:</b> Tiempo de detención por mantenimientos mal dimensionados, baja eficiencia o cuellos de botella en programación.",
+    "item_per3":"<b class='text-orange'>Mantenibilidad y Coordinación:</b> Tiempo adicional por dificultad de acceso, falta de repuestos o coordinación deficiente que extiende los tiempos de reparación.",        
+    "item_per4":"<b class='text-orange'>Rendmiento Reducido:</b> Equipos operando bajo capacidad nominal. Degradación silenciosa que genera pérdida acumulada en el tiempo operativo.",        
+    "item_per5":"<b class='text-orange'>Calidad de Datos:</b> Decisiones basadas en información incompleta o inconsistente, que se traducen en estrategias mal calibradas.",        
+    "item_per6":"<b class='text-orange'>Cultura y gestión Organizacional:</b> Brechas en competencias, liderazgo desalineado o cultura reactiva que perpetúan el ciclo de pérdidas."        
   },
 
 

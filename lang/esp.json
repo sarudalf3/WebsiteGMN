@@ -50,8 +50,8 @@
     "par_job": "En <span class='gmn-font gmn-color'>GMN</span><sup>®</sup> transformamos el mantenimiento en un motor de rentabilidad. Mediante un ecosistema que integra tecnología, análisis de datos y estrategia, cubrimos todo el ciclo de vida del activo —desde el Core Tecnológico en SAP PM hasta la Ingeniería de Confiabilidad— para garantizar resultados medibles y sostenibles en el tiempo.",
     "ind_title": "Hemos desarrollado soluciones en las industrias:",
     "item_1":"<b>Minería:</b> Soluciones para operaciones de alto desempeño.",
-    "item_2":"<b>Energía, Petróleo y Gas:</b> Eficiencia y suministro sostenible .",
-    "item_3":"<b>Otros Sectores:</b> Manufactura, Forestal, Transporte y Aeronáutica .",        
+    "item_2":"<b>Energía, Petróleo y Gas:</b> Eficiencia y suministro sostenible.",
+    "item_3":"<b>Otros Sectores:</b> Manufactura, Forestal, Transporte y Aeronáutica.",        
     "title1": "Disponibilidad y Confiabilidad Operacional",
     "par11": "Aseguramos que sus activos críticos superen los niveles de diseño mediante metodologías avanzadas de confiabilidad.",
     "par12": "Diagnosticamos el comportamiento real de sus equipos para eliminar restricciones sistémicas y fallas crónicas que interrumpen la continuidad.",
@@ -68,11 +68,11 @@
     "title_per":"Análisis de Pérdidas Operativas",
     "par_per": "Identificamos, cuantificamos y eliminamos las pérdidas operativas mediante metodología probada y analítica avanzada en operaciones de clase mundial.",
     "item_per1":"<b class='text-orange'>Detenciones No Programadas:</b> Soluciones para operaciones de alto desempeño.",
-    "item_per2":"<b class='text-orange'>Planificación y Procesos Ineficientes:</b> Eficiencia y suministro sostenible .",
-    "item_per3":"<b class='text-orange'>Rendimiento Reducido:</b> Manufactura, Forestal, Transporte y Aeronáutica .",        
-    "item_per4":"<b class='text-orange'>Otros Sectores:</b> Manufactura, Forestal, Transporte y Aeronáutica .",        
-    "item_per5":"<b class='text-orange'>Calidad de Datos:</b> Manufactura, Forestal, Transporte y Aeronáutica .",        
-    "item_per6":"<b class='text-orange'>Cultura y gestión Organizacional:</b> Manufactura, Forestal, Transporte y Aeronáutica ."        
+    "item_per2":"<b class='text-orange'>Planificación y Procesos Ineficientes:</b> Eficiencia y suministro sostenible.",
+    "item_per3":"<b class='text-orange'>Rendimiento Reducido:</b> Manufactura, Forestal, Transporte y Aeronáutica.",        
+    "item_per4":"<b class='text-orange'>Otros Sectores:</b> Manufactura, Forestal, Transporte y Aeronáutica.",        
+    "item_per5":"<b class='text-orange'>Calidad de Datos:</b> Manufactura, Forestal, Transporte y Aeronáutica.",        
+    "item_per6":"<b class='text-orange'>Cultura y gestión Organizacional:</b> Manufactura, Forestal, Transporte y Aeronáutica."        
   },
 
 

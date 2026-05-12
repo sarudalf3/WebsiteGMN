@@ -19,7 +19,7 @@
   "home": {
       "title1": "Juntos",
       "title2": "Avanzamos",
-      "subtitle": "Avanzamos juntos a nuestros clientes en alcanzar y sostener la eficiencia operativa.\nCombinamos visión de procesos, analítica avanzada y SAP PM para que los activos cumplan las metas de productividad."
+      "subtitle": "Avanzamos juntos a nuestros clientes en alcanzar y sostener la eficiencia operativa.\nCombinamos visión de procesos, analítica avanzada y SAP PM para que los activos cumplan las metas productivas."
   },
 
   "achievements": {
@@ -27,13 +27,14 @@
     "subtitle": "Durante el último año, nuestra gestión ha permitido a grandes operaciones industriales optimizar recursos por más de <span class='resaltado-gmn'>200 millones de dólares</span>",
     "card1": "$200",
     "card1_sub": "MUSD Valor Generado",
-    "card2": "18%",
+    "card2": "20%",
     "card2_sub": "Optimización de Costos",
     "card3": "24%",
     "card3_sub": "Disponibilidad de Activos",
     "list": "Valor creado por <span class='gmn-font'>GMN</span><sup>®</sup>",
-    "list1": "25+ años de experiencia liderando la gestión de activos en sectores intensivos en capital.",
-    "list2": "8+ operaciones mineras críticas impulsadas en Chile y Latinoamérica.",
+    "list1": "25+ años de experiencia liderando la gestión de activos de clase mundial.",
+    "list2": "8+ operaciones mineras en presencia global y LatAm.",
+    "list6": "Certificación Normas ISO 9001, 14001, 45001 y AENOR.",
     "list3": "200.000+ Órdenes de Trabajo regularizadas y optimizadas en SAP PM, asegurando integridad total de la información.",
     "list4": "Especialistas en proyectos de alta criticidad, donde la continuidad operativa no es negociable.",
     "list5": "Equipo multidisciplinario de 50+ profesionales enfocados en hacer que las cosas pasen.",
@@ -43,10 +44,14 @@
   "we_do": {
     "title": "Nuestras Soluciones",
     "intro": "Transformamos la complejidad operativa en continuidad de negocio",
-    "intro_par1": "Acompañamos a organizaciones intensivas en capital a elevar su desempeño mediante una gestión de activos de clase mundial. No somos consultores externos; nos integramos como parte de su equipo para asegurar que cada solución técnica se traduzca en una mejora real y sostenible en terreno.",
-    "intro_par2": "Con presencia en toda Latinoamérica, combinamos diagnóstico experto con una ejecución disciplinada que impulsa la toma de decisiones basada en datos reales y en tiempo real.",
+    "intro_par1": "Acompañamos a organizaciones intensivas en capital a elevar su desempeño mediante una gestión de activos de clase mundial, con experiencia en:",
+    "intro_par2": "Con presencia en toda Latinoamérica, combinamos diagnóstico experto con una ejecución disciplinada que impulsa la toma de decisiones basada en datos reales y en tiempo real. No somos consultores externos; nos integramos como parte de su equipo para asegurar que cada solución técnica se traduzca en una mejora real y sostenible en terreno.",
     "job":"Soluciones Integrales para la Gestión de Activos y Confiabilidad",
     "par_job": "En <span class='gmn-font gmn-color'>GMN</span><sup>®</sup> transformamos el mantenimiento en un motor de rentabilidad. Mediante un ecosistema que integra tecnología, análisis de datos y estrategia, cubrimos todo el ciclo de vida del activo —desde el Core Tecnológico en SAP PM hasta la Ingeniería de Confiabilidad— para garantizar resultados medibles y sostenibles en el tiempo.",
+    "ind_title": "Hemos desarrollado soluciones en las industrias:",
+    "item_1":"<b>Minería:</b> Soluciones para operaciones de alto desempeño.",
+    "item_2":"<b>Energía, Petróleo y Gas:</b> Eficiencia y suministro sostenible .",
+    "item_3":"<b>Otros Sectores:</b> Manufactura, Forestal, Transporte y Aeronáutica .",        
     "title1": "Disponibilidad y Confiabilidad Operacional",
     "par11": "Aseguramos que sus activos críticos superen los niveles de diseño mediante metodologías avanzadas de confiabilidad.",
     "par12": "Diagnosticamos el comportamiento real de sus equipos para eliminar restricciones sistémicas y fallas crónicas que interrumpen la continuidad.",
@@ -58,7 +63,16 @@
     "title3": "Inteligencia Operacional y Reportabilidad",
     "par31": "Llevamos su gestión al siguiente nivel mediante la integración de SAP, Reportabilidad Avanzada en Power BI e Inteligencia Artificial.",
     "par32": "Desarrollamos ecosistemas digitales que detectan desviaciones en tiempo real y proponen acciones inmediatas. ",
-    "par33": " Convertimos el flujo masivo de datos en insights estratégicos, elevando la predictibilidad, la agilidad y la transparencia de toda su operación."
+    "par33": " Convertimos el flujo masivo de datos en insights estratégicos, elevando la predictibilidad, la agilidad y la transparencia de toda su operación.",
+    
+    "title_per":"Análisis de Pérdidas Operativas",
+    "par_per": "Identificamos, cuantificamos y eliminamos las pérdidas operativas mediante metodología probada y analítica avanzada en operaciones de clase mundial.",
+    "item_per1":"<b class='text-orange'>Detenciones No Programadas:</b> Soluciones para operaciones de alto desempeño.",
+    "item_per2":"<b class='text-orange'>Planificación y Procesos Ineficientes:</b> Eficiencia y suministro sostenible .",
+    "item_per3":"<b class='text-orange'>Rendimiento Reducido:</b> Manufactura, Forestal, Transporte y Aeronáutica .",        
+    "item_per4":"<b class='text-orange'>Otros Sectores:</b> Manufactura, Forestal, Transporte y Aeronáutica .",        
+    "item_per5":"<b class='text-orange'>Calidad de Datos:</b> Manufactura, Forestal, Transporte y Aeronáutica .",        
+    "item_per6":"<b class='text-orange'>Cultura y gestión Organizacional:</b> Manufactura, Forestal, Transporte y Aeronáutica ."        
   },
 
 
@@ -115,24 +129,24 @@
 
   "success": {
     "title": "Nuestra Experiencia",
-    "exp_title01": "Escondida | BHP",
-    "exp_desc01": "Reportabilidad automática KPIs · 52.669 objetos técnicos / 5.071 planes SAP PM · análisis de pérdidas por área (OLAP, ECT) · Apoyo a reportabilidad ejecutiva",
+    "exp_title01": "ESCONDIDA | BHP",
+    "exp_desc01": "Maximización de la Disponibilidad de Activos Críticos · Mejora en Calidad de Información · Automatización de Reportes Operativos de Mantenimiento",
     "exp_title02": "CODELCO",
-    "exp_desc02": "KPIs integrados con análisis de pérdidas productivas en BW · Hojas de ruta orientadas a reducción de pérdidas · Estándar corporativo datos maestros SAP PM",
+    "exp_desc02": "Estandarización de Críterios Operativos · Optimización en Control de Gestión  · Carga Datos Maestros SAP PM",
     "exp_title03": "CERRO MATOSO",
-    "exp_desc03": "Se han desarrollado modelos de datos y dashboars automatizados, los cuales han generado una reducción de X horas operacionales a la semana para el personal beneficiado.",
+    "exp_desc03": "Incremento en la Ejecución del Trabajo Programado · Mejora en la Productividad Laboral",
     "exp_title04":"GLENCORE",
-    "exp_desc04": "Implementación SAP/SOMA con eliminación de defectos y soporte en confiabilidad operacional",
+    "exp_desc04": "Reducción Detenciones No Programadas · Rediseño de Planes de Mantenimiento",
     "exp_title05":"COCA-COLA",
-    "exp_deesc05": "Implementación SAS PM para automatización de mantenimiento planta.",
-    "exp_title06":"MINERA ANTAPACCAY",
-    "exp_desc06": "",
+    "exp_desc05": "Reducción Costos Operativos · Optimización Procesos de Confiabilidad en Líneas de Producción de Alta Velocidad",
+    "exp_title06":"CENTINELA | ANTOFAGASTA MINERALS",
+    "exp_desc06": "Cumplimiento de Metas Operativas · Identificación Brechas Críticas",
     "exp_title07":"SPENCE | BHP",
-    "exp_desc07": "Internalización completa: 15.131 objetos técnicos / 382 planes / 230 personas capacitadas · Proceso reparables como palanca clave de reducción de pérdidas",
-    "exp_title08":"SIERRA GORDA",
-    "exp_desc08": "Datos maestros y planes para nueva operación · Implementación SAP/SOMA con eliminación de defectos",
-    "exp_title09":"CASERONES",
-    "exp_desc09": ""
+    "exp_desc07": "Continudad Operativa en Cambio de Modelo de Gestión · Fortalecimiento Capacidades Internas de Gestión",
+    "exp_title08":"SIERRA GORDA SCM",
+    "exp_desc08": "Detección de Pérdidas Operativas · Reportes de Gestión de Activos en Tiempo Real",
+    "exp_title09":"CASERONES | LUNDIN MINING",
+    "exp_desc09": "Reducción Capital Inmovilizado · Optimización Ciclo de Vida de Componentes Mayores"
   },
 
   "about_us": {

@@ -945,11 +945,11 @@ body {
   display: flex;
   gap: var(--spacing-xl);
   align-items: flex-start; 
-  margin-bottom: var(--spacing-xxl);
+  margin-bottom: 0;
 }
 
 .text-job {
-  flex: 1;
+  flex: 1.8;
 }
 
 .text-job p {
@@ -977,6 +977,24 @@ body {
   display: block; /* Elimina espacios vacíos debajo de la imagen */
   margin: 0 auto; /* CLAVE: Esto centra la imagen horizontalmente */
   box-shadow: 0 10px 20px rgba(0,0,0,0.2);
+}
+
+.industria-text ul {
+  list-style: none;
+  padding-left: 0;
+}
+
+.industria-text li {
+  margin-bottom: var(--spacing-sm);
+  padding-left: 20px;
+  position: relative;
+}
+
+.industria-text li::before {
+  content: "•";
+  color: var(--color-text-secondary);
+  position: absolute;
+  left: 4px;
 }
 /*
 .image-job img {

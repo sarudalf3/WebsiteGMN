@@ -201,8 +201,9 @@ body {
 }
 
 .logo-link img {
-    height: 59px;
-    width: 48px;
+    height: 55px;
+    width: 60px;
+    padding: 5px;
     transition: transform 0.3s ease;
 }
 
@@ -226,10 +227,9 @@ body {
 }
 
 .brand-tagline {
-  font-size: var(--font-size-base);
+  font-size: var(--font-size-xs);
   color: var(--color-text-header-secondary);
-  margin-top: 3px;
-  margin-bottom: 5px;
+  margin: 2px 0px 3px 0px;
 }
 
 /* Center Menu */
@@ -1925,7 +1925,7 @@ padding-bottom: 4px;
 /* --- Ajuste para Laptops Pequeñas / Tablets Grandes (1024px o menos) --- */
 @media (max-width: 1075px) {
     .logo-text {
-      min-width: 120px;
+      min-width: 90px;
     }    
     /* Achicamos el espacio entre los enlaces del menú */
     .nav-links {
@@ -1959,9 +1959,10 @@ padding-bottom: 4px;
         font-size: 0.8rem;
         margin-top: 3px;
     }
-    .logo img {
-        height: 30px; /* Achicamos un poco el icono de GMN */
-    }
+    /*.logo img {
+        height: 30px;  Achicamos un poco el icono de GMN 
+        width: 35px;
+    }*/
   .navbar-nav {
     top: 58px;
   }

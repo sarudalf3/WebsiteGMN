@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="es-CL">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Canal de Ética y Denuncias de Global Maintenance Network (GMN). Espacio seguro y confidencial para reportar conductas indebidas, conforme a la Ley 21.643 (Karin), Ley 20.393 y Ley 19.628." />
+  <meta name="robots" content="index,follow" />
+  <meta name="referrer" content="no-referrer" />
+  <title>Canal de Ética y Denuncias · GMN</title>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Jost:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+  <link rel="icon" type="image/x-icon" href="./img/gmn_icon.ico">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+  
+  <link rel="stylesheet" href="css/styles.css"/>
+
+  <style>
+    body {
+      background-color: var(--color-background2); /* Fondo gris claro para contraste */
+      color: var(--color-text-primary);
+    }
+    
+    .denuncias-main {
+      max-width: var(--container-width);
+      margin: 120px auto 60px auto; /* Margen superior para evitar solapamiento con el navbar */
+      padding: 0 var(--spacing-xl);
+    }
+
+    /* Banner Provisorio */
+    .provisional-banner {
+      background: var(--color-text-secondary); /* Negro del header de GMN */
+      color: var(--color-text-light);
+      padding: 10px 24px;
+      text-align: center;
+      font-size: var(--font-size-sm);
+      font-weight: 500;
+      margin-top: 70px; /* Separación de la barra de navegación */
+    }
+    .provisional-banner strong { 
+      color: var(--color-primary); /* Naranja GMN */
+    }
+
+    /* Tarjetas de Contenido */
+    .denuncias-card {
+      background: var(--color-surface);
+      border-radius: var(--radius-lg);
+      padding: var(--spacing-xl);
+      box-shadow: 0 4px 16px rgba(0,0,0,0.05);
+      margin-bottom: var(--spacing-xl);
+      border-top: 4px solid var(--color-primary); /* Acento Naranja */
+    }
+
+    .denuncias-card h1, .denuncias-card h2, .denuncias-card h3 {
+      font-family: 'Jost', sans-serif;
+      color: var(--color-text-primary);
+      margin-bottom: var(--spacing-sm);
+    }
+
+    /* Botón Naranja GMN */
+    .btn-denuncia {
+      display: inline-block;
+      background-color: var(--color-primary);
+      color: var(--color-background) !important;
+      padding: var(--spacing-sm) var(--spacing-lg);
+      border-radius: var(--radius-sm);
+      font-weight: 600;
+      text-decoration: none !important;
+      transition: var(--transition-fast);
+      margin-top: var(--spacing-md);
+    }
+    
+    .btn-denuncia:hover {
+      background-color: var(--color-primary-hover);
+      transform: translateY(-2px);
+    }
+
+    /* Acordeón (Para Preguntas Frecuentes y Leyes) */
+    details {
+      background: var(--color-background-accordion);
+      border: 1px solid var(--color-border);
+      border-radius: var(--radius-sm);
+      padding: var(--spacing-md);
+      margin-bottom: var(--spacing-sm);
+      transition: var(--transition-fast);
+    }
+    summary {
+      font-family: 'Jost', sans-serif;
+      font-weight: 600;
+      font-size: var(--font-size-md);
+      cursor: pointer;
+      color: var(--color-text-secondary);
+      outline: none;
+    }
+    details p {
+      margin-top: var(--spacing-sm);
+      font-size: var(--font-size-base);
+    }
+  </style>
+</head>
+
+<body>
+  <header id="navbar">
+    <div class="navbar-container">
+      <div class="logo">
+        <a href="index.html" class="logo-link">
+          <img src="./img/gmn_icon.svg" alt="GMN Group Logo">
+          <div class="logo-text">
+            <h1 class="brand-name gmn-font">GMN</h1>
+            <h4 class="brand-tagline font-others">Canal de Ética</h4>
+          </div>
+        </a>
+      </div> 
+      <nav class="navbar-nav">
+        <ul class="nav-links">
+          <li><a href="#que-denunciar">Qué denunciar</a></li>
+          <li><a href="#garantias">Garantías</a></li>
+          <li><a href="#marco-legal">Marco Legal</a></li>
+          <li><a href="#preguntas">Preguntas</a></li>
+        </ul>
+      </nav>
+      
+      <div class="navbar-right">
+        <button class="navbar-toggle" type="button" aria-label="Toggle navigation">☰</button>
+        <div class="navbar-lang">
+          <select id="language-selector" class="lang-select" aria-label="Select language">
+            <option value="esp" selected>ESP</option>
+            <option value="eng">ENG</option>
+            <option value="prt">PRT</option>
+          </select>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <div class="provisional-banner">
+    Este es el Canal de Denuncias oficial de <strong>GMN Group</strong>.<br>
+    <strong>Versión preliminar</strong> · Canal operativo mientras se implementa la plataforma definitiva GlobaLeaks
+  </div>
+
+  <main class="denuncias-main">
+    
+    <div class="denuncias-card" id="acceso">
+      <h2 class="highlight-orange">Canal de Ética y Denuncias</h2>
+      <p>Espacio seguro y confidencial para reportar conductas indebidas, conforme a la Ley 21.643 (Karin), Ley 20.393 y Ley 19.628.</p>
+      <a href="https://gmngroup.try.globaleaks.org/#/" target="_blank" rel="noopener noreferrer" class="btn-denuncia">Presentar denuncia</a>
+    </div>
+
+    <div class="denuncias-card" id="preguntas">
+      <h3 class="highlight-orange">Preguntas frecuentes</h3>
+      
+      <details>
+        <summary>¿Quiénes pueden denunciar?</summary>
+        <p>Cualquier trabajador, ex-trabajador, proveedor o tercero que tenga relación con la empresa.</p>
+      </details>
+      <details>
+        <summary>¿Puedo hacer una denuncia anónima?</summary>
+        <p>Sí, la plataforma permite presentar denuncias de manera 100% anónima si así lo deseas.</p>
+      </details>
+    </div>
+
+    <div class="denuncias-card" id="marco-legal">
+      <h3 class="highlight-orange">Marco legal</h3>
+      
+      <details>
+        <summary>Ley 21.643 (Ley Karin)</summary>
+        <p>Prevención, investigación y sanción del acoso laboral, sexual o de violencia en el trabajo.</p>
+      </details>
+    </div>
+
+  </main>
+
+  <footer style="background: var(--color-header-surface); color: var(--color-text-header-secondary); padding: var(--spacing-xl) 2rem; text-align: center;">
+    <p class="gmn-size-footer font-others">© 2026 Global Maintenance Network Ltda.® — Todos los derechos reservados.</p>
+    <div style="margin-top: 10px; font-size: var(--font-size-xs);">
+      <a href="https://www.dt.gob.cl" target="_blank" style="color: var(--color-text-header-secondary); margin: 0 10px;">Dirección del Trabajo</a> | 
+      <a href="https://gmngroup.try.globaleaks.org/#/login" target="_blank" style="color: var(--color-text-header-secondary); margin: 0 10px;">Acceso Admin</a>
+    </div>
+  </footer>
+
+  <script type="module" src="js/main.js"></script>
+</body>
+</html>

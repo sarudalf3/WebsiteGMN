@@ -1,7 +1,7 @@
 {
   "meta": {
     "title": "GMN",
-    "subtitle": "Consultores Expertos",
+    "subtitle": "Making Things <br> Happen<sup>®</sup>",
     "description": "Especializados en Gestión de Activos Físicos con más de 25 años de experiencia."
   },
 
@@ -13,7 +13,7 @@
     "navbar5": "Soluciones",       
     "navbar6": "Experiencia",
     "navbar7": "Sello GMN",
-    "navbar8": "Hablemos"
+    "navbar8": "Conectemos"
   },
 
   "home": {
@@ -205,7 +205,7 @@
   },
 
 "contact": {
-    "title": "Hablemos",
+    "title": "Conectemos",
     "client_title": "¿Listo para optimizar su continuidad operativa?",
     "client_text": "La complejidad de los datos no debe detener su producción. Cuéntenos sobre sus desafíos en SAP, reportabilidad o gestión de activos; estamos listos para integrarnos como parte de su equipo y transformar sus problemas en resultados medibles.",
     "client_btn": "Hablemos de su proyecto",

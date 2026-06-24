@@ -1315,7 +1315,7 @@ body {
   border: 2px solid var(--color-primary); /* Borde naranja GMN */
   border-radius: 6px;
   filter: grayscale(0%);  
-  height: 260px;
+  height: 280px;
   position: relative;
   overflow: hidden;
   padding: 0 var(--spacing-md);
@@ -1415,6 +1415,12 @@ body {
 }
 
 /* Responsive */
+@media (max-width: 1400px) {
+  .grid-container { grid-template-columns: repeat(2, 1fr); } /* 2 columnas en tablets */
+  .solucion-card { height: 240px; }  
+
+}
+
 @media (max-width: 981px) {
   .grid-container { grid-template-columns: repeat(3, 1fr); } /* 2 columnas en tablets */
 

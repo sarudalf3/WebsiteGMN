@@ -511,6 +511,11 @@ body {
     line-height: 1.2;
 }
 
+.margener h4 {
+    margin: var(--spacing-md) 0;
+    line-height: 1.2;
+}
+
 .margener p {
   padding-bottom: var(--spacing-md);
 }
@@ -612,10 +617,20 @@ body {
 }
 
 .cards-subtitle {
-  margin: 0 auto;
+  padding: 0px !important;
   color: var(--color-text-secondary) !important;
   text-align: center;      /* Fuerza el centrado del texto */
   font-size: var(--font-size-heading-md) !important;
+  display: block;
+  width: 95%;  
+  font-weight: bold;
+  align-items: center;
+}
+
+.cards-comparative {
+  color: var(--color-text-secondary) !important;
+  text-align: center;      /* Fuerza el centrado del texto */
+  font-size: var(--font-size-heading-xs) !important;
   display: block;
   width: 95%;  
   font-weight: bold;
@@ -997,6 +1012,7 @@ body {
   position: absolute;
   left: 4px;
 }
+
 
 /* New cards*/
 
@@ -1773,6 +1789,11 @@ body {
     text-align: center;
 }
 
+.wrapper-contacto {
+  display: inline-block; /* Esto hace que el div solo ocupe el ancho de sus elementos */
+  text-align: left;      /* Esto asegura que el contenido interno se alinee a la izquierda */
+  margin: 0 auto;        /* Esto centra el bloque si el padre tiene text-align: center */
+}
 
 .footer-column {
     display: flex;
@@ -1790,12 +1811,12 @@ body {
 
 .footer-link {
     display: flex;
-    align-items: center; /* ALINEACIÓN VERTICAL CRUCIAL */
+    align-items:center; /* ALINEACIÓN VERTICAL CRUCIAL */
     text-decoration: none;
     color: #ccc;
     transition: color 0.3s ease;
     gap: 8px; /* Espacio horizontal entre icono y texto */
-    justify-content: center; /* Esto mueve el icono+texto al centro */
+    justify-content: flex-start; /* Esto mueve el icono+texto al centro */
     padding: 0 5px; /* Espacio vertical para que no se vean amontonados */
 
 }
@@ -2033,7 +2054,7 @@ padding-bottom: 4px;
     margin-bottom: 5px;
   }
   .footer-link {
-    justify-content: center; /* Esto mueve el icono+texto al centro */
+    /*justify-content: center; /* Esto mueve el icono+texto al centro */
     margin: 0px auto;      /* Da espacio vertical */
     gap: 10px;
   }
@@ -2043,7 +2064,7 @@ padding-bottom: 4px;
 @media (min-width: 1229px) {
   .footer-container {
     grid-template-columns: 1.5fr 1.2fr 1.0fr;
-    text-align: left;
+    text-align: center;
     gap: 30px;
   }
   .footer-column:first-child {
@@ -2057,6 +2078,8 @@ padding-bottom: 4px;
   }
   .footer-column h3, .footer-column h4 {
     margin-bottom: var(--spacing-sm);
+    align-self: center;
+    text-align: center;
   }
   .footer-link {
     justify-content: flex-start !important;
@@ -2248,6 +2271,10 @@ padding-bottom: 4px;
     font-size: var(--font-size-heading-md) !important; /* Achicamos el $200M */
     padding-bottom: var(--spacing-sm);
   }  
+  .cards-comparative {
+    font-size: var(--font-size-base) !important; /* Achicamos el $200M */
+    padding-bottom: var(--spacing-sm);
+  }
   .list-content li {
     font-size: var(--font-size-base); /* Texto de la lista más legible */
   }

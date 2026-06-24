@@ -1,15 +1,15 @@
 {
   "meta": {
-    "title": "GMN",
-    "subtitle": "Making Things <br> Happen<sup>®</sup>",
-    "description": "Especializados en Gestión de Activos Físicos con más de 25 años de experiencia."
+    "title": "GMN® | Gestión de Activos Físicos, SAP PM y Confiabilidad para Minería e Industria",
+    "subtitle": "Making Things Happen<sup>®</sup>",
+    "description": "Especializados en Gestión de Activos Físicos con más de 25 años de experiencia. SAP PM, analítica avanzada y confiabilidad operacional para minería, energía e industria en Latinoamérica y el mundo."
   },
 
   "nav": {
     "navbar1": "Inicio",
-    "navbar2": "Hitos",
+    "navbar2": "Impacto",
     "navbar3": "Noticias",
-    "navbar4": "ADN GMN", 
+    "navbar4": "Nosotros", 
     "navbar5": "Soluciones",       
     "navbar6": "Experiencia",
     "navbar7": "Sello GMN",
@@ -19,68 +19,67 @@
   "home": {
       "title1": "Juntos",
       "title2": "Avanzamos",
-      "subtitle": "Avanzamos juntos a nuestros clientes en alcanzar y sostener la eficiencia operativa.\nCombinamos visión de procesos, analítica avanzada y SAP PM para que los activos cumplan las metas productivas."
+      "subtitle": "Avanzamos junto a usted para alcanzar y sostener la eficiencia operativa.\nIntegramos visión de procesos, analítica avanzada y SAP PM para que los activos cumplan sus metas de producción."
   },
 
   "achievements": {
     "title": "Impacto Estratégico <span class='gmn-font'>GMN</span><sup>®</sup>",
-    "subtitle": "Durante el último año, nuestra gestión ha permitido a grandes operaciones industriales optimizar recursos por más de <span class='resaltado-gmn'>200 millones de dólares</span>",
+    "subtitle": "Durante el último año, nuestra gestión ha permitido a grandes operaciones industriales optimizar recursos por más de <span class='resaltado-gmn'>200 millones de dólares</span>.",
     "card1": "$200",
-    "card1_sub": "MUSD Valor Generado",
+    "card1_sub1": "MUSD Valor Generado",
+    "card1_sub2": "Recursos optimizados en operaciones cliente",
     "card2": "20%",
-    "card2_sub": "Optimización de Costos",
+    "card2_sub1": "Optimización de Costos",
+    "card2_sub2": "Sobre históricos de mantenimiento",
     "card3": "24%",
-    "card3_sub": "Disponibilidad de Activos",
+    "card3_sub1": "Disponibilidad de Activos",
+    "card3_sub2": "En activos críticos intervenidos",
     "list": "Valor creado por <span class='gmn-font'>GMN</span><sup>®</sup>",
-    "list1": "+25 años de experiencia liderando la gestión de activos de clase mundial.",
-    "list2": "+8 operaciones mineras en presencia global y LatAm.",
-    "list6": "Certificación Normas ISO 9001, 14001, 45001 y AENOR.",
-    "list3": "+200.000 Órdenes de Trabajo regularizadas y optimizadas en SAP PM, asegurando integridad total de la información.",
+    "list1": "Más de 25 años de experiencia liderando la gestión de activos de clase mundial.",
+    "list2": "Más de 9 faenas mineras intervenidas, con presencia en Latinoamérica y a nivel global.",
+    "list6": "Certificación en normas ISO 9001, 14001 y 45001, y acreditación AENOR.",
+    "list3": "Más de 200.000 órdenes de trabajo regularizadas y optimizadas en SAP PM, asegurando la integridad total de la información.",
     "list4": "Especialistas en proyectos de alta criticidad, donde la continuidad operativa no es negociable.",
-    "list5": "Equipo multidisciplinario de 50+ profesionales enfocados en hacer que las cosas pasen.",
+    "list5": "Equipo multidisciplinario de más de 50 profesionales enfocados en hacer que las cosas pasen.",
     "success_cases": "Revisa nuestra experiencia en casos de éxito concretos."
   },
 
   "we_do": {
     "title": "Nuestras Soluciones",
-    "intro": "Transformamos la complejidad operativa en continuidad de negocio",
-    "intro_par1": "Acompañamos a organizaciones intensivas en capital a elevar su desempeño mediante una gestión de activos de clase mundial, con experiencia en:",
-    "intro_par2": "Con presencia en toda Latinoamérica, combinamos diagnóstico experto con una ejecución disciplinada que impulsa la toma de decisiones basada en datos reales y en tiempo real. No somos consultores externos; nos integramos como parte de su equipo para asegurar que cada solución técnica se traduzca en una mejora real y sostenible en terreno.",
-    "job":"Soluciones Integrales para la Gestión de Activos y Confiabilidad",
-    "par_job": "En <span class='gmn-font gmn-color'>GMN</span><sup>®</sup> transformamos el mantenimiento en un motor de rentabilidad. Mediante un ecosistema que integra tecnología, análisis de datos y estrategia, cubrimos todo el ciclo de vida del activo —desde el Core Tecnológico en SAP PM hasta la Ingeniería de Confiabilidad— para garantizar resultados medibles y sostenibles en el tiempo.",
-    "ind_title": "Hemos desarrollado soluciones en las industrias:",
-    "item_1":"<b>Minería:</b> Soluciones para operaciones de alto desempeño.",
-    "item_2":"<b>Energía, Petróleo y Gas:</b> Eficiencia y suministro sostenible.",
-    "item_3":"<b>Otros Sectores:</b> Manufactura, Forestal, Transporte y Aeronáutica.",        
-    "title1": "Disponibilidad y Confiabilidad Operacional",
-    "par11": "Aseguramos que sus activos críticos superen los niveles de diseño mediante metodologías avanzadas de confiabilidad.",
-    "par12": "Diagnosticamos el comportamiento real de sus equipos para eliminar restricciones sistémicas y fallas crónicas que interrumpen la continuidad.",
-    "par13": "Desde la cadena de valor hasta la intervención puntual, garantizamos procesos más estables y una operación alineada con sus metas de producción.",
-    "title2": "Eficiencia en Costos y Gestión de Inventarios",
-    "par21": "Transformamos ineficiencias visibles en ahorros estratégicos.",
-    "par22": "Optimizamos recursos clave mediante una metodología propia de gestión de inventarios que permite recuperar activos, eliminar sobrestock histórico y sanear procesos que generan pérdidas silenciosas.",
-    "par23": "El resultado es un control financiero operativo robusto y una estructura de costos competitiva sustentada en datos.",
-    "title3": "Inteligencia Operacional y Reportabilidad",
-    "par31": "Llevamos su gestión al siguiente nivel mediante la integración de SAP, Reportabilidad Avanzada en Power BI e Inteligencia Artificial.",
-    "par32": "Desarrollamos ecosistemas digitales que detectan desviaciones en tiempo real y proponen acciones inmediatas. ",
-    "par33": " Convertimos el flujo masivo de datos en insights estratégicos, elevando la predictibilidad, la agilidad y la transparencia de toda su operación.",
+    "intro1": "Transformamos la complejidad operativa en continuidad de negocio",
+    "intro1_par1": "Acompañamos a organizaciones intensivas en capital a elevar su desempeño mediante una gestión de activos de estándar internacional.",
+    "intro1_par2": "Con presencia en toda Latinoamérica, combinamos diagnóstico experto y ejecución disciplinada para sustentar decisiones en datos reales y en tiempo real. Trabajamos integrados a su operación, no desde afuera de ella: aseguramos que cada solución técnica se traduzca en una mejora medible y sostenible en terreno.",
+    "intro2":"Soluciones integrales para la gestión de activos y confiabilidad",
+    "intro2_par1": "En <span class='gmn-font gmn-color'>GMN</span><sup>®</sup> gestionamos el mantenimiento, integrando tecnología, análisis de datos y estrategia, cubrimos todo el ciclo de vida del activo, desde lo tecnológico en SAP PM hasta la ingeniería de confiabilidad, con resultados medibles y sostenibles en el tiempo.",
+    "intro2_list": "Industrias en las que hemos desarrollado soluciones",
+    "intro2_item_1":"<b>Minería:</b> Soluciones para operaciones de alto desempeño.",
+    "intro2_item_2":"<b>Energía, Petróleo y Gas:</b> Eficiencia y suministro sostenible.",
+    "intro2_item_3":"<b>Otros Sectores:</b> Manufactura, Forestal, Transporte y Aeronáutica.",        
+    "intro3": "Disponibilidad y Confiabilidad Operacional",
+    "intro3_par1": "Aseguramos que sus activos críticos superen los niveles de diseño mediante metodologías avanzadas de confiabilidad. Diagnosticamos el comportamiento real de sus equipos para eliminar restricciones sistémicas y fallas crónicas que interrumpen la continuidad. Desde la cadena de valor hasta la intervención puntual, garantizamos procesos más estables y una operación alineada con sus metas de producción.",
+    "intro4": "Eficiencia en Costos y Gestión de Inventarios",
+    "intro4_par1": "Transformamos ineficiencias visibles en ahorros estratégicos. Optimizamos recursos clave mediante una metodología propia de gestión de inventarios que permite recuperar activos, eliminar sobrestock histórico y sanear procesos que generan pérdidas silenciosas. El resultado es un control financiero operativo robusto y una estructura de costos competitiva sustentada en datos.",
+    "intro5": "Inteligencia Operacional y Reportabilidad",
+    "intro5_par1": "Integramos SAP, reportabilidad avanzada en Power BI e inteligencia artificial para detectar desviaciones en tiempo real y habilitar acciones inmediatas. Convertimos grandes volúmenes de datos en información accionable, elevando la predictibilidad y la transparencia de toda su operación.",
     
-    "title_per":"Análisis de Pérdidas Operativas",
-    "par_per": "Identificamos, cuantificamos y eliminamos las pérdidas operativas mediante metodología probada y analítica avanzada en operaciones de clase mundial.",
-    "item_per1":"<b class='text-orange'>Detenciones No Programadas:</b> Fallas de equipos críticos o paradas no operacionales. La fuente más costosa y visible de pérdida productiva.",
-    "item_per2":"<b class='text-orange'>Planificación y Procesos Ineficientes:</b> Tiempo de detención por mantenimientos mal dimensionados, baja eficiencia o cuellos de botella en programación.",
-    "item_per3":"<b class='text-orange'>Mantenibilidad y Coordinación:</b> Tiempo adicional por dificultad de acceso, falta de repuestos o coordinación deficiente que extiende los tiempos de reparación.",        
-    "item_per4":"<b class='text-orange'>Rendmiento Reducido:</b> Equipos operando bajo capacidad nominal. Degradación silenciosa que genera pérdida acumulada en el tiempo operativo.",        
-    "item_per5":"<b class='text-orange'>Calidad de Datos:</b> Decisiones basadas en información incompleta o inconsistente, que se traducen en estrategias mal calibradas.",        
-    "item_per6":"<b class='text-orange'>Cultura y gestión Organizacional:</b> Brechas en competencias, liderazgo desalineado o cultura reactiva que perpetúan el ciclo de pérdidas."        
+    "intro6":"Análisis de Pérdidas Operativas",
+    "intro6_par1": "Identificamos, cuantificamos y eliminamos las pérdidas operativas mediante metodología probada y analítica avanzada en operaciones de clase mundial.",
+    "item_per1":"<b class='text-orange'>Detenciones No Programadas:</b> fallas de equipos críticos o paradas no operacionales; la fuente más costosa y visible de pérdida productiva.",
+    "item_per2":"<b class='text-orange'>Planificación y Procesos Ineficientes:</b> tiempo de detención por mantenimientos mal dimensionados, baja eficiencia o cuellos de botella en la programación.",
+    "item_per3":"<b class='text-orange'>Mantenibilidad y Coordinación:</b> tiempo adicional por dificultad de acceso, falta de repuestos o coordinación deficiente que extiende los tiempos de reparación.",        
+    "item_per4":"<b class='text-orange'>Rendmiento Reducido:</b> equipos operando bajo capacidad nominal; degradación silenciosa que genera pérdida acumulada en el tiempo operativo.",        
+    "item_per5":"<b class='text-orange'>Calidad de Datos:</b> decisiones basadas en información incompleta o inconsistente, que se traducen en estrategias mal calibradas.",        
+    "item_per6":"<b class='text-orange'>Cultura y gestión Organizacional:</b> brechas en competencias, liderazgo desalineado o cultura reactiva que perpetúan el ciclo de pérdidas."        
   },
 
 
   "servicios": {
+    "title": "Catálogo de Servicios",
+    "par1": "Dieciséis servicios que cubren el ciclo completo de la gestión de activos:",
     "s01_title": "SAP PM / EAM",
     "s01_tag": "Core tecnológico",
     "s01_desc": "Implementación, soporte y evolución de ERP de mantenimiento. Configuración, datos maestros y habilitación analítica.",
-    "s02_title": "Analítica, KPI & Reportabilidad",
+    "s02_title": "Analítica, KPI y Reportabilidad",
     "s02_tag": "Decisiones basadas en datos",
     "s02_desc": "Power BI y dashboards configurables. Estructura KPI árbol (Principal → Sub KPI → KPI Proceso). Visibilidad en tiempo real.",
     "s03_title": "Datos Maestros",
@@ -121,7 +120,7 @@
     "s14_desc": "Elaboración de BPR (Business Process Re-engineering). Optimización de procesos de negocio y arquitectura funcional.",
     "s15_title": "Coaching y Capacitación",
     "s15_tag": "Desarrollo de equipos",
-    "s15_desc": "Coaching On Site y One-to-One. Programas de inducción en buenas prácticas de mantenimiento y conexión con ERP/EAM.",
+    "s15_desc": "Coaching on-site y uno a uno. Programas de inducción en buenas prácticas de mantenimiento y conexión con ERP/EAM.",
     "s16_title": "Aseguramiento de Calidad",
     "s16_tag": "QA & Auditorías",
     "s16_desc": "Auditorías de mantenimiento: Personas, Procesos y Herramientas. Monitoreo y seguimiento de beneficios (PIR)."
@@ -129,39 +128,40 @@
 
   "success": {
     "title": "Nuestra Experiencia",
+    "par1": "Resultados concretos en operaciones líderes de minería e industria:",
+
     "exp_title01": "ESCONDIDA | BHP",
-    "exp_desc01": "Maximización de la Disponibilidad de Activos Críticos · Mejora en Calidad de Información · Automatización de Reportes Operativos de Mantenimiento",
+    "exp_desc01": "Maximización de la disponibilidad de activos críticos · Mejora en la calidad de Información · Automatización de reportes operativos de mantenimiento",
     "exp_title02": "CODELCO",
-    "exp_desc02": "Estandarización de Críterios Operativos · Optimización en Control de Gestión  · Carga Datos Maestros SAP PM",
+    "exp_desc02": "Estandarización de críterios operativos · Optimización en el control de gestión  · Carga de datos maestros SAP PM",
     "exp_title03": "CERRO MATOSO",
-    "exp_desc03": "Incremento en la Ejecución del Trabajo Programado · Mejora en la Productividad Laboral",
+    "exp_desc03": "Incremento en la ejecución del trabajo programado · Mejora en la productividad laboral",
     "exp_title04":"GLENCORE",
-    "exp_desc04": "Reducción Detenciones No Programadas · Rediseño de Planes de Mantenimiento",
+    "exp_desc04": "Reducción de detenciones no programadas · Rediseño de planes de mantenimiento",
     "exp_title05":"COCA-COLA",
-    "exp_desc05": "Reducción Costos Operativos · Optimización Procesos de Confiabilidad en Líneas de Producción de Alta Velocidad",
+    "exp_desc05": "Reducción de costos operativos · Optimización de procesos de confiabilidad en líneas de producción de alta velocidad",
     "exp_title06":"CENTINELA | ANTOFAGASTA MINERALS",
-    "exp_desc06": "Cumplimiento de Metas Operativas · Identificación Brechas Críticas",
+    "exp_desc06": "Cumplimiento de metas operativas · Identificación de brechas críticas",
     "exp_title07":"SPENCE | BHP",
-    "exp_desc07": "Continudad Operativa en Cambio de Modelo de Gestión · Fortalecimiento Capacidades Internas de Gestión",
+    "exp_desc07": "Continudad operativa en el cambio de modelo de gestión · Fortalecimiento de capacidades internas de gestión",
     "exp_title08":"SIERRA GORDA SCM",
-    "exp_desc08": "Detección de Pérdidas Operativas · Reportes de Gestión de Activos en Tiempo Real",
+    "exp_desc08": "Detección de pérdidas operativas · Reportes de gestión de activos en tiempo real",
     "exp_title09":"CASERONES | LUNDIN MINING",
-    "exp_desc09": "Reducción Capital Inmovilizado · Optimización Ciclo de Vida de Componentes Mayores"
+    "exp_desc09": "Reducción de capital inmovilizado · Optimización del ciclo de vida de componentes mayores"
   },
 
   "about_us": {
-    "title1": "ADN <span class='gmn-font'>GMN</span><sup>®</sup>: 25 años transformando la industria",
-    "par11": "<span class='gmn-font gmn-color'>GLOBAL MAINTENANCE NETWORK</span><sup>®</sup>, llamada también <span class='gmn-font gmn-color'>GMN</span><sup>®</sup> por sus iniciales, es una consultora especializada en gestión de activos físicos, con más de 25 años de experiencia apoyando operaciones de minería, petróleo & gas, energía y manufactura LATAM & Global.",
-    "par12": "Nuestro enfoque integra tecnología SAP PM, analítica avanzada y metodología de clase mundial para generar resultados medibles y sostenibles.",
-    "par13": "Nuestra historia está escrita en faenas mineras, plantas de energía y centros logísticos, donde hemos impulsado a líderes industriales mediante resultados medibles que perduran en el tiempo.",
+    "title1": "Quiénes Somos: 25 años en la gestión de activos físicos",
+    "par11": "<span class='gmn-font gmn-color'>GLOBAL MAINTENANCE NETWORK</span><sup>®</sup> (<span class='gmn-font gmn-color'>GMN</span><sup>®</sup>) es una consultora especializada en la gestión de activos físicos, con más de 25 años acompañando a operaciones líderes de minería, energía e industria en Latinoamérica y a nivel global. Integramos SAP PM, analítica avanzada y metodología de estándar internacional para entregar resultados medibles y sostenibles.",
+    "par12": "Nuestra trayectoria se ha construido en faenas mineras, donde hemos respaldado a líderes industriales con mejoras que perduran en el tiempo. No nos definimos por un informe, sino por el desempeño que dejamos instalado en la operación.",
     "subtitle2": "Visión",
-    "par21": "Consolidarnos como los referentes globales en Gestión de Activos Físicos, impulsados por equipos de alto desempeño que redefinen el éxito operativo de nuestros clientes a través de la excelencia y la innovación aplicada.",
+    "par21": "Consolidarnos como referentes globales en gestión de activos físicos, impulsados por equipos de alto desempeño que redefinen el éxito operativo de nuestros clientes a través de la excelencia y la innovación aplicada.",
     "subtitle3": "Misión",
-    "par31": "Asegurar la competitividad y sustentabilidad de nuestros clientes mediante soluciones ágiles que maximicen su valor económico. Lo logramos a través de un crecimiento sostenible, garantizando que cada activo alcance su máximo potencial de retorno.",
+    "par31": "Asegurar la competitividad y la sustentabilidad de nuestros clientes mediante soluciones ágiles que maximicen su valor económico. Lo logramos a través de un crecimiento sostenible, garantizando que cada activo alcance su máximo potencial de retorno.",
     "title2": "Nuestros Liderazgos",
-    "subtitle4": "Liderazgo con propósito: Hacemos que las cosas pasen",
+    "subtitle4": "Liderazgo con propósito: hacemos que las cosas pasen",
     "par41": "Creemos en el liderazgo que se involucra en el terreno. Nuestros directivos combinan visión estratégica con décadas de ejecución real en las industrias más exigentes.",
-    "bio_SA": "Estratega con tres décadas liderando proyectos de excelencia operacional y cadena de suministro. Su enfoque integra la Gestión de Activos con una visión sistémica de la optimización de procesos para generar valor real.",
+    "bio_SA": "Con tres décadas liderando proyectos de excelencia operacional y cadena de suministro. Su enfoque integra la gestión de activos con una visión sistémica de la optimización de procesos para generar valor real.",
     "highlights_SA1":"Gestión de Activos",
     "highlights_SA2":"Optimización de Procesos",
     "bio_MM": "Con más de 13 años de trayectoria en la industria minera nacional y multinacional, Marcelo lidera la expansión de <span class='gmn-font gmn-color gmn-size-xs'>GMN</span><sup>®</sup> mediante alianzas estratégicas y una rigurosa evaluación de proyectos de alta criticidad.",
@@ -170,21 +170,14 @@
     "lkdn_profile": "Ver Perfil"  
   },
 
-  "news": {
-    "title": "Noticias",
-    "subtitle": "El motor para recuperar la competitividad minera",
-    "par1": "En entrevista con Reporte Minero, nuestro Managing Director, Sergio Adauy, analizó la brecha de competitividad que enfrenta la industria, destacando que la productividad ha caído un 27% en las últimas dos décadas. Frente al aumento de costos y la baja en las leyes de mineral, Adauy enfatizó que el mantenimiento representa cerca de un tercio del costo operativo (OPEX) de una faena.",
-    "par2": "Desde la perspectiva de <span class='gmn-font gmn-color'>GMN</span><sup>®</sup>, la solución no reside únicamente en la reducción de costos tradicional, sino en una Gestión de Activos Físicos y Humanos con visión de largo plazo. <span class='italic bold-text'>La productividad no es lo mismo que la producción</span>, subrayando que la clave está en integrar tecnología avanzada con equipos de trabajo altamente capacitados para asegurar la continuidad del negocio en escenarios de alta complejidad."
-  },
-
   "culture": {
-    "title": "Sello <span class='gmn-font'>GMN</span><sup>®</sup>: Excelencia técnica y presencia en terreno",
-    "subtitle": "Nos involucramos en sus desafíos como si fueran propios. No somos observadores; somos socios estratégicos que acompañan cada paso con disciplina, rigor y una visión orientada a resultados sostenibles",
+    "title": "Excelencia técnica y presencia en terreno",
+    "subtitle": "Nos involucramos en sus desafíos como si fueran propios. No somos observadores: somos socios estratégicos que acompañan cada paso con disciplina, rigor y una visión orientada a resultados sostenibles",
 
     "section01": "Nuestra Identidad Operativa",
     "subsection01": "Disciplina que genera valor",
-    "par11": "Construimos relaciones de largo plazo basadas en la confianza técnica y la ejecución impecable. El Sello <span class='gmn-font gmn-color'>GMN</span><sup>®</sup> significa integración natural con los equipos del cliente: trabajamos con la cercanía de un aliado y el rigor de un experto. No solo asesoramos; aseguramos la implementación efectiva y la adopción de mejoras que realmente perduran en la operación.",
-    "par12": "En <span class='gmn-font'>GMN</span><sup class='text-orange'>®</sup> no solo asesoramos: aseguramos implementación efectiva, adopción sostenida y resultados que realmente perduran.",
+    "par11": "Construimos relaciones de largo plazo basadas en la confianza técnica y la ejecución impecable. El Sello <span class='gmn-font gmn-color'>GMN</span><sup>®</sup> significa integración natural con los equipos del cliente: trabajamos con la cercanía de un aliado y el rigor de un experto.",
+    "par12": "En <span class='gmn-font gmn-color'>GMN</span><sup>®</sup> no solo asesoramos: aseguramos implementación efectiva, adopción sostenida y resultados que realmente perduran.",
 
     "section02": "Estándares de Clase Mundial",
     "subsection02": "Respaldo en Gestión y Seguridad Certificada",
@@ -198,10 +191,17 @@
     "section03": "Especialización Técnica Aplicada",
     "subsection03": "Expertos que hacen que las cosas pasen",
     "par31": "El valor del Sello <span class='gmn-font gmn-color'>GMN</span><sup>®</sup> reside en nuestro capital humano: consultores senior que combinan experiencia en terreno con una capacidad analítica avanzada.",
-    "par33": "La disciplina técnica no es un servicio, es nuestro ADN corporativo.",
-    "par32_li01": "25+ años de trayectoria en activos críticos y estrategias de mantenimiento.",
-    "par32_li02": "Dominio experto en SAP PM / S4HANA y optimización masiva de datos.",
-    "par32_li03": "Analítica avanzada y gestión de inventarios aplicada a la rentabilidad del negocio."
+    "par32": "La disciplina técnica no es un servicio, es nuestro ADN corporativo.",
+    "par33_li01": "Más de 25 años de trayectoria en activos críticos y estrategias de mantenimiento.",
+    "par33_li02": "Dominio experto en SAP PM / S4HANA y optimización masiva de datos.",
+    "par33_li03": "Analítica avanzada y gestión de inventarios aplicada a la rentabilidad del negocio."
+  },
+
+"news": {
+    "title": "Noticias",
+    "subtitle": "El motor para recuperar la competitividad minera",
+    "par1": "En entrevista con Reporte Minero, nuestro Managing Director, Sergio Adauy, analizó la brecha de competitividad que enfrenta la industria, destacando que la productividad ha caído un 27 % en las últimas dos décadas. Frente al aumento de costos y la baja en las leyes de mineral, Adauy enfatizó que el mantenimiento representa cerca de un tercio del costo operativo (OPEX) de una faena.",
+    "par2": "Desde la perspectiva de <span class='gmn-font gmn-color'>GMN</span><sup>®</sup>, la solución no reside únicamente en la reducción de costos tradicional, sino en una gestión de activos físicos y humanos con visión de largo plazo. La productividad no es lo mismo que la producción: la clave está en integrar tecnología avanzada con equipos de trabajo altamente capacitados para asegurar la continuidad del negocio en escenarios de alta complejidad."
   },
 
 "contact": {
@@ -211,7 +211,7 @@
     "client_btn": "Hablemos de su proyecto",
     
     "talent_title": "Súmate a <span class='gmn-font gmn-size-title'>GMN</span><sup>®</sup>",
-    "talent_text": "Buscamos consultores senior que no solo asesoren, sino que hagan que las cosas pasen. Si te apasiona la excelencia técnica y quieres generar un impacto real en las operaciones más críticas de Latinoamérica, este es su lugar.",
+    "talent_text": "Buscamos consultores que no solo asesoren, sino que hagan que las cosas pasen. Si le apasiona la excelencia técnica y quiere generar un impacto real en las operaciones más críticas de Latinoamérica, este es su lugar.",
     "talent_linkedIn_btn": "Ver oportunidades en LinkedIn",
     "talent_mail_btn": "Envianos tu CV"
   },

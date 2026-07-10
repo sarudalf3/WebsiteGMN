@@ -7,7 +7,7 @@ const successCases = [
     { id: 3, title: "success.exp_title03", desc: "success.exp_desc03", logo: "./img/logo03.webp", img: "./img/success03.jpg"},
     { id: 4, title: "success.exp_title04", desc: "success.exp_desc04", logo: "./img/logo04.webp", img: "./img/success04.jpg"},
     { id: 5, title: "success.exp_title05", desc: "success.exp_desc05", logo: "./img/logo05.webp", img: "./img/success05.jpg"},
-    { id: 6, title: "success.exp_title06", desc: "success.exp_desc06", logo: "./img/logo06.webp", img: "./img/success06.jpg"},
+    { id: 6, title: "success.exp_title06", desc: "success.exp_desc06", logo: "./img/logo06a.webp", img: "./img/success06.jpg"},
     { id: 7, title: "success.exp_title07", desc: "success.exp_desc07", logo: "./img/logo07.webp", img: "./img/success07.jpg"},
     { id: 8, title: "success.exp_title08", desc: "success.exp_desc08", logo: "./img/logo08.webp", img: "./img/success08.jpg"},
     { id: 9, title: "success.exp_title09", desc: "success.exp_desc09", logo: "./img/logo09.webp", img: "./img/success09.jpg"},

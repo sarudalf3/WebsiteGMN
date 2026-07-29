@@ -108,12 +108,31 @@ html {scroll-behavior: smooth; scroll-padding-top: 85px}
 
 body {
   font-family: var(--mono);
-  line-height: 1.3;
-  color: var(--color-text-primary);
+  line-height: 1.5;
+  color: var(--slate);
   background-color: var(--color-background);
   overflow-x: hidden;
   font-size: var(--font-size-sm);
 }
+
+.slide {
+  padding: 1.5m 1.5rem;display: flex;flex-direction: column;
+  align-items: center; justify-content: center; background-color: var(--color-background);text-align: left
+}
+
+.margener {width: 92%;margin-bottom:var(--spacing-xl)}
+.margener h2 {margin-top: var(--spacing-xxl);margin-bottom: var(--spacing-md)}
+.margener h3 {margin: var(--spacing-xl) 0;margin-bottom: var(--spacing-sm);line-height: 1.2}
+.margener h4 {margin: var(--spacing-md) 0;line-height: 1.2}
+.margener p {padding-bottom: var(--spacing-md)}
+
+.slide h2 {font-size: var(--font-size-hero); line-height: 1.1}
+.slide h3 {font-size: var(--font-size-heading-lg);margin-top: 7px}
+.slide h4 {font-size: var(--font-size-heading-md)}
+.slide p, .slide a, .slide li {font-size: var(--font-size-md)}
+
+.color-bg {background-color: rgba(163, 163, 163, 0.10)}
+.color-bg-alt {background-color: rgba(163, 163, 163, 0.17)}
 
 .gmn-font {font-family: 'SimploSoftCapsDemo', sans-serif; letter-spacing: 2px;font-weight: bold}
 /*.gmn-font {font-family: 'Quicksand', sans-serif; font-weight: 700}*/
@@ -126,17 +145,15 @@ body {
 .font-others {font-family: 'Jost', sans-serif; letter-spacing: 0.25px}
 
 /* buttons */
-.btn{display:inline-flex; align-items:center; gap:8px; font-weight:600; padding:14px 26px;
+.btn{display:inline-flex; align-items:center; gap:8px; font-weight:600; padding:14px;
   border-radius:var(--radius); transition:.2s; cursor:pointer; border:none}
 .btn-primary{border:1.5px solid var(--color-primary);background:var(--color-primary);color:var(--color-background)}
 .btn-primary:hover{border-color:var(--color-background);transform:translateY(-1px)}
 .btn-ghost{border:1.5px solid rgba(255,255,255,.42);color:var(--color-primary);background:white}
 .btn-ghost:hover{border-color:var(--color-primary);color:var(--color-primary);transform:translateY(-1px)}
 
-
 /* ===== RESPONSIVE DESIGN ===== */
 /*Text Sizes and margins
-
 
 /* High DPI/Retina Displays */
 @media (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi) {

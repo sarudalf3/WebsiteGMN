@@ -3,6 +3,32 @@
 /**
  * Maneja el menú desplegable en dispositivos móviles
  */
+//export function initMobileMenu() {
+//  const menuToggle = document.querySelector('.navbar-toggle'); 
+//  const navMenu = document.querySelector('.navbar-nav');
+//  const navLinks = document.querySelectorAll(".navbar-nav a"); // Usamos el ID del header
+ 
+  //const navLinks = document.querySelectorAll('.navbar-nav a');
+
+//  if (menuToggle && navMenu) {
+//    menuToggle.addEventListener('click', () => {
+      // Alternamos la clase 'active' que creamos en el CSS
+//      navMenu.classList.toggle('active');
+
+   // Accesibilidad: cambia de ☰ a X opcionalmente o solo cambia el aria
+//      const expanded = navMenu.classList.contains('active');
+//      menuToggle.setAttribute('aria-expanded', expanded);
+//    });
+    // Cerrar el menú automáticamente cuando el usuario haga clic en una sección
+//    navLinks.forEach(link => {
+//      link.addEventListener('click', () => {
+//        navMenu.classList.remove('active');
+//      });
+//    });
+//  }
+//}
+
+
 export function initMobileMenu() {
   const menuToggle = document.querySelector('.navbar-toggle'); 
   const navMenu = document.querySelector('.navbar-nav');
@@ -10,10 +36,10 @@ export function initMobileMenu() {
 
   if (menuToggle && navMenu) {
     menuToggle.addEventListener('click', () => {
-      // Alternamos la clase 'active' que creamos en el CSS
+      // Alternamos la clase 'active'
       navMenu.classList.toggle('active');
 
-   // Accesibilidad: cambia de ☰ a X opcionalmente o solo cambia el aria
+      // Actualizamos accesibilidad
       const expanded = navMenu.classList.contains('active');
       menuToggle.setAttribute('aria-expanded', expanded);
     });
@@ -22,14 +48,14 @@ export function initMobileMenu() {
     navLinks.forEach(link => {
       link.addEventListener('click', () => {
         navMenu.classList.remove('active');
+        // ¡Importante! Reseteamos también el aria-expanded para mantener la sincronía
+        menuToggle.setAttribute('aria-expanded', 'false');
       });
     });
   }
 }
 
-/**
- * Cambia la apariencia del header cuando el usuario hace scroll
-*/
+/* Cambia la apariencia del header cuando el usuario hace scroll*/
 export function handleHeaderScroll() {
   const header = document.querySelector('header');
   window.addEventListener('scroll', () => {
@@ -41,14 +67,12 @@ export function handleHeaderScroll() {
   });
 }
 
-/**
- * Observador para resaltar el enlace activo en la navegación
- */
+/* Observador para resaltar el enlace activo en la navegación*/
 
 export function initNavObserver() {
   const sections = document.querySelectorAll("section[id]");
-  //const navLinks = document.querySelectorAll("#navbar a"); // Usamos el ID del header
-  const navLinks = document.querySelectorAll(".navbar-nav a, header nav a");
+  const navLinks = document.querySelectorAll("#navbar a"); // Usamos el ID del header
+  //const navLinks = document.querySelectorAll(".navbar-nav a, header nav a");
 
   const observerOptions = {
     root: null,

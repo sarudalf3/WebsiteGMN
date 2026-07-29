@@ -1,0 +1,70 @@
+.tasks-class h3 {margin-top: var(--spacing-xxl)}
+.grid-container {display: grid;grid-template-columns: repeat(4, 1fr);
+    gap: var(--spacing-md);margin: 0 auto;padding: var(--spacing-md);
+    max-width: 1200px}
+
+.solucion-card {background-color:var(--color-surface-light);
+    border:2px solid var(--color-primary);border-radius: 6px;
+    filter: grayscale(0%);height: 280px;position:relative;
+    overflow: hidden;padding: 0 var(--spacing-md);display: flex;
+    flex-direction: column;transition: all 0.4s ease;cursor: pointer}
+
+.card-main {display: flex;flex-direction: column}
+
+.solucion-number {color: var(--color-primary);font-size: var(--font-size-hero-md);
+    font-weight: bold;line-height: 0.8;display: inline-block; 
+    width: fit-content;margin-bottom: var(--spacing-sm);margin-top: var(--spacing-xl);
+    transition: color 0.3s ease;padding-left: var(--spacing-md)}
+
+.solucion-title {color: var(--color-text-secondary);
+    font-size: var(--font-size-heading-sm) !important;
+    margin: var(--spacing-sm) 0 !important;
+    line-height: var(--spacing-xs);
+    min-height: 2.8em;
+    display: flex;
+    align-items: flex-end;
+}
+
+.solucion-title h3 {font-size: var(--font-size-heading-sm);
+    margin: 0 var(--spacing-sm);line-height: 1.2;}
+
+.solucion-tag {color: var(--color-primary);font-size: var(--font-size-lg);
+    text-transform: uppercase;letter-spacing: 0.6px;font-style: italic;
+    line-height: 1.1;text-shadow: 1px 1px 2px white}
+
+/* Contenido que aparece en el HOVER */
+.card-hover-content {position: absolute;top: 0;left: 0;width: 100%;height: 100%;
+    background-color:var(--color-primary);padding:var(--spacing-md);
+    display: flex;align-items: center;transform: translateY(100%);
+    transition: transform 0.5s cubic-bezier(0.4, 0, 0.2, 1);box-sizing: border-box}
+
+.card-hover-content p {color: var(--color-text-header-primary);
+    font-weight: 600;line-height: 1.1;margin: 0;}
+
+    .solucion-card:hover {border: 2px solid var(--color-background)}
+.solucion-card:hover .card-hover-content {transform: translateY(0)}
+.solucion-card:hover .solucion-number {color: var(--color-primary-border)}
+
+/* Responsive 
+@media (min-width: 982px) {
+  .grid-container { grid-template-columns: repeat(4, 1fr); } /* 2 columnas en tablets */
+/*  .solucion-card { height: 220px; }  
+
+}
+
+@media (max-width: 981px) {
+  .grid-container { grid-template-columns: repeat(3, 1fr); } /* 2 columnas en tablets */
+/*
+}
+
+@media (max-width: 691px) {
+  .grid-container { grid-template-columns: repeat(2, 1fr); } /* 2 columnas en tablets */
+/*  .solucion-card { height: 207px; }  
+
+}
+
+@media (max-width: 516px) {
+  .grid-container { grid-template-columns: 1fr; } /* 1 columna en móviles */
+/*  .solucion-card { height: 190px; max-width: 240px}
+}
+*/

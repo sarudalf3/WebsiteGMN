@@ -35,13 +35,15 @@
     "card3_sub1": "Disponibilidad de Activos",
     "card3_sub2": "En activos críticos intervenidos",
     "list": "Valor creado por <span class='gmn-font'>GMN</span><sup>®</sup>",
-    "list1": "Más de 25 años de experiencia liderando la gestión de activos de clase mundial.",
-    "list2": "Más de 9 faenas mineras intervenidas, con presencia en Latinoamérica y a nivel global.",
-    "list6": "Certificación en normas ISO 9001, 14001 y 45001, y acreditación AENOR.",
-    "list3": "Más de 200.000 órdenes de trabajo regularizadas y optimizadas en SAP PM, asegurando la integridad total de la información.",
-    "list4": "Especialistas en proyectos de alta criticidad, donde la continuidad operativa no es negociable.",
-    "list5": "Equipo multidisciplinario de más de 50 profesionales enfocados en hacer que las cosas pasen.",
-    "success_cases": "Revisa nuestra experiencia en casos de éxito concretos."
+ 
+ 
+ 
+    "list1": "<b>+25 años</b> liderando la gestión de activos de clase mundial.",
+    "list2": "<b>+9 faenas</b> mineras intervenidas en LatAm y el mundo.",
+    "list3": "<b>ISO 9001 · 14001 · 45001</b> y acreditación AENOR.",
+    "list4": "<b>+200.000 OT</b> regularizadas y optimizadas en SAP PM.",
+    "list5": "<b>Proyectos críticos</b> donde la continuidad no es negociable.",
+    "list6": "<b>+40 profesionales</b> multidisciplinarios enfocados en resultados."
   },
 
   "we_do": {
@@ -50,7 +52,7 @@
     "intro1_par1": "Acompañamos a organizaciones intensivas en capital a elevar su desempeño mediante una gestión de activos de estándar internacional.",
     "intro1_par2": "Con presencia en toda Latinoamérica, combinamos diagnóstico experto y ejecución disciplinada para sustentar decisiones en datos reales y en tiempo real. Trabajamos integrados a su operación, no desde afuera de ella: aseguramos que cada solución técnica se traduzca en una mejora medible y sostenible en terreno.",
     "intro2":"Soluciones integrales para la gestión de activos y confiabilidad",
-    "intro2_par1": "En <span class='gmn-font gmn-color'>GMN</span><sup>®</sup> gestionamos el mantenimiento, integrando tecnología, análisis de datos y estrategia, cubrimos todo el ciclo de vida del activo, desde lo tecnológico en SAP PM hasta la ingeniería de confiabilidad, con resultados medibles y sostenibles en el tiempo.",
+    "intro2_par1": "En GMN<sup>®</sup> gestionamos el mantenimiento, integrando tecnología, análisis de datos y estrategia, cubrimos todo el ciclo de vida del activo, desde lo tecnológico en SAP PM hasta la ingeniería de confiabilidad, con resultados medibles y sostenibles en el tiempo.",
     "intro2_list": "Industrias en las que hemos desarrollado soluciones",
     "intro2_item_1":"<b>Minería:</b> Soluciones para operaciones de alto desempeño.",
     "intro2_item_2":"<b>Energía, Petróleo y Gas:</b> Eficiencia y suministro sostenible.",
@@ -73,9 +75,10 @@
   },
 
 
+
   "servicios": {
-    "title": "Catálogo de Servicios",
-    "par1": "Dieciséis servicios que cubren el ciclo completo de la gestión de activos:",
+    "title": "Dieciséis servicios, un solo estándar",
+    "par1": "Cobertura del ciclo completo de la gestión de activos, cada servicio a la medida de su operación.",
     "s01_title": "SAP PM / EAM",
     "s01_tag": "Core tecnológico",
     "s01_desc": "Implementación, soporte y evolución de ERP de mantenimiento. Configuración, datos maestros y habilitación analítica.",

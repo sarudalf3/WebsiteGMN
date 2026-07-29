@@ -1,0 +1,16 @@
+
+.img_job {display: flex; gap: var(--spacing-md); align-items: 
+    flex-start; margin-bottom: 0}
+
+.text-job {flex: 1.25;}
+.text-job p {text-align: left;color: var(--slate);margin-bottom: 0}
+.text-job p:first-child {margin-top: 0}
+.image-job {flex: 0.9;margin-top: 0}
+.image-job img {width: 90%;height: auto;border-radius: 8px;
+    display: block; margin: 0 auto; box-shadow: 0 10px 20px rgba(0,0,0,0.2)}
+
+.industria-text ul {list-style: none;padding-left: 0}
+.industria-text li {margin-bottom: var(--spacing-sm);padding-left: 20px;position: relative}
+.industria-text li::before {content: "•";color: var(--color-text-secondary);position: absolute;left: 4px}
+.industria-text p b{color:var(--copper-cta)}
+

@@ -14,6 +14,10 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
     <link rel="stylesheet" href="css/styles_main.css"/>
     <link rel="stylesheet" href="css/navbar.css"/>
+    <link rel="stylesheet" href="css/hero.css"/>
+    <link rel="stylesheet" href="css/achievements.css"/>
+    <link rel="stylesheet" href="css/our_job.css"/>
+    <link rel="stylesheet" href="css/tasks.css"/>
 
     <script type="module" src="js/main.js"></script>
   </head>
@@ -37,7 +41,7 @@
             <a href="#success_cases" aria-label="Success Cases" data-key="nav.navbar6"></a>
             <a href="#about" aria-label="About" data-key="nav.navbar4"></a>
             <a href="#news" aria-label="News" data-key="nav.navbar3"></a>
-            <a href="#contact" aria-label="Contact" data-key="nav.navbar8"></a>
+            <a class="btn btn-primary" href="#contact" aria-label="Contact" data-key="nav.navbar8"></a>
           </nav>
         </div>
         <!-- Right: Language & Toggle -->
@@ -57,7 +61,7 @@
 
   <!-- HOME -->
   <section id="home" class="hero"> 
-    <video autoplay muted loop playsinline webkit-playsinline poster="./img/hero_video.webm"  class="bg-video">
+    <video autoplay muted loop webkit-playsinline poster="./img/hero_video.webm"  class="bg-video">
       <source src="./video/hero_video.webm" type="video/webm"/>
     </video>
     <div class="overlay">
@@ -83,15 +87,6 @@
         <!--Left Column - Cards -->
         <div class="cards-block">
           <div class="cards-container">
-            <!--<div class="cards">
-              <div class="cards-image">
-                <img src="./img/icono1.webp" alt="card_01">
-              </div>
-              <div class="cards-content">
-                <h3 class="cards-title highlight-orange" data-key="achievements.card1"></h3>
-                <p class="cards-subtitle" data-key="achievements.card1_sub"></p>
-              </div>
-            </div>-->
             <div class="cards">
               <div class="card-top-row">
                 <div class="cards-image">
@@ -133,62 +128,20 @@
 
         <!-- Right Column - List -->
         <div class="list-block">
-          <div class="list-content-split">  
-            <div class="split-list-columns">
-              <div class="list-column-half">
-                <ul>
-                  <li><p data-key="achievements.list1"></p></li>
-                  <li><p data-key="achievements.list2"></p></li>
-                  <li><p data-key="achievements.list3"></p></li>
-                </ul>
-              </div>
-              <div class="list-column-half">
-                <ul>
-                  <li><p data-key="achievements.list4"></p></li>
-                  <li><p data-key="achievements.list6"></p></li>
-                  <li><p data-key="achievements.list5"></p></li>
-                </ul>
-              </div>
-            </div>
+          <div class="split-list-columns">
+            <ul class="vlist">
+              <li data-key="achievements.list1"></li>
+              <li data-key="achievements.list2"></li>
+              <li data-key="achievements.list3"></li>
+              <li data-key="achievements.list4"></li>
+              <li data-key="achievements.list6"></li>
+              <li data-key="achievements.list5"></li>
+            </ul>
           </div>
         </div>
       </div>
     </div>
   </section>      
-    
-  <!--New Section / Cards-->
-  <section class="hitos-container">
-    <div class="hito-card">
-      <h3>3% &ndash; 7%</h3>
-      <p><strong>Disponibilidad de Activos</strong></p>
-      <small>Reducción de fallas imprevistas</small>
-    </div>
-    <div class="hito-card">
-      <h3>-10% &ndash; -20%</h3>
-      <p><strong>Costos de Mantenimiento</strong></p>
-      <small>Sobre históricos</small>
-    </div>
-    <div class="hito-card">
-      <h3>-20%</h3>
-      <p><strong>Detenciones No Programadas</strong></p>
-      <small>En activos críticos</small>
-    </div>
-    <div class="hito-card highlight">
-      <h3>+25%</h3>
-      <p><strong>Adherencia a Paradas Mayores</strong></p>
-      <small>Mayor cumplimiento</small>
-    </div>
-    <div class="hito-card">
-      <h3>-15%</h3>
-      <p><strong>Inventario Inmovilizado</strong></p>
-      <small>Optimización de stock crítico</small>
-    </div>
-    <div class="hito-card">
-      <h3>100%</h3>
-      <p><strong>Trazabilidad de Datos</strong></p>
-      <small>Calidad SAP PM garantizada</small>
-    </div>
-  </section>
 
   <!-- Nuestro trabajo Section-->
   <section id="ourjob" class="slide ourjob-class color-bg-alt">
@@ -199,28 +152,25 @@
         <div class="text-job">
           <p data-key="we_do.intro1_par1"></p>
           <p data-key="we_do.intro1_par2"></p>
+          <p data-key="we_do.intro2_par1"></p>
         </div>
         <div class="image-job">
           <img src="./img/solving.jpg" alt="We Do_img01">
         </div>
       </div> 
-      <h3 class="gray-subtitle italic" data-key="we_do.intro2"></h3>
-      <p data-key="we_do.intro2_par1"></p>
-      <h4 class="highlight-orange" data-key="we_do.intro2_list"></h4>
-          <div class="industria-text_1">
-            <p data-key="we_do.intro2_item_1"></p>
-            <p data-key="we_do.intro2_item_2"></p>
-            <p data-key="we_do.intro2_item_3"></p>
-          </div>
-      <h3 class="gray-subtitle italic" data-key="we_do.intro3"></h3>
+      <h4 class="gray-subtitle" data-key="we_do.intro2_list"></h4>
+      <div class="industria-text">
+        <p data-key="we_do.intro2_item_1"></p>
+        <p data-key="we_do.intro2_item_2"></p>
+        <p data-key="we_do.intro2_item_3"></p>
+      </div>
+      <h4 class="gray-subtitle italic" data-key="we_do.intro3"></h4>
       <p data-key="we_do.intro3_par1"></p>
-      <h3 class="gray-subtitle italic" data-key="we_do.intro4"></h3>
+      <h4 class="gray-subtitle italic" data-key="we_do.intro4"></h4>
       <p data-key="we_do.intro4_par1"></p>
-      <h3 class="gray-subtitle italic" data-key="we_do.intro5"></h3>
+      <h4 class="gray-subtitle italic" data-key="we_do.intro5"></h4>
       <p data-key="we_do.intro5_par1"></p>
-
-
-      <h3 class="gray-subtitle italic" data-key="we_do.intro6"></h3>
+      <h4 class="gray-subtitle italic" data-key="we_do.intro6"></h4>
       <p data-key="we_do.intro6_par1"></p>
       <div class="industria-text">
         <ul>
@@ -235,79 +185,12 @@
     </div>
   </section>
         
-    <!--Types of our job-->
-    <!--
-    <div class="job-grid">
-        <div class="job-card">
-          <h4 class="highlight-orange" data-key="we_do.title1"></h4>
-          <div class="job-modal job-left">
-            <h4 class="highlight-orange" data-key="we_do.title1"></h4>
-            <p data-key="we_do.par11"></p>
-            <p data-key="we_do.par12"></p>
-            <p data-key="we_do.par13"></p>
-          </div>
-        </div>
-        <div class="job-card">
-          <h4 class="highlight-orange" data-key="we_do.title2"></h4>
-          <div class="job-modal job-middle">
-            <h4 class="highlight-orange" data-key="we_do.title2"></h4>
-            <p data-key="we_do.par21"></p>
-            <p data-key="we_do.par22"></p>
-            <p data-key="we_do.par23"></p>
-            <p data-key="we_do.par24"></p>
-          </div>
-        </div>
-        <div class="job-card">
-          <h4 class="highlight-orange" data-key="we_do.title3"></h4>
-          <div class="job-modal job-right">
-            <h4 class="highlight-orange" data-key="we_do.title3"></h4>
-            <p data-key="we_do.par31"></p>
-            <p data-key="we_do.par32"></p>
-            <p data-key="we_do.par33"></p>
-          </div>
-        </div>
-      </div>-->
-      <!--Check new idea-->
-      <!--<div class="accordion">
-        <div class="accordion-item">
-          <button type="button" class="accordion-header highlight-orange" aria-expanded="false" data-key="we_do.title1" aria-label="What we do 01"></button>
-          <div class="accordion-panel">
-            <div class="accordion-text">
-              <p data-key="we_do.par11"></p>
-              <p data-key="we_do.par12"></p>
-              <p data-key="we_do.par13"></p>
-            </div>
-          </div>
-        </div>
-        <div class="accordion-item">
-          <button type="button" class="accordion-header highlight-orange" aria-expanded="false" data-key="we_do.title2" aria-label="What we do 02"></button>
-          <div class="accordion-panel">
-            <div class="accordion-text">
-              <p data-key="we_do.par21"></p>
-              <p data-key="we_do.par22"></p>
-              <p data-key="we_do.par23"></p>
-            </div>
-          </div>
-        </div>
-        <div class="accordion-item">
-          <button type="button" class="accordion-header highlight-orange" aria-expanded="false" data-key="we_do.title3" aria-label="What we do 03"></button>
-          <div class="accordion-panel">
-            <div class="accordion-text">
-              <p data-key="we_do.par31"></p>
-              <p data-key="we_do.par32"></p>
-              <p data-key="we_do.par33"></p>
-            </div>
-          </div>
-        </div>
-      </div>-->
-    <!--Do the boxes with services-->
-  <section id="ourjob" class="slide ourjob-class color-bg">
+  <!--Do the boxes with services-->
+  <section id="tasks" class="slide tasks-class color-bg">
     <div class="margener">      
-      <h3 class="gray-subtitle italic" data-key="servicios.title"></h3>
+      <h2 class="highlight-orange" data-key="servicios.title"></h2>
       <p data-key="servicios.par1"></p>
-
       <div class="grid-container">
-
         <div class="solucion-card">
           <div class="card-main">
             <span class="solucion-number">1</span>

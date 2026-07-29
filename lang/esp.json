@@ -151,9 +151,9 @@
   },
 
   "about_us": {
-    "title1": "Quiénes Somos: 25 años en la gestión de activos físicos",
-    "par11": "<span class='gmn-title gmn-color'>GLOBAL MAINTENANCE NETWORK</span><sup>®</sup> (<span class='gmn-font gmn-color'>GMN</span><sup>®</sup>) es una consultora especializada en la gestión de activos físicos, con más de 25 años acompañando a operaciones líderes de minería, energía e industria en Latinoamérica y a nivel global. Integramos SAP PM, analítica avanzada y metodología de estándar internacional para entregar resultados medibles y sostenibles.",
-    "par12": "Nuestra trayectoria se ha construido en faenas mineras, donde hemos respaldado a líderes industriales con mejoras que perduran en el tiempo. No nos definimos por un informe, sino por el desempeño que dejamos instalado en la operación.",
+    "title1": "25 años en la gestión de activos físicos",
+    "par11": "Global Maintenance Network® (GMN®) es una consultora especializada en gestión de activos físicos, con más de 25 años acompañando a operaciones líderes de minería, energía e industria en Latinoamérica y a nivel global. Integramos SAP PM, analítica avanzada y metodología de estándar internacional para entregar resultados medibles y sustentables.",
+    "par12": "No nos definimos por un informe, sino por el desempeño que dejamos instalado en la operación.",
     "subtitle2": "Visión",
     "par21": "Consolidarnos como referentes globales en gestión de activos físicos, impulsados por equipos de alto desempeño que redefinen el éxito operativo de nuestros clientes a través de la excelencia y la innovación aplicada.",
     "subtitle3": "Misión",
@@ -161,10 +161,10 @@
     "title2": "Nuestros Liderazgos",
     "subtitle4": "Liderazgo con propósito: hacemos que las cosas pasen",
     "par41": "Creemos en el liderazgo que se involucra en el terreno. Nuestros directivos combinan visión estratégica con décadas de ejecución real en las industrias más exigentes.",
-    "bio_SA": "Con tres décadas liderando proyectos de excelencia operacional y cadena de suministro. Su enfoque integra la gestión de activos con una visión sistémica de la optimización de procesos para generar valor real.",
+    "bio_SA": "Tres décadas liderando excelencia operacional y cadena de suministro, integrando gestión de activos y optimización de procesos.",
     "highlights_SA1":"Gestión de Activos",
     "highlights_SA2":"Optimización de Procesos",
-    "bio_MM": "Con más de 13 años de trayectoria en la industria minera nacional y multinacional, Marcelo lidera la expansión de <span class='gmn-font gmn-color gmn-size-xs'>GMN</span><sup>®</sup> mediante alianzas estratégicas y una rigurosa evaluación de proyectos de alta criticidad.",
+    "bio_MM": "Más de 13 años en minería nacional y multinacional, liderando la expansión de GMN mediante alianzas estratégicas.",
     "highlights_MM1":"Alianzas Estratégicas",
     "highlights_MM2":"Evaluación de Proyectos",
     "lkdn_profile": "Ver Perfil"  

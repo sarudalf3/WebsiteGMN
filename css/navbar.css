@@ -1,0 +1,147 @@
+/* ===== NAVBAR ===== */
+
+#navbar {position: fixed; top: 0; width: 100%; background: var(--color-nav);
+    border-bottom: 1px solid var(--color-border); z-index: 100; padding: 0.6rem 1.2rem}
+
+.navbar-container {display: flex; align-items: center; justify-content: space-between; 
+    height: 100%; padding: 0 10px; gap: var(--spacing-md)}
+
+.logo {display: flex; align-items: center; gap: var(--spacing-sm)}
+
+.logo-link {
+    display: flex;
+    flex-direction: column; /* Esta es la magia: apila los elementos verticalmente */
+    align-items: center;    /* Centra la imagen y el texto horizontalmente */
+    text-decoration: none;  /* Quita el subrayado típico de los enlaces (ideal para logos) */
+}
+
+.logo-link img {height: 50px; width: auto;
+    padding: 5px 0px; transition: transform 0.3s ease}
+
+
+/* Center Menu */
+#navbar nav{display:flex;gap: 30px;;align-items: center}
+
+.navbar-nav a {padding-top: 7px; padding-bottom: 7px;
+  color: var(--color-text-header-primary); text-decoration: none}
+
+.nav-wrap .cta{background:var(--color-primary);color:#fff;padding:10px 7px; border-radius:var(--radius);font-weight:600;font-size:var(--font-size-md);font-family:var(--body);margin-left: 10px}
+.nav-wrap .cta:hover{background:var(--color-primary-hover)}
+
+.navbar-nav a {
+  color: var(--color-text-header-primary);
+  text-decoration: none; font-weight: 500;
+  transition: color var(--transition-fast);
+  line-height: 1.3;
+}
+
+.navbar-nav a:hover, .navbar-nav a.active {color: var(--color-primary)}
+.navbar-nav a:not(.active) {color: #FFFFFF}
+
+/* Right Menu */
+.navbar-right {display: flex; align-items: center; gap: 15px; height: 100%}
+.navbar-lang {display: flex; align-items: center;
+  gap: 0.4rem; cursor: pointer; font-weight: 600;
+  color: var(--color-text-header-primary);
+}
+.lang-select {background: transparent;
+  border: 1px solid var(--color-primary);
+  color: var(--color-text-header-primary);
+  border-radius: var(--radius-sm);
+  margin-left: 0.8rem;
+  padding: var(--spacing-xs) var(--spacing-sm);
+  font-size: var(--font-size-sm);
+  cursor: pointer;
+}
+
+.lang-select option {background: var(--color-surface); color: var(--color-text-primary)}
+
+.navbar-toggle {display: flex;align-items: center; justify-content: center;
+  background: none;border: none;color: white;font-size: 2rem;
+  padding: 0;margin: 0;line-height: 1;cursor: pointer}
+
+.navbar-toggle .bar {
+    width: 100%;
+    height: 3px;
+    background-color: var(--color-text-light);
+    border-radius: 10px;
+    transition: all 0.3s ease;
+}
+
+/* ===== RESPONSIVE DESIGN ===== */
+
+@media (min-width: 874px) {
+  .navbar-toggle {display: none}
+  .navbar-nav {display: flex;flex-direction: row}
+}
+
+@media (max-width: 873px) {
+  #navbar nav {gap: 10px}
+  .navbar-nav {display: none;position: absolute;
+      top: 70px;left: 0;width: 100%;
+      background-color:var(--muted); flex-direction: column;
+      padding: 10px 0;text-align: center;
+      box-shadow: 0 4px 6px rgba(0,0,0,0.3)}
+  .navbar-nav.active {display: flex;}
+
+  /* Aseguramos que el botón sea visible en móvil */
+  .navbar-toggle {
+    display: block;
+    font-size: 1.8rem;
+    background: none;
+    border: none;
+    color: white;
+    cursor: pointer;
+  }
+}
+
+
+/*Navbar text size */
+/* --- Ajuste para Laptops Pequeñas / Tablets Grandes (1024px o menos) --- */
+/*@media (max-width: 1075px) {
+    .logo-text {
+      min-width: 90px;
+    }    
+    /* Achicamos el espacio entre los enlaces del menú */
+/*    .nav-links {
+        gap: 15px; 
+    }
+    .nav-links a {
+        font-size: var(--font-size-base);
+    }
+    .navbar-nav ul {
+    gap: var(--spacing-md);  
+  }
+}
+
+@media (max-width: 951px) {
+  .nav-links a {
+    font-size: var(--font-size-sm);  
+  }
+  .navbar-nav ul {
+    gap: var(--spacing-sm);       
+  }
+}
+
+/* --- Ajuste para Tablets (768px o menos) --- */
+/*@media (max-width: 768px) {
+    /* Aquí es donde usualmente el menú se convierte en hamburguesa, 
+       pero si aún se ve horizontal, bajamos más los tamaños */
+/*    .brand-name {
+        font-size: 1.1rem; 
+    }
+    .brand-tagline {
+        font-size: 0.8rem;
+        margin-top: 3px;
+    }
+    /*.logo img {
+        height: 30px;  Achicamos un poco el icono de GMN 
+        width: 35px;
+    }*/
+/*  .navbar-nav {
+    top: 58px;
+  }
+  .navbar-nav ul {
+    gap: var(--spacing-sm);       
+  }
+}

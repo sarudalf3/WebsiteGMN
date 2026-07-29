@@ -6,7 +6,7 @@
 export function initMobileMenu() {
   const menuToggle = document.querySelector('.navbar-toggle'); 
   const navMenu = document.querySelector('.navbar-nav');
-  const navLinks = document.querySelectorAll('.nav-links a');
+  const navLinks = document.querySelectorAll('.navbar-nav a');
 
   if (menuToggle && navMenu) {
     menuToggle.addEventListener('click', () => {
@@ -48,7 +48,7 @@ export function handleHeaderScroll() {
 export function initNavObserver() {
   const sections = document.querySelectorAll("section[id]");
   //const navLinks = document.querySelectorAll("#navbar a"); // Usamos el ID del header
-  const navLinks = document.querySelectorAll(".navbar-nav a, .nav-links a, header nav a");
+  const navLinks = document.querySelectorAll(".navbar-nav a, header nav a");
 
   const observerOptions = {
     root: null,

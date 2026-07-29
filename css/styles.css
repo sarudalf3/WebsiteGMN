@@ -25,6 +25,7 @@
   --color-text-light: #ffffff;
   --color-border: #ebebeb;
   --color-overlay: rgba(0, 0, 0, 0);
+  --color-nav: #203140;
 
   --color-text-header-primary: #ffffff;
   --color-text-header-secondary: #f8f8f8;
@@ -47,28 +48,34 @@
   --radius-xl: 12px;
   --radius-xxl: 16px;
   
-  /* Typography - Reorganized by size */
-  --font-size-xs: 0.9rem;
-  --font-size-sm: 0.95rem;
-  --font-size-base: 1rem;  
-  --font-size-md: 1.1rem;  
-  --font-size-lg: 1.2rem;
-  --font-size-xl: 1.5rem;
-  --font-size-xxl: 1.6rem;
+/* 1. Escala Base (Single Source of Truth) */
+  --font-size-xs: 0.8rem;
+  --font-size-sm: 0.83rem;
+  --font-size-base: 0.87rem;  
+  --font-size-md: 0.92rem;  
+  --font-size-lg: 1rem;
+  --font-size-xl: 1.4rem;
+  --font-size-2xl: 1.8rem; /* Antes xxl */
+  --font-size-3xl: 2.2rem;
+  --font-size-4xl: 2.6rem;
+  --font-size-5xl: 3.0rem;
+  --font-size-6xl: 4.0rem;
+  --font-size-7xl: 5.0rem;
 
-  /* Heading sizes - Reorganized */
-  --font-size-heading-sm: 1.6rem;
-  --font-size-heading-md: 2.1rem;
-  --font-size-heading-lg: 3rem;
-  --font-size-heading-xl: 2.2rem;
-  --font-size-heading-xxl: 2.6rem;
-  --font-size-subheading-lg: 2.6rem;  
+  /* 2. Heading sizes (Vinculados a la escala base) */
+  --font-size-heading-sm: var(--font-size-xl);    /* 1.4rem */
+  --font-size-heading-md: var(--font-size-2xl);   /* 1.8rem */
+  --font-size-subheading-lg: 2.1rem;              /* Valor intermedio específico */
+  --font-size-heading-lg: var(--font-size-3xl);   /* 2.2rem */
+  --font-size-heading-xl: var(--font-size-4xl);   /* 2.6rem */
+  --font-size-heading-xxl: var(--font-size-5xl);  /* 3.0rem */
 
-  /* Hero sizes */
-  --font-size-hero-lg: 6rem;
-  --font-size-hero-md: 5rem;
-  --font-size-hero: 4rem;
-  --font-size-hero-sm: 3.5rem;
+  /* 3. Hero sizes (Vinculados a la escala base) */
+  --font-size-hero-sm: 2.5rem;                    /* Valor intermedio específico */
+  --font-size-hero: var(--font-size-5xl);         /* 3.0rem */
+  --font-size-hero-md: var(--font-size-6xl);      /* 4.0rem */
+  --font-size-hero-lg: var(--font-size-7xl);      /* 5.0rem */
+
 
   /* Transitions */
   --transition-smooth: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
@@ -80,9 +87,8 @@
   --margener-ratio: 74%;
   --content-max-width: 1200px;
   --section-padding: 6rem 2rem 3rem;
-}
 
-:root{
+
   --navy:#0F2E4E; --navy-2:#12406F; --brand:#3880D0; --brand-light:#80B8F8;
   --copper:#F8A068; --copper-cta:#D9752E; --copper-cta-h:#C4661F; --copper-soft:#FBEADD;
   --paper:#F5F8FC; --ink:#0E1B28; --slate:#4E6172; --muted:#7A8896; --border:#DCE6F0;
@@ -135,7 +141,7 @@
 html {
   scroll-behavior: smooth;
   /* Ajusta este valor según la altura de tu header (aprox 70px - 100px) */
-  scroll-padding-top: 80px; 
+  scroll-padding-top: 85px; 
 }
 
 body {
@@ -217,12 +223,12 @@ body {
 
 
 
-/* ===== NAVBAR ===== */
+/* ===== NAVBAR ===== 
 #navbar {
   position: fixed;
   top: 0;
   width: 100%;
-  background: var(--color-header-surface);
+  background: var(--color-nav);
   border-bottom: 1px solid var(--color-border);
   z-index: 100;
   padding: 0.6rem 1.2rem;
@@ -233,12 +239,12 @@ body {
   align-items: center;
   justify-content: space-between;
   height: 100%;                   /* Asegura que use todo el alto del header */
-  padding: 0 10px;
+  /*padding: 0 10px;
   gap: var(--spacing-md);              /* Espacio entre los elementos del header */  
-}
+/*}*/
 
 /* Left Menu */
-.logo {
+/*.logo {
   display: flex;
   align-items: center;
   gap: 0.6rem;
@@ -252,13 +258,13 @@ body {
 }*/
 
 /* Convertimos el enlace en un contenedor flexible */
-.logo-link {
+/*.logo-link {
     display: flex;
     flex-direction: column; /* Esta es la magia: apila los elementos verticalmente */
-    align-items: center;    /* Centra la imagen y el texto horizontalmente */
-    text-decoration: none;  /* Quita el subrayado típico de los enlaces (ideal para logos) */
+/*    align-items: center;    /* Centra la imagen y el texto horizontalmente */
+/*    text-decoration: none;  /* Quita el subrayado típico de los enlaces (ideal para logos) */
     /*gap: 8px;*/               /* Añade un pequeño espacio entre la imagen y el texto */
-}
+/*}
 
 .logo-link img {
     height: 50px;
@@ -280,7 +286,7 @@ body {
   padding: 0;
   text-align: center;
   line-height: 1.2; /* Ajusta para que no ocupen espacio extra */
-}
+/*}
 
 .brand-name {
   font-size: var(--font-size-xl);
@@ -306,41 +312,34 @@ body {
   cursor:pointer;
   border:none}
 
-.btn-primary{background:var(--color-primary);color:var(--color-background)}
-.btn-primary:hover{background:var(--color-background);transform:translateY(-1px)}
+.btn-primary{border:1.5px solid var(--color-primary);background:var(--color-primary);color:var(--color-background)}
+.btn-primary:hover{border-color:var(--color-background);transform:translateY(-1px)}
 .btn-ghost{border:1.5px solid rgba(255,255,255,.42);color:var(--color-primary);background:white}
-.btn-ghost:hover{border-color:var(--color-primary);color:var(--color-primary)}
+.btn-ghost:hover{border-color:var(--color-primary);color:var(--color-primary);transform:translateY(-1px)}
 
 
 /* Center Menu */
-.navbar-nav ul {
-  list-style: none;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  gap: var(--spacing-xl);
-  font-size: var(--font-size-sm);
-  margin: 0;
-  padding: 0;
+
+#navbar nav{display:flex;gap: 30px;;align-items: center}
+#navbar .nav-wrap{display:flex;align-items:center;justify-content:space-between}
+
+.navbar-nav a {
+  padding-top: 7px;
+  padding-bottom: 7px;
+  color: var(--color-text-header-primary);
+  text-decoration: none; /* Esta es la línea que quita el subrayado */
 }
 
+.nav-wrap .cta{background:var(--color-primary);color:#fff;padding:10px 7px; border-radius:var(--radius);font-weight:600;font-size:var(--font-size-md);font-family:var(--body);margin-left: 10px}
+.nav-wrap .cta:hover{background:var(--color-primary-hover)}
+
+/*
 .navbar-nav a {
   color: var(--color-text-header-primary);
   text-decoration: none;
   font-weight: 500;
   transition: color var(--transition-fast);
-  line-height: 1.3; /* Ajusta para que no ocupen espacio extra */
-}
-
-.nav-links a {
-    font-family: var(--mono);
-    display: inline-flex; /* Cambia de inline a inline-flex */
-    align-items: center;
-    justify-content: center;
-    text-align: center; /* Centra las líneas entre sí */
-    max-width: 120px;   /* Limita el ancho para forzar el salto si es necesario */
-    word-wrap: break-word;
-    font-size: var(--font-size-base); 
+  line-height: 1.3; 
 }
 
 .navbar-nav a:hover,
@@ -349,10 +348,14 @@ body {
   color: var(--color-primary);
 }
 
-/* Evita que otros estados interfieran */
 .navbar-nav a:not(.active) {
-    color: #FFFFFF; /* O tu color gris por defecto */
-}
+    color: #FFFFFF; }
+}*/
+
+
+
+
+
 
 /* Right Menu */
 .navbar-right {
@@ -528,7 +531,7 @@ body {
 .overlay p {
   color: var(--color-text-banner-secondary);
   font-family: var(--last);
-  font-size: var(--font-size-xxl);
+  font-size: var(--font-size-heading-sm);
   margin-top: var(--spacing-md);
   margin-bottom: var(--spacing-sm);
   max-width: 830px;
@@ -560,17 +563,17 @@ body {
 }
 
 .slide h2 {
-  font-size: var(--font-size-hero-md);
+  font-size: var(--font-size-heading-lg);
   line-height: 1.1;
 }
 
 .slide h3 {
-  font-size: var(--font-size-heading-lg);
+  font-size: var(--font-size-heading-md);
   margin-top: 7px;
 }
 
 .slide h4 {
-  font-size: var(--font-size-heading-md);
+  font-size: var(--font-size-heading-sm);
 }
 
 .slide p,
@@ -814,28 +817,39 @@ body {
 }
 
 .about-class p {
-  font-size: var(--font-size-xl);
+  font-size: var(--font-size-lg);
+}
+
+.about_part {
+  display: grid;
+  grid-template-columns: 3fr 1fr; 
 }
 
 .team-grid {
-  display: grid;
+  /*display: grid;
   grid-template-columns: repeat(2, 1fr); /* Dos columnas en escritorio */
-  gap: var(--spacing-xl);
+  /*gap: var(--spacing-xl);
   align-items: stretch; /* Fuerza a que ambas tarjetas tengan el mismo alto */
-  margin: var(--spacing-lg) 0;
+  /*margin: var(--spacing-lg) 0;*/
 }
 
 
 /* Tarjeta Individual */
+.about_izq{
+    width: 95%;
+}
+
 .team-card {
     background: rgba(255, 255, 255, 0.03);
     display: flex;
-    flex-direction: column; /* Imagen arriba, contenido abajo */
+    flex-direction: column;  /* Imagen arriba, contenido abajo */
     border-radius: 8px;
     overflow: hidden;
     border: 2px solid var(--color-primary-hover);
     box-shadow: 0 10px 30px rgba(0,0,0,0.05); /* Sombra muy sutil */
     transition: transform 0.3s ease, box-shadow 0.3s ease;
+    margin-bottom: var(--spacing-md);
+    margin-top: var(--spacing-md);
 }
 
 .team-card h3 {
@@ -856,83 +870,37 @@ body {
     /*background-color: #f0f0f0;*/
 
 .team-card__image {
-    flex: 0 0 270px;
-    position: relative;
-    overflow: hidden;       /* Para que la imagen no se salga de las esquinas redondeadas */
-    padding: 0; 
+  display:flex;gap:16px;background:#fff;
+  border:1px solid var(--border);
+  border-radius:var(--radius);padding:18px;
+  box-shadow:var(--sh-sm);
 }
 
-.team-card__image img {
-    width: 45%;
-    height: 95%;
-    object-fit: cover;
-    filter: grayscale(30%); /* Toque elegante */
-    display: block;
-    border: 2px solid var(--color-border); 
-    border-radius: 8px;  
-    margin: 10px;
-    padding: 0px; 
-
+.team-card__image .av{
+  flex:none;
+  width:100px;height:100px;
+  border-radius:50%;
+  overflow:hidden;
+  background:linear-gradient(135deg,var(--brand),var(--navy));
+  display:grid;
+  place-items:center;font: weight 700px;
 }
 
-/* Contenido de la Tarjeta */
-.team-card__content {
-    padding: var(--spacing-md);
-    display: flex;
-    flex-direction: column;
-    height: 100%; /* Ocupa todo el alto disponible */
+.team-card__image .av img{
+  width:100%;height:100%;
+  object-fit:cover;display:block
 }
 
-.member-name {
-  color: var(--color-text-primary);
-}
+.team-card__image .n{font-weight:700;color:var(--navy)}
+.team-card__image .r{font-family:var(--mono);font-size:.7rem;color:var(--copper-cta);font-weight:600;text-transform:uppercase;letter-spacing:.06em;margin:2px 0}
+.team-card__image .d{font-size:.87rem;color:var(--slate)}
 
-.member-role {
-    color: var(--color-primary); /* Naranja GMN */
-    font-size: var(--font-size-base);
-    font-weight: bold;
-    text-transform: uppercase;
-    letter-spacing: 1px;
-    margin-bottom: 0;
-}
-
-.member-bio {
-    font-size: 0.95rem;
-    color: var(--color-text-secondary);
-    line-height: 1.5;
-    margin-bottom: 5px;
-}
-
-/* Highlights */
-.member-highlights {
-    list-style: none;
-    margin-bottom: 10px;
-}
-
-.member-highlights li {
-    font-weight: 600;
-    display: flex;
-    align-items: center;
-    gap: 8px;
-    color: var(--color-text-primary);
-    margin-bottom: 5px;
-}
-
-.member-highlights li p{
-  padding-bottom: 2px;
-}
-
-.dot {
-    width: 6px;
-    height: 6px;
-    background: var(--color-primary);
-    border-radius: 50%;
-}
 
 /* Botón LinkedIn */
 .linkedin-link {
     margin-top: auto;
     display: flex;
+    flex-direction: column; /* Esta es la propiedad clave */
     align-items: center;
     justify-content: center;
     gap: 10px;
@@ -953,10 +921,21 @@ body {
 
 .linkedin-link span {
   line-height: 1;
-  font-size: var(--font-size-lg);
+  font-size: var(--font-size-sm);
   font-weight: bold;
+  text-align: center;
 }
 
+.about_der{
+    width: 98%;
+}
+
+.vm {background:#fff;border:2px solid var(--color-primary-hover);border-radius:var(--radius);padding:15px;margin-top:10px;box-shadow:var(--sh-sm)}
+.vm h3{color :var(--color-primary);
+  font-size:var(--font-size-heading-sm);
+  margin:4px 0px; text-align: center}
+
+.vm p{font-size:var(--font-size-base);color:var(--slate); padding-bottom: 3px; text-align: center;}
 
 /*Our job section*/
 /* ===== QUE HACEMOS SECTIONS ===== */
@@ -2017,19 +1996,27 @@ padding-bottom: 4px;
 
 /*Navbar text size */
 /* --- Ajuste para Laptops Pequeñas / Tablets Grandes (1024px o menos) --- */
-@media (max-width: 1075px) {
-    .logo-text {
-      min-width: 90px;
-    }    
-    /* Achicamos el espacio entre los enlaces del menú */
-    .nav-links {
-        gap: 15px; 
-    }
-    .nav-links a {
-        font-size: var(--font-size-base);
-    }
-    .navbar-nav ul {
-    gap: var(--spacing-md);  
+@media (max-width: 941px) {
+  #navbar nav {
+    flex-direction: column;
+    align-items: flex-start; /* O center, dependiendo de tu menú móvil */
+    gap: 20px; /* Ajusta la separación entre enlaces en móvil */
+  }
+
+    /* Le quitamos el formato de botón al CTA para que sea una opción más */
+  .navbar-nav .cta {
+    background: transparent;
+    color: #FFFFFF !important; /* Color igual al resto de los enlaces */
+    padding: 0;
+    margin-left: 0;
+    font-weight: 500;
+    font-size: inherit;
+  }
+
+  /* Comportamiento hover igual al resto del texto */
+  .navbar-nav .cta:hover {
+    background: transparent;
+    color: var(--color-primary) !important;
   }
 }
 
@@ -2552,7 +2539,7 @@ padding-bottom: 4px;
 }
 
 /* ===== RESPONSIVE DESIGN ===== */
-/*Text Sizes and margins*/
+/*Text Sizes and margins
 
 @media (max-width: 1421px) {
   :root {
@@ -2599,9 +2586,9 @@ padding-bottom: 4px;
     --font-size-sm: 0.9rem;
     --font-size-xs: 0.85rem;
 
-    --spacing-lg: 1.5rem; /* El espacio respira menos en tablets */
+    --spacing-lg: 1.5rem; 
   }
-}
+}*/
 
 @media (max-width: 768px) {
   :root {

@@ -38,7 +38,7 @@
 /* Adaptación de estilos de lista existentes a los nuevos contenedores */
 .split-list-columns ul {list-style: none;padding-left:var(--spacing-xs);margin: 1rem}
 
-.vlist{display:grid;grid-template-columns:1fr 1fr;gap:14px 34px;list-style:none}
+.vlist{display:grid;grid-template-columns:1fr 1fr;gap:14px 34px;list-style:none;}
 .vlist li{padding-left:28px;position:relative;color:var(--slate)}
 .vlist li::before{content:"";position:absolute;left:0;top:.25em;width:10px;height:10px;background:var(--color-primary);border-radius:50%}
 .vlist li b{color:var(--ink)}

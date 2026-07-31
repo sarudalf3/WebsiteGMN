@@ -1,6 +1,6 @@
 .contact-grid {
     display: flex;
-    gap: 30px;
+    gap: 40px;
     justify-content: center;
     margin-top: 40px;
     flex-wrap: wrap; /* Para móviles */
@@ -10,9 +10,9 @@
     background: var(--color-surface);
     padding: 30px;
     border-radius: var(--radius-md);
-    border: 1px solid var(--color-border);
+    border: 1.5px solid var(--slate);
     flex: 1;
-    max-width: 520px;
+    max-width: 540px;
     text-align: center;
     transition: transform 0.3s ease, box-shadow 0.3s ease;
     display: flex;

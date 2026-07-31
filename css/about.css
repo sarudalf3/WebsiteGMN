@@ -33,12 +33,12 @@
 
 .linkedin-link:hover {color: #005582;}
 .linkedin-link svg {display: block;}
-.linkedin-link span {line-height: 1;font-size: var(--font-size-sm);
+.linkedin-link span {line-height: 1;font-size: var(--font-size-xs);
     font-weight: bold;text-align: center;}
 
 .about_der{width: 98%;}
 
-.vm {background:#fff;border:2px solid var(--color-primary-hover);border-radius:var(--radius);padding:15px;margin-top:10px;box-shadow:var(--sh-sm)}
+.vm {background:var(--color-surface-light);border:2px solid var(--color-primary-hover);border-radius:var(--radius);padding:15px;margin-top:10px;box-shadow:var(--sh-sm)}
 .vm h3{color :var(--navy);font-size:var(--font-size-heading-sm);margin:4px 0px; text-align: center}
 .vm p{font-size:var(--font-size-base);color:var(--slate); padding-bottom: 3px; text-align: center;}
 

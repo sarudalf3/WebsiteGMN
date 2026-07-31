@@ -16,7 +16,9 @@
 }
 
 .logo-link img {height: 60px; width: auto;
-    padding: 5px 0px; transition: transform 0.3s ease}
+    padding: 5px 0px; 
+    filter: brightness(1.25); 
+    transition: transform 0.3s ease, filter 0.3s ease}
 
 
 /* Center Menu */
@@ -30,7 +32,7 @@
 }
 
 .navbar-nav a:not(.active) {color: #FFFFFF}
-.navbar-nav a.active {color: var(--muted) !important}
+.navbar-nav a.active {color: var(--color-nabvar) !important}
 .navbar-nav a:hover {color: var(--color-primary-hover) !important}
 .navbar-nav .btn-primary:hover {color: var(--navy) !important}
 .navbar-nav .btn-primary:active {color: var(--navy) !important}

@@ -49,7 +49,7 @@ export function initMobileMenu() {
       link.addEventListener('click', () => {
         navMenu.classList.remove('active');
         // ¡Importante! Reseteamos también el aria-expanded para mantener la sincronía
-        menuToggle.setAttribute('aria-expanded', 'false');
+        //menuToggle.setAttribute('aria-expanded', 'false');
       });
     });
   }
@@ -71,8 +71,8 @@ export function handleHeaderScroll() {
 
 export function initNavObserver() {
   const sections = document.querySelectorAll("section[id]");
-  const navLinks = document.querySelectorAll("#navbar a"); // Usamos el ID del header
-  //const navLinks = document.querySelectorAll(".navbar-nav a, header nav a");
+  //const navLinks = document.querySelectorAll("#navbar a"); // Usamos el ID del header
+  const navLinks = document.querySelectorAll(".navbar-nav a, header nav a");
 
   const observerOptions = {
     root: null,

@@ -35,9 +35,6 @@
     "card3_sub1": "Disponibilidad de Activos",
     "card3_sub2": "En activos críticos intervenidos",
     "list": "Valor creado por <span class='gmn-font'>GMN</span><sup>®</sup>",
- 
- 
- 
     "list1": "<b>+25 años</b> liderando la gestión de activos de clase mundial.",
     "list2": "<b>+9 faenas</b> mineras intervenidas en LatAm y el mundo.",
     "list3": "<b>ISO 9001 · 14001 · 45001</b> y acreditación AENOR.",
@@ -131,7 +128,7 @@
 
   "success": {
     "title": "Nuestra Experiencia",
-    "par1": "Resultados concretos en operaciones líderes de minería e industria:",
+    "par1": "Resultados concretos en operaciones líderes de minería e industria.",
 
     "exp_title01": "ESCONDIDA | BHP",
     "exp_desc01": "Maximización de la disponibilidad de activos críticos · Mejora en la calidad de Información · Automatización de reportes operativos de mantenimiento",
@@ -214,7 +211,7 @@
     "client_btn": "Hablemos de su proyecto",
     
     "talent_title": "Súmate a <span class='gmn-font gmn-size-title'>GMN</span><sup>®</sup>",
-    "talent_text": "Buscamos consultores que no solo asesoren, sino que hagan que las cosas pasen. Si le apasiona la excelencia técnica y quiere generar un impacto real en las operaciones más críticas de Latinoamérica, este es su lugar.",
+    "talent_text": "Buscamos consultores que no solo asesoren, sino que hagan que las cosas pasen. Si le apasiona la excelencia técnica y quiere generar un impacto real, este es su lugar.",
     "talent_linkedIn_btn": "Ver oportunidades en LinkedIn",
     "talent_mail_btn": "Envianos tu CV"
   },

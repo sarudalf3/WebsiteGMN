@@ -20,7 +20,7 @@
 
 
 /* Center Menu */
-#navbar nav.navbar-nav{display:flex;gap: 30px;;align-items: center}
+#navbar nav.navbar-nav{display:flex;gap: 30px;align-items: center}
 
 .navbar-nav a {padding-top: 7px; padding-bottom: 7px;
   color: var(--color-text-header-primary);
@@ -30,9 +30,10 @@
 }
 
 .navbar-nav a:not(.active) {color: #FFFFFF}
-.navbar-nav a.active {color: var(--color-primary) !important}
+.navbar-nav a.active {color: var(--muted) !important}
 .navbar-nav a:hover {color: var(--color-primary-hover) !important}
-.navbar-nav .btn-primary:hover {color: var(--color-background) !important}
+.navbar-nav .btn-primary:hover {color: var(--navy) !important}
+.navbar-nav .btn-primary:active {color: var(--navy) !important}
 
 
 /* Right Menu */

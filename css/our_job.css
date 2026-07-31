@@ -1,6 +1,6 @@
 
 .img_job {display: flex; gap: var(--spacing-md); align-items: 
-    flex-start; margin-bottom: 0}
+    flex-start; margin-top: var(--spacing-md)}
 
 .text-job {flex: 1.25;}
 .text-job p {text-align: left;color: var(--slate);margin-bottom: 0}
@@ -13,4 +13,3 @@
 .industria-text li {margin-bottom: var(--spacing-sm);padding-left: 20px;position: relative}
 .industria-text li::before {content: "•";color: var(--color-text-secondary);position: absolute;left: 4px}
 .industria-text p b{color:var(--copper-cta)}
-

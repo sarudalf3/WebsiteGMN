@@ -1,0 +1,160 @@
+.footer {
+    background-color: var(--color-header-surface); /* Un gris casi negro muy elegante */
+    color: #ffffff;
+    padding: 20px 0 5px;
+    font-size: var(--font-size-heading-lg);
+}
+
+.margener-footer {
+    width: 90%;          /* Un poco menos para dar aire a los costados */
+    max-width: 1400px;   /* Evita que en pantallas gigantes se estire demasiado */
+    margin: 0 auto;      /* ESTO centra el contenedor en la página */
+
+}
+
+ /*.footer-container {
+    display: grid;
+    grid-template-columns: 1.4fr 1.1fr 1fr; /* La descripción ocupa más espacio */
+ /*    gap: 60px;
+    margin-bottom: 20px;
+    align-items: start; 
+}*/
+
+.footer-container {
+    display: grid;
+    gap: 10px;
+    /* Por defecto (Móvil): Una sola columna */
+    grid-template-columns: 1fr;
+    text-align: center;
+}
+
+.wrapper-contacto {
+  display: inline-block; /* Esto hace que el div solo ocupe el ancho de sus elementos */
+  text-align: left;      /* Esto asegura que el contenido interno se alinee a la izquierda */
+  margin: 0 auto;        /* Esto centra el bloque si el padre tiene text-align: center */
+}
+
+.footer-column {
+    display: flex;
+    flex-direction: column;
+    gap: 3px; /* Espacio vertical entre los enlaces de contacto */
+    padding-bottom: var(--spacing-md);
+  }
+
+.footer-column h3, .footer-column h4 {
+    color: var(--color-primary); /* Tu naranja corporativo */
+    margin-bottom: 3px;
+    font-size: var(--font-size-lg);
+    font-weight: bold;
+}
+
+.footer-link {
+    display: flex;
+    align-items:center; /* ALINEACIÓN VERTICAL CRUCIAL */
+    text-decoration: none;
+    color: white;
+    transition: color 0.3s ease;
+    gap: 8px; /* Espacio horizontal entre icono y texto */
+    justify-content: flex-start; /* Esto mueve el icono+texto al centro */
+    padding: 0 5px; /* Espacio vertical para que no se vean amontonados */
+
+}
+
+.footer-link:hover {
+    color: var(--color-primary); /* Naranja corporativo al pasar el mouse */
+}
+
+.footer-link .icon {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 20px; /* Ancho fijo para que los textos empiecen en la misma línea */
+    flex-shrink: 0;
+}
+
+.footer-link span {
+padding-bottom: 4px;
+}
+
+.footer-link .icon svg {
+    width: 15px;  /* Ajuste fino para que coincida con el tamaño del emoji */
+    height: 15px;
+}
+
+.footer-link .text {
+    line-height: 1.1; /* Evita que el interlineado mueva el texto */
+    font-size: var(--font-size-lg);
+}
+
+
+
+/* Alineación para la ubicación (párrafo con el pin 📍) */
+.footer-column p {
+    display: flex;
+    align-items: center; /* Alinea el pin con la primera línea de la dirección */
+    gap: 10px;
+    line-height: 1.4;
+    justify-content: center;
+    font-size: var(--font-size-lg);
+
+}
+
+.footer-bottom {
+    border-top: 1px solid #b0afaf;
+    padding: 10px;
+    text-align: center;
+    color: white;
+    font-size: var(--font-size-md);
+    display: flex;
+    flex-direction: column;  /* Apila los contenedores verticalmente (una fila abajo de la otra) */
+    align-items: center;     /* Centra todo horizontalmente */      
+}
+
+.footer-links {
+  display: flex;
+  justify-content: space-between;
+  width: 100%; 
+  gap: var(--spacing-md);
+  margin: 0 var(var(--spacing-xxl));
+}                 /* Separación entre los 3 enlaces */
+
+.footer-link-bottom {
+    flex: 1; /* Obliga a los 3 cuadros a medir exactamente lo mismo */
+    padding: var(--spacing-sm) var(--spacing-md);
+    text-align: center;
+    transition: all 0.3s ease;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    text-decoration: none;
+  }
+
+.footer-link-bottom:hover {
+  color: var(--color-primary)      /* Color naranja corporativo GMN al pasar el mouse */
+}
+
+/*
+.footer-link-bottom a {
+    font-size: 0.9rem;
+    width: 100%;
+    display: block;
+}*/
+
+
+.linkedin-footer span {
+  line-height: 1;
+  font-size: var(--font-size-xs);
+}
+
+
+.footer-bottom p {
+  margin: 0;               /* Limpia los márgenes por defecto */
+}
+
+.grey-footer {
+    color: rgb(86, 86, 86);
+    padding: 3px 0;
+    text-align: center;
+    font-size: var(--font-size-md);
+}

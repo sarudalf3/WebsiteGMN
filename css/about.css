@@ -1,0 +1,44 @@
+.about_part {display: grid;grid-template-columns: 3fr 1fr;}
+.about_izq{width: 95%;}
+
+.team-card {background: rgba(255, 255, 255, 0.03);
+    display: flex; flex-direction: column; border-radius: 8px;
+    overflow: hidden; border: 2px solid var(--color-primary-hover);
+    box-shadow: 0 10px 30px rgba(0,0,0,0.05); /* Sombra muy sutil */
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    margin-bottom: var(--spacing-md);margin-top: var(--spacing-md);}
+
+.team-card:hover {transform: translateY(-5px);
+    border-color: var(--color-primary);box-shadow: 0 15px 40px rgba(0,0,0,0.1);}
+
+.team-card__image {display:flex;gap:16px;background:#fff;
+    border:1px solid var(--border);
+    border-radius:var(--radius);padding:18px;
+    box-shadow:var(--sh-sm);}
+
+.team-card__image .av{flex:none;width:100px;height:100px;
+    border-radius:50%;overflow:hidden;
+    background:linear-gradient(135deg,var(--brand),var(--navy));
+    display:grid;place-items:center;font: weight 700px;}
+
+.team-card__image .av img{width:100%;height:100%;object-fit:cover;display:block}
+.team-card__image .n{font-weight:700;color:var(--navy)}
+.team-card__image .r{font-family:var(--mono);font-size:.7rem;color:var(--copper-cta);font-weight:600;text-transform:uppercase;letter-spacing:.06em;margin:2px 0}
+.team-card__image .d{font-size:.87rem;color:var(--slate)}
+
+.linkedin-link {margin-top: auto;display: flex;flex-direction: column; 
+    align-items: center;justify-content: center;gap: 10px;
+    text-decoration: none;padding: 10px;color: #0077B5; 
+    font-size: var(--font-size-sm);transition: color 0.3s ease;}
+
+.linkedin-link:hover {color: #005582;}
+.linkedin-link svg {display: block;}
+.linkedin-link span {line-height: 1;font-size: var(--font-size-sm);
+    font-weight: bold;text-align: center;}
+
+.about_der{width: 98%;}
+
+.vm {background:#fff;border:2px solid var(--color-primary-hover);border-radius:var(--radius);padding:15px;margin-top:10px;box-shadow:var(--sh-sm)}
+.vm h3{color :var(--navy);font-size:var(--font-size-heading-sm);margin:4px 0px; text-align: center}
+.vm p{font-size:var(--font-size-base);color:var(--slate); padding-bottom: 3px; text-align: center;}
+

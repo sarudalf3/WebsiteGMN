@@ -37,6 +37,7 @@
   --spacing-lg: 1.5rem;
   --spacing-xl: 2rem;
   --spacing-xxl: 3rem;
+  --spacing-achievement: 4.5rem;  
   --container-width: 1200px;
 
   /* Border radius */
@@ -118,18 +119,19 @@ body {
 
 .slide {
   padding: 1.5m 1.5rem;display: flex;flex-direction: column;
-  align-items: center; justify-content: center; background-color: var(--color-background);text-align: left
+  align-items: center; justify-content: center; background-color: var(--color-background);text-align: left;
+  max-width:(--content-max-width);
 }
 
-.margener {width: 92%;margin-bottom:var(--spacing-xl)}
-.margener h2 {margin-top: var(--spacing-xxl);margin-bottom: var(--spacing-md)}
-.margener h3 {margin: var(--spacing-xl) 0;margin-bottom: var(--spacing-sm);line-height: 1.2}
+.margener {width:90%; max-width:(--content-max-width);margin-bottom:var(--spacing-xl)}
+.margener h2 {margin-top: var(--spacing-xl);margin-bottom: var(--spacing-md)}
+.margener h3 {margin: var(--spacing-lg) 0;margin-bottom: var(--spacing-sm);line-height: 1.2}
 .margener h4 {margin: var(--spacing-md) 0;line-height: 1.2}
 .margener p {padding-bottom: var(--spacing-md)}
 
-.slide h2 {font-size: var(--font-size-hero); line-height: 1.1}
-.slide h3 {font-size: var(--font-size-heading-lg);margin-top: 7px}
-.slide h4 {font-size: var(--font-size-heading-md)}
+.slide h2 {font-size: var(--font-size-heading-xl); line-height: 1.1}
+.slide h3 {font-size: var(--font-size-heading-md);margin-top: 7px}
+.slide h4 {font-size: var(--font-size-heading-sm)}
 .slide p, .slide a, .slide li {font-size: var(--font-size-md)}
 
 .color-bg {background-color: rgba(163, 163, 163, 0.10)}
@@ -144,6 +146,8 @@ body {
 .gmn-size-xs {font-weight: 400}
 .gmn-size-footer {font-weight: 500}
 .font-others {font-family: 'Jost', sans-serif; letter-spacing: 0.25px}
+.tnum{font-variant-numeric:tabular-nums;letter-spacing:-.01em}
+
 
 /* buttons */
 .btn{display:inline-flex; align-items:center; gap:8px; font-weight:600; padding:14px;

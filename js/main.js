@@ -8,6 +8,41 @@ document.addEventListener('DOMContentLoaded', () => {
     initNavObserver();
     initCarousel(); // Inicializamos el carrusel
 
+// --- INTEGRACIÓN DEL COUNT-UP ---
+    const reduce = matchMedia('(prefers-reduced-motion: reduce)').matches;
+
+    function countUp(el) {
+        const target = +el.dataset.count, 
+              pre = el.dataset.prefix || '', 
+              suf = el.dataset.suffix || '';
+        
+        if (reduce) {
+            el.textContent = pre + target.toLocaleString('es') + suf;
+            return;
+        }
+        
+        let start = null, dur = 1400;
+        
+        function step(t) {
+            if (!start) start = t;
+            const p = Math.min((t - start) / dur, 1);
+            const val = Math.floor((1 - Math.pow(1 - p, 3)) * target);
+            el.textContent = pre + val.toLocaleString('es') + suf;
+            if (p < 1) requestAnimationFrame(step);
+        }
+        
+        requestAnimationFrame(step);
+    }
+
+    const cio = new IntersectionObserver((es) => es.forEach(en => {
+        if (en.isIntersecting) {
+            countUp(en.target);
+            cio.unobserve(en.target);
+        }
+    }), { threshold: .5 });
+
+    document.querySelectorAll('[data-count]').forEach(el => cio.observe(el));
+    // ---------------------------------
     initLanguage(() => {
         // Al cambiar idioma, i18n ya traduce los data-key automáticamente. 
         // Si tu i18n.js traduce todo el DOM, no necesitas reinicializar el carrusel aquí.

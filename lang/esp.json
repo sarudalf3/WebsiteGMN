@@ -26,12 +26,15 @@
     "title": "Impacto Estratégico <span class='gmn-font'>GMN</span><sup>®</sup>",
     "subtitle": "Durante el último año, nuestra gestión ha permitido a grandes operaciones industriales optimizar recursos por más de <span class='resaltado-gmn'>200 millones de dólares</span>.",
     "card1": "$200",
+    "card1_pref": "01 / VALOR",
     "card1_sub1": "MUSD Valor Generado",
     "card1_sub2": "Recursos optimizados en operaciones cliente",
     "card2": "20%",
+    "card2_pref": "02 / COSTOS",
     "card2_sub1": "Optimización de Costos",
     "card2_sub2": "Sobre históricos de mantenimiento",
     "card3": "24%",
+    "card3_pref": "03 / DISPONIBILIDAD",
     "card3_sub1": "Disponibilidad de Activos",
     "card3_sub2": "En activos críticos intervenidos",
     "list": "Valor creado por <span class='gmn-font'>GMN</span><sup>®</sup>",
@@ -41,6 +44,7 @@
     "list4": "<b>+200.000 OT</b> regularizadas y optimizadas en SAP PM.",
     "list5": "<b>Proyectos críticos</b> donde la continuidad no es negociable.",
     "list6": "<b>+40 profesionales</b> multidisciplinarios enfocados en resultados."
+
   },
 
   "we_do": {
@@ -68,9 +72,21 @@
     "item_per3":"<b class='text-orange'>Mantenibilidad y Coordinación:</b> tiempo adicional por dificultad de acceso, falta de repuestos o coordinación deficiente que extiende los tiempos de reparación.",        
     "item_per4":"<b class='text-orange'>Rendmiento Reducido:</b> equipos operando bajo capacidad nominal; degradación silenciosa que genera pérdida acumulada en el tiempo operativo.",        
     "item_per5":"<b class='text-orange'>Calidad de Datos:</b> decisiones basadas en información incompleta o inconsistente, que se traducen en estrategias mal calibradas.",        
-    "item_per6":"<b class='text-orange'>Cultura y gestión Organizacional:</b> brechas en competencias, liderazgo desalineado o cultura reactiva que perpetúan el ciclo de pérdidas."        
-  },
+    "item_per6":"<b class='text-orange'>Cultura y gestión Organizacional:</b> brechas en competencias, liderazgo desalineado o cultura reactiva que perpetúan el ciclo de pérdidas.",        
 
+    "item_title1":"Detenciones No Programadas",
+    "item_par1":"Fallas de equipos críticos o paradas no operacionales; la fuente más costosa y visible de pérdida productiva.",
+    "item_title2":"Planificación y Procesos Ineficientes",
+    "item_par2":"Tiempo de detención por mantenimientos mal dimensionados, baja eficiencia o cuellos de botella en la programación.",
+    "item_title3":"Mantenibilidad y Coordinación",
+    "item_par3":"Tiempo adicional por dificultad de acceso, falta de repuestos o coordinación deficiente que extiende los tiempos de reparación.",        
+    "item_title4":"Rendmiento Reducido",
+    "item_par4":"Equipos operando bajo capacidad nominal; degradación silenciosa que genera pérdida acumulada en el tiempo operativo.",        
+    "item_title5":"Calidad de Datos",
+    "item_par5":"Decisiones basadas en información incompleta o inconsistente, que se traducen en estrategias mal calibradas.",        
+    "item_title6":"Cultura y gestión Organizacional",        
+    "item_par6":"Brechas en competencias, liderazgo desalineado o cultura reactiva que perpetúan el ciclo de pérdidas."
+  },
 
 
   "servicios": {

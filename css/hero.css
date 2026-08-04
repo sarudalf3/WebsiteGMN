@@ -1,5 +1,5 @@
 /* Section Home*/
-.hero {position: relative;height: 100vh; width: 100%;overflow: hidden;
+.hero {position: relative;height: 107vh; width: 100%;overflow: hidden;
     display: flex;align-items: center; padding: 0 5%}
 
 .hero::before {content: '';position: absolute;inset: 0;
@@ -17,15 +17,19 @@
 .overlay {position: absolute;box-sizing: border-box;background: rgba(0, 0, 0, 0.15);
     -webkit-backdrop-filter: blur(2px);backdrop-filter: blur(2px); 
     padding: var(--spacing-xxl);border-radius: var(--radius-lg);
-    text-align: left;left: 10%;top: 20%;color: white;transform: none;
-    margin: 0 auto;max-width: 900px;width: auto;z-index: 1}
+    text-align: left;left: 12%;top: 18%;color: white;transform: none;
+    margin: 0 auto;max-width: 950px;width: auto;z-index: 1}
 
-.overlay h1 {font-size: var(--font-size-hero-lg);line-height: 1.1;
+.overlay h1 {font-size: var(--font-size-hero-md);line-height: 1.1;
     margin: 0;padding-bottom: var(--spacing-xs);color: var(--color-text-banner-primary)}
 
 .overlay p {color: var(--color-text-banner-secondary);font-family: var(--last);
-    font-size: var(--font-size-heading-sm);margin-top: var(--spacing-md);margin-bottom: var(--spacing-sm);
+    font-size: var(--font-size-xl);margin-top: var(--spacing-md);margin-bottom: var(--spacing-sm);
     max-width: 830px;gap: 0.8rem;font-weight: bold;white-space: pre-line}
 
-.actions {display: flex;justify-content: flex-start;padding-top: var(--spacing-md);gap: 30px; margin-top:5px}
+.actions {display: flex;justify-content: flex-start;padding-top: var(--spacing-md);gap: var(--spacing-xxl); margin-top:5px}
 .actions a {text-decoration: none}
+
+.datastrip{margin-top:25px;display:flex;gap:34px;flex-wrap:wrap;border-top:1px solid rgba(128,184,248,.22);padding-top:15px}
+.datastrip .d .n{font-weight:700;font-size:var(--font-size-2xl);color:var(--color-primary)}
+.datastrip .d .l{font-size:var(--font-size-xs);letter-spacing:.14em;text-transform:uppercase;color:var(--color-background);font-weight:600}

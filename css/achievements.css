@@ -1,13 +1,31 @@
-.main-content-stack {display: flex;flex-direction: column; 
-    align-items: center; margin-top: var(--spacing-xl)}
+.main-achievements-wrapper {display: flex;
+  align-items: row; /* Alinea TODO el bloque de la lista con el fondo de las cajas */
+  gap: 2rem; /* Mantén el espacio entre columnas */
+}
 
-.cards-container {display: flex;justify-content: left; gap: 30px; flex-wrap: nowrap}
-.cards-block {width:100%; display:flex;justify-content: center}
+/*.main-content-stack {display: flex;flex-direction: row; 
+    align-items: flex-start; margin-top: var(--spacing-xl)}*/
+
+.main-content-stack {display: flex;
+  flex-direction: column; /* Mantiene las tarjetas en fila */
+  gap: 1rem; /* Espacio entre tarjetas */
+  /*flex: 2;  Ocupa la mayor parte del espacio, por ejemplo */
+}
+
+
+/*.cards-container {display: flex;justify-content: left; gap: 30px; flex-wrap: nowrap}*/
+.cards-container {display: flex;flex-direction: row; 
+    gap: var(--spacing-achievement); margin: var(--spacing-md) 0;
+    width: 100%;}
+
+/*.cards-block {width:100%; display:flex;justify-content: center}*/
+.cards-block {width: 100%;}
 
 .cards {display: flex;flex-direction: column;align-items: center; 
     gap: 0px;background-color: var(--color-surface-light);
     border: 2px solid var(--color-primary); border-radius: 8px; 
-    flex: 1 1 calc(55% - 20px); /* flex-grow, flex-shrink, flex-basis: roughly a third minus gap share. (calc(33.33% - (2*gap/3))) -> calc(33.33% - 20px) seems okay with gap 30px, 3 cards, 2 gaps, 60px/3 = 20px */
+    /*flex: 1 1 calc(55% - 20px);  flex-grow, flex-shrink, flex-basis: roughly a third minus gap share. (calc(33.33% - (2*gap/3))) -> calc(33.33% - 20px) seems okay with gap 30px, 3 cards, 2 gaps, 60px/3 = 20px */
+    flex: 1;
     transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
@@ -19,8 +37,9 @@
 }
 
 .cards-image { flex: 0 0 auto; width: 75px; padding: 3px}
-.cards-image img {height: 75px; width:auto; object-fit: cover; display: block}
-.card-top-row {display: flex; align-items: center; justify-content: center; gap: 0; width: 100%; height: auto; margin:4px}
+.cards-image img {height: 70px; width:auto; object-fit: cover; display: block}
+/*.card-top-row {display: flex; align-items: center; justify-content: center; gap: 0; width: 100%; height: auto; margin:4px}*/
+.card-top-row {display: flex;align-items: center;gap: 0.5rem}
 .card-top-row h3 {font-weight:bold;margin: 0; padding: 0 var(--spacing-md)}
 .card-bottom-row {display: flex;flex-direction: column;align-items: center;text-align: center;width: 100%;margin-top: var(--spacing-xs);}
 
@@ -28,17 +47,49 @@
 .cards-subtitle {padding: 3px !important; color: var(--ink) !important; text-align: center; font-size: var(--font-size-lg) !important; display: block; width: 98%; font-weight: bold; align-items: center}
 .cards-comparative { color: var(--slate) !important; text-align: center; font-size: var(--font-size-sm) !important; display: grid; width: 60%; align-items: center !important;padding-bottom:var(--spacing-sm) ;}
 
+.list-block {flex: 1; /* La columna de lista ocupa el resto */
+  /* Asegurate que la lista en si no tenga márgenes superiores que rompan la alineación */
+    ul.vlist {margin-top: 0;}
+    margin-bottom: var(--spacing-md);
+}
 
+/*.list-block {width: 90%;max-width: 1200px;background: rgba(255, 255, 255, 0.05);
+    padding: var(--spacing-sm) var(--spacing-xl);border-radius: 8px}*/
 
-.list-block {width: 90%;max-width: 1200px;background: rgba(255, 255, 255, 0.05);
-    padding: var(--spacing-sm) var(--spacing-xl);border-radius: 8px}
+.split-list-columns {display: flex; gap: var(--spacing-md); justify-content:flex-start; margin-top: var(--spacing-sm)}
 
-.split-list-columns {display: flex; gap: var(--spacing-lg); justify-content: center; margin-top: var(--spacing-md)}
+.split-list-columns .vlist {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr); /* Dos columnas iguales */
+    gap: var(--spacing-md) var(--spacing-achievement); /* Espaciado interno (fila y columna) */
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
 
-/* Adaptación de estilos de lista existentes a los nuevos contenedores */
-.split-list-columns ul {list-style: none;padding-left:var(--spacing-xs);margin: 1rem}
-
-.vlist{display:grid;grid-template-columns:1fr 1fr;gap:14px 34px;list-style:none;}
-.vlist li{padding-left:28px;position:relative;color:var(--slate)}
+.vlist li{padding-left:30px;position:relative;color:var(--slate)}
 .vlist li::before{content:"";position:absolute;left:0;top:.25em;width:10px;height:10px;background:var(--color-primary);border-radius:50%}
 .vlist li b{color:var(--ink)}
+
+.metrics{display:grid;grid-template-columns:repeat(3,1fr);gap:var(--spacing-md) var(--spacing-achievement);margin-bottom:0px}
+
+.metric{background:var(--paper);
+    border: 2px solid var(--color-primary);
+    border-radius:var(--radius);
+    padding:20px 40px;
+    box-shadow:var(--sh-md);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.metric:hover {
+    transform: translateY(5px);
+    box-shadow: 0 15px 40px rgba(0,0,0,0.1);
+    background-color: var(--color-surface);
+    filter:grayscale(5%)
+}
+
+.metric .idx{font-family:var(--mono);font-size:var(--font-size-xs);color:var(--color-primary);letter-spacing:.1em; font-weight: bold;}
+.metric .big{font-family:var(--display);font-weight:700;font-size:var(--font-size-4xl);color:var(--navy);line-height:1;margin-top:6px}
+.metric .lbl{font-weight:700;margin-top:8px;color:var(--navy-2);font-size:var(--font-size-lg);}
+.metric .sub{font-size:var(--font-size-base);color:var(--muted);margin-top:2px; width: 80%;}
+

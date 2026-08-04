@@ -13,3 +13,74 @@
 .industria-text li {margin-bottom: var(--spacing-sm);padding-left: 20px;position: relative}
 .industria-text li::before {content: "•";color: var(--color-text-secondary);position: absolute;left: 4px}
 .industria-text p b{color:var(--copper-cta)}
+
+/* --- BLOQUE ANÁLISIS DE PÉRDIDAS (NUEVAS CAJAS GRID) --- */
+.losses-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr); /* Cuadrícula flexible */
+  gap: var(--spacing-md);
+  margin: var(--spacing-md) 0;
+}
+
+.loss-box {
+  background: var(--paper);
+  padding: var(--spacing-sm);
+  border-radius: 8px;
+  box-shadow: 0 2px 10px var(--muted);
+  display: flex;
+  align-items: center;
+  border: 1.5px solid;
+  border-left: 4px solid;
+  border-bottom: 4px solid;    
+}
+
+.loss-box:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 15px 40px rgba(0,0,0,0.1);
+    background-color: var(--color-surface);
+    filter:grayscale(5%)
+}
+
+.loss-box .loss-icon {
+  font-size: 2.1rem;
+  color: var(--navy); /* O puedes usar el color de acento correspondiente */
+  flex-shrink: 0;
+  width: 50px;
+  text-align: center;
+  margin-right: var(--spacing-sm);
+}
+
+.loss-box .loss-box-text h4{
+    margin: var(--spacing-sm) 0 ;
+}
+
+.loss-box .loss-box-text p{
+    padding: var(--spacing-sm) 0;
+    padding-right: var(--spacing-md);
+    color: var(--slate);
+    margin: 0;
+    line-height: 1.5;    
+}
+
+.loss-box p {
+  color: var(--slate);
+  margin: 0;
+  line-height: 1.5;
+  font-size: 0.9rem;
+}
+
+/* Clases de color para los bordes (usando variables existentes o colores nuevos) */
+.border-orange { border-left-color: var(--copper-cta);border-color: var(--copper-cta); }
+.border-red { border-left-color: #e74c3c; border-color: #e74c3c;} /* Ejemplo color, ajustar a paleta GMN */
+.border-yellow { border-left-color: #f1c40f; border-color: #f1c40f;}
+.border-blue { border-left-color: #3498db; border-color: #3498db;}
+.border-purple { border-left-color: #9b59b6; border-color: #9b59b6;}
+.border-green { border-left-color: #27ae60; border-color: #27ae60;}
+
+
+.loss-box .box-orange { color: var(--copper-cta);}
+.loss-box .box-red { color: #e74c3c;} /* Ejemplo color, ajustar a paleta GMN */
+.loss-box .box-yellow { color: #f1c40f;}
+.loss-box .box-blue { color: #3498db;}
+.loss-box .box-purple { color: #9b59b6;}
+.loss-box .box-green { color: #27ae60;}

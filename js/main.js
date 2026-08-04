@@ -21,7 +21,7 @@ document.addEventListener('DOMContentLoaded', () => {
             return;
         }
         
-        let start = null, dur = 1400;
+        let start = null, dur = 1200;
         
         function step(t) {
             if (!start) start = t;
